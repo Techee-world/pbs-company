@@ -1,6 +1,7 @@
 import React from "react";
 import LeadersCard from "../component/LeadersCard";
 import Link from "next/link";
+import Image from "next/image";
 
 const page = () => {
   return (
@@ -38,10 +39,12 @@ const page = () => {
             qui debitis maxime!
           </p>
         </div>
-        <img
+        <Image
           src="https://www.investpr.org/wp-content/uploads/2023/07/ELLA-WEBSITE-EDITED-m.jpg"
           alt="ceo"
           className="h-80 object-cover rounded-tl-[120px] border-t-2 border-l-2 border-blue-300"
+          width={200}
+          height={100}
         />
       </div>
       <div className="max-w-6xl m-auto my-10">
