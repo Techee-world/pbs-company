@@ -79,7 +79,7 @@ const page: React.FC = () => {
                 </span>
               </div>
             </div>
-            <button className="bg-blue-500 text-white px-6 py-3 rounded-lg mt-6 hover:bg-red-600">
+            <button className="bg-blue-400 text-white px-6 py-3 rounded-lg mt-6 hover:bg-red-600">
               GET A QUOTE
             </button>
           </div>
