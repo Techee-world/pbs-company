@@ -42,7 +42,7 @@ const page: React.FC = () => {
               </h2>
               <p className="text-gray-600 mb-6 text-base montserrat-font">
                 spanning 7 to 10 days, equip you with practical skills and
-                industry insights to excel in your chosen field. Whether you're
+                industry insights to excel in your chosen field. Whether you re
                 aiming for career advancement or seeking to acquire new skills,
                 our training sessions are your pathway to success.
               </p>

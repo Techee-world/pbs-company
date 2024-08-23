@@ -10,7 +10,7 @@ const page: React.FC = () => {
         </h2>
         <p className="text-gray-600 mb-10 text-base montserrat-font">
           Step into success with our dynamic funding options tailored to your
-          business needs. Lorem Ipsum has been the industry's standard dummy
+          business needs. Lorem Ipsum has been the industry s standard dummy
           text ever since the 1500s, when an unknown printer took a galley type
           and scrambled it to make a type specimen book. It has survived not
           only five centuries into electronic typesetting remaining essentially
@@ -24,7 +24,7 @@ const page: React.FC = () => {
               </h2>
               <p className="text-gray-600 mb-6 text-base montserrat-font">
                 Ignite your entrepreneurial journey with our startup-friendly
-                funding. From initial seed capital to expansion financing, we're
+                funding. From initial seed capital to expansion financing, were
                 committed to fueling your vision and driving growth from day
                 one.
               </p>
@@ -45,8 +45,8 @@ const page: React.FC = () => {
               <p className="text-gray-600 mb-6 text-base montserrat-font">
                 Ready to scale up? Our strategic partnerships offer the capital
                 infusion and expertise needed to elevate your business to new
-                heights. Whether it's launching new products, entering new
-                markets, or optimising operations, we're your trusted ally for
+                heights. Whether it s launching new products, entering new
+                markets, or optimising operations, we re your trusted ally for
                 sustainable expansion Know our team page
               </p>
             </div>

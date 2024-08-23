@@ -15,7 +15,7 @@ const HomeFunding: React.FC = () => {
         </h1>
         <p className="text-gray-600 mt-4">
           Ignite your entrepreneurial journey with our startup-friendly funding.
-          From initial seed capital to expansion financing, we're committed to
+          From initial seed capital to expansion financing, were committed to
           fueling your vision and driving growth from day one.
         </p>
 
