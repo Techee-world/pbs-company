@@ -18,7 +18,7 @@ const HomeTraining: React.FC = () => {
           <Image
             src="https://images.pexels.com/photos/796602/pexels-photo-796602.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt="VR Headset"
-             height={500}
+            height={500}
             width={200}
             className="rounded-lg absolute bottom-6 sm:bottom-8 left-28 sm:left-32 lg:left-48 xl:left-56 bg-white p-2 sm:p-4 object-cover w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 xl:w-64 xl:h-64"
           />
@@ -34,8 +34,8 @@ const HomeTraining: React.FC = () => {
         <p className="text-sm text-blue-500 uppercase font-semibold">
           Training
         </p>
-        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-2">
-          Transform Business to Technology
+        <h1 className="text-3xl sm:text-4xl uppercase font-bold text-gray-900 mt-2">
+          Elevate Your Skills with Tailored Training Sessions
         </h1>
         <p className="text-gray-600 mt-4 text-base">
           Elevate Your Skills with Tailored Training Sessions. Unlock your

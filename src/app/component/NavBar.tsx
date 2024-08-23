@@ -1,6 +1,8 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
+import logo from "../../img/logo.jpg"
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,16 +14,20 @@ const NavBar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            {/* <Image
-              src="/path/to/logo.png"
-              alt="PSB Logo"
-                            className="h-8 w-auto"
-            /> */}
-            <h1 className="text-2xl text-blue-700  font-black mt-4">
+            {/* <h1 className="text-2xl text-blue-700  font-black mt-4">
               <span>P</span>
               <span>B</span>
               <span>S</span>
-            </h1>
+              </h1> */}
+            <Link href="/">
+              <Image
+                src={logo}
+                alt="PSB Logo"
+                width={100}
+                height={100}
+                className="h-12 w-auto"
+              />
+            </Link>
           </div>
 
           {/* Desktop Menu */}
@@ -52,7 +58,7 @@ const NavBar = () => {
                     href="/funding"
                     className="block px-4 py-2 text-gray-900 hover:bg-gray-100"
                   >
-                    Funding Soln
+                    Funding Solution
                   </Link>
                   <Link
                     href="/meeting"
@@ -110,12 +116,6 @@ const NavBar = () => {
           >
             About
           </Link>
-          <Link
-            href="/leader"
-            className="block px-4 py-2 text-gray-900 hover:bg-gray-100"
-          >
-            Leaders
-          </Link>
           <div className="relative">
             <button
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
@@ -126,20 +126,33 @@ const NavBar = () => {
             {isDropdownOpen && (
               <div className="pl-4">
                 <Link
-                  href="#"
+                  href="/training"
                   className="block px-4 py-2 text-gray-900 hover:bg-gray-100"
                 >
-                  Fund
+                  Training
                 </Link>
                 <Link
-                  href="#"
+                  href="/funding"
                   className="block px-4 py-2 text-gray-900 hover:bg-gray-100"
                 >
-                  Meeting
+                  Funding Solution
+                </Link>
+                <Link
+                  href="/meeting"
+                  className="block px-4 py-2 text-gray-900 hover:bg-gray-100"
+                >
+                  Meeting Room
                 </Link>
               </div>
             )}
           </div>
+          <Link
+            href="/leader"
+            className="block px-4 py-2 text-gray-900 hover:bg-gray-100"
+          >
+            Leaders
+          </Link>
+
           <Link
             href="/contact"
             className="block px-4 py-2 text-gray-900 hover:bg-gray-100"

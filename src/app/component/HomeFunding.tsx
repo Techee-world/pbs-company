@@ -11,7 +11,7 @@ const HomeFunding: React.FC = () => {
           Funding Soln
         </p>
         <h1 className="text-4xl font-bold text-gray-900 mt-2">
-          Transform Business to Technology
+          FUNDING SOLUTIONS FOR EVERY STAGE
         </h1>
         <p className="text-gray-600 mt-4">
           Ignite your entrepreneurial journey with our startup-friendly funding.

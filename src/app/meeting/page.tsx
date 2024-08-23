@@ -6,16 +6,19 @@ const page: React.FC = () => {
     <div className="bg-gradient-to-r from-blue-50  to-white py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold text-gray-900 mb-6 sm:text-4xl lg:text-4xl">
-          Coworking in India.
+          Elevate Your Events with Premium Meeting Spaces
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <p className="text-gray-600 mb-6 text-base montserrat-font">
-              Work along like-minded professionals in our vibrant coworking
-              spaces in India, with break out areas and networking events to
-              foster collaboration and growth. Drop in and hot-desk in an
-              open-plan workspace, or reserve your own dedicated desk in a
-              shared office.
+              Host your next conference, training session, or corporate event in
+              our state-of-the-art meeting rooms, designed for productivity and
+              inspiration. With cutting-edge technology, customizable layouts,
+              and a professional ambiance, our spaces are perfect for teams to
+              brainstorm, collaborate, and succeed. Whether it's a high-stakes
+              presentation or an immersive workshop, we provide the ideal
+              environment to make every event a success. Book today and
+              experience the difference!
             </p>
             <div className="flex flex-col space-y-4">
               <div className="flex items-center">
@@ -34,7 +37,7 @@ const page: React.FC = () => {
                   />
                 </svg>
                 <span className="text-gray-600 text-base montserrat-font">
-                  Day Coworking for on demand use as you need it
+                  cutting-edge technology
                 </span>
               </div>
               <div className="flex items-center">
@@ -53,7 +56,7 @@ const page: React.FC = () => {
                   />
                 </svg>
                 <span className="text-gray-600 text-base montserrat-font">
-                  Coworking memberships for regular access
+                  customizable layouts
                 </span>
               </div>
               <div className="flex items-center">
@@ -72,17 +75,17 @@ const page: React.FC = () => {
                   />
                 </svg>
                 <span className="text-gray-600 text-base montserrat-font">
-                  Fixed desks for 24/7 access reserved just for you
+                  professional ambiance
                 </span>
               </div>
             </div>
-            <button className="bg-red-500 text-white px-6 py-3 rounded-lg mt-6 hover:bg-red-600">
+            <button className="bg-blue-500 text-white px-6 py-3 rounded-lg mt-6 hover:bg-red-600">
               GET A QUOTE
             </button>
           </div>
           <div>
             <Image
-              src="https://images.pexels.com/photos/3183143/pexels-photo-3183143.jpeg?auto=compress&cs=tinysrgb&w=600"
+              src="https://t4.ftcdn.net/jpg/00/80/91/11/360_F_80911186_RoBCsyLrNTrG7Y1EOyCsaCJO5DyHgTox.jpg"
               alt="Coworking in India"
               className="w-full h-auto rounded-lg"
               width={500}

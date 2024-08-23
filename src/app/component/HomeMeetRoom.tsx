@@ -31,8 +31,8 @@ const HomeMeetRoom: React.FC = () => {
         <p className="text-sm text-blue-500 uppercase font-semibold">
           Meeting Room space rental
         </p>
-        <h1 className="text-4xl font-bold text-gray-900 mt-2">
-          Transform Business to Technology
+        <h1 className="text-4xl uppercase font-bold text-gray-900 mt-2">
+          Conference meeting rooms
         </h1>
         <p className="text-gray-600 mt-4">
           IT Technology is a broad category encompassing all aspects of
@@ -53,7 +53,7 @@ const HomeMeetRoom: React.FC = () => {
                 padding: "2px",
               }}
             />
-            <p className="text-gray-600">New Startups</p>
+            <p className="text-gray-600">Training Room</p>
           </li>
           <li className="flex items-center gap-2 ">
             {/* <span className="text-blue-500">✓</span> */}
@@ -67,14 +67,14 @@ const HomeMeetRoom: React.FC = () => {
                 padding: "2px",
               }}
             />
-            <p className="text-gray-600">Seeking Expansion</p>
+            <p className="text-gray-600">Conference Hall</p>
           </li>
         </ul>
-<Link href="/meeting">
-        <button className="mt-8 px-6 py-2 text-white bg-blue-500 rounded-full shadow-lg hover:bg-blue-600">
-          Discover More
-        </button>
-</Link>
+        <Link href="/meeting">
+          <button className="mt-8 px-6 py-2 text-white bg-blue-500 rounded-full shadow-lg hover:bg-blue-600">
+            Discover More
+          </button>
+        </Link>
       </div>
     </section>
   );

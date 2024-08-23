@@ -8,12 +8,11 @@ export default function AboutPage() {
           <div className="my-6">
             <h1 className="text-2xl font-bold my-4">Company Overview</h1>
             <p className="text-sm font-light md:w-3/4 w-full border-b   montserrat-font border-gray-300 pb-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-              adipisci deleniti vitae ullam. Natus enim nobis aliquid iste
-              officiis doloribus obcaecati sapiente soluta laborum perspiciatis.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
-              expedita est? Odio odit minus reiciendis inventore unde, earum
-              assumenda iste placeat sunt, dignissimos accusantium. Itaque?
+              We pride ourselves on staying ahead with the latest technology and
+              maintaining the highest standards of compliance and quality in all
+              our ventures. Join us at PBS, where your business ambitions meet
+              our comprehensive solutions, paving the way for mutual growth and
+              success.
             </p>
           </div>
           <div className="my-6 ">

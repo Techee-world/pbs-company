@@ -17,10 +17,10 @@ const ContactUs: React.FC = () => {
           <h2 className="text-3xl sm:text-3xl font-bold text-gray-800 mb-4">
             Do you have any question?
           </h2>
-          <p className="text-gray-500 mb-8 montserrat-font">
+          {/* <p className="text-gray-500 mb-8 montserrat-font">
             For your car we will do everything advice, repairs and maintenance.
             We are the preferred choice by many car owners because...
-          </p>
+          </p> */}
           <form className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <input
               type="text"

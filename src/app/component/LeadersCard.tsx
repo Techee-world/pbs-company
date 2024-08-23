@@ -9,12 +9,12 @@ const LeadersCard = () => {
           src="https://www.investpr.org/wp-content/uploads/2021/01/John-EDITED-m.jpg"
           alt="leaders images"
           height={500}
-          width={200}
+          width={300}
           className='object-cover h-72 '
         />
       </div>
       <div className='py-4 text-center bg-gray-500'>
-      <h1 className='text-xl font-bold text-gray-100'>Lorem ipsum dolor sit .</h1>
+      <h1 className='text-xl font-bold text-gray-100'>Lorem ipsum dolor sit </h1>
       </div>
     </div>
   );

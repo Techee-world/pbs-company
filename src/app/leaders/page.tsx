@@ -9,40 +9,47 @@ const page = () => {
       <div className="max-w-6xl m-auto py-10 mb-10 px-6 lg:px-0">
         <h1 className="text-2xl font-black text-center my-4">Our Team</h1>
         <p className="text-sm font-thin text-center montserrat-font">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione fuga
-          modi perspiciatis voluptatum quaerat sed, accusamus numquam voluptas,
-          minus vel, ullam odit aliquam facere esse. , amet consectetur
-          adipisicing elit. Ratione fuga modi perspiciatis voluptatum quaerat
-          sed, accusamus numquam voluptas, minus vel, ullam odit aliquam facere
-          esse.
+          Our strength lies in our experienced directors and technical team, who
+          bring a wealth of knowledge and innovation to every project.
         </p>
       </div>
       <div className="flex lg:flex-row flex-col-reverse items-start justify-center  gap-10 px-6 lg:px-20 py-20 bg-blue-950 text-gray-200">
         <div>
-          <h2 className="text-2xl font-bold mb-4">Alino-Devic , ceo</h2>
+          <h2 className="text-2xl font-bold mb-4">Habeebu Rahiman , MD</h2>
           <p className="montserrat-font">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem a aut
-            ex dolore error, sint saepe ut cum, nostrum nihil harum rerum! Non
-            quas minima illo cum perspiciatis eos asperiores, aliquid alias
-            nulla exercitationem sequi tempora cupiditate sint, et eum. Lorem
-            ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur ullam
-            ea, laboriosam reprehenderit assumenda nostrum quibusdam explicabo
-            corrupti unde, voluptatibus dolore fuga, placeat optio veniam
-            consequatur laborum qui debitis maxime!.Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Autem a aut ex dolore error, sint
-            saepe ut cum, nostrum nihil harum rerum! Non quas minima illo cum
-            perspiciatis eos asperiores, aliquid alias nulla exercitationem
-            sequi tempora cupiditate sint, et eum. Lorem ipsum, dolor sit amet
-            consectetur adipisicing elit. Aspernatur ullam ea, laboriosam
-            reprehenderit assumenda nostrum quibusdam explicabo corrupti unde,
-            voluptatibus dolore fuga, placeat optio veniam consequatur laborum
-            qui debitis maxime!
+            I am thrilled to announce the launch of our new business
+            consultancy, dedicated to empowering businesses and professionals to
+            reach their full potential. In today's rapidly evolving landscape,
+            success requires not only strategic insight but also the continuous
+            development of essential skills. That's why we are not just a
+            consultancy—we are your partner in growth.
+            <br />
+            Our services go beyond traditional consulting. We offer
+            comprehensive training programs designed to enhance both soft skills
+            and technical expertise, ensuring that your team is equipped to meet
+            the challenges of tomorrow. Whether you're looking to sharpen your
+            leadership capabilities, improve communication within your
+            organization, or master the latest technologies, our tailored
+            solutions are here to guide you every step of the way.
+            <br />
+            At the heart of our mission is a commitment to excellence and a deep
+            understanding of the unique needs of each client. We believe that by
+            investing in people, we create the foundation for lasting success. I
+            invite you to explore how we can collaborate to drive your business
+            forward and achieve remarkable results.
+            <br />
+            <br />
+            Thank you for your trust, and I look forward to embarking on this
+            journey with you.
+            <br />
+            <br />
+            Warm regards,
           </p>
         </div>
         <Image
-          src="https://www.investpr.org/wp-content/uploads/2023/07/ELLA-WEBSITE-EDITED-m.jpg"
+          src="https://th.bing.com/th?id=OIP.MkDe0JAMDwUZ78yqJaWUIAHaKX&w=211&h=295&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
           alt="ceo"
-          className="h-80 object-cover rounded-tl-[120px] border-t-2 border-l-2 border-blue-300"
+          className="h-80 object-cover rounded-lg border-t-2 border-l-2 border-blue-300"
           width={250}
           height={100}
         />

@@ -15,10 +15,9 @@ const Footer: React.FC = () => {
         <div>
           <h2 className="text-2xl font-semibold">PBS</h2>
           <p className="mt-2 font-thin text-sm">
-            Financial planners help people to gain knowledge about wealth
-            management and investments.
+            Navigate Business Success with Expert Consultation Embark on your
+            business journey with confidence! At PBS
           </p>
-
         </div>
         <div>
           <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
@@ -53,40 +52,75 @@ const Footer: React.FC = () => {
         </div>
         <div>
           <h3 className="text-lg font-semibold mb-4">Our Services</h3>
-          <ul>
-            <li className="mt-2">
-              <Link
-                href="/hosting"
-                className="text-sm block hover:text-blue-400"
-              >
-                Individual
-              </Link>
-            </li>
-            <li className="mt-2">
-              <Link
-                href="/cyber-security"
-                className="text-sm block hover:text-blue-400"
-              >
-                Group 
-              </Link>
-            </li>
-            <li className="mt-2">
-              <Link
-                href="/network-analysis"
-                className="text-sm block hover:text-blue-400"
-              >
-               Job Oriented
-              </Link>
-            </li>
-            <li className="mt-2">
-              <Link
-                href="/data-recovery"
-                className="text-sm block hover:text-blue-400"
-              >
-                Soft Skill
-              </Link>
-            </li>
-          </ul>
+          <div className="flex -ml-20 gap-6">
+            <div>
+              <h4 className="font-bold">Training</h4>
+              <ul>
+                <li className="mt-2">
+                  <Link
+                    href="/hosting"
+                    className="text-sm block hover:text-blue-400"
+                  >
+                    Individual
+                  </Link>
+                </li>
+                <li className="mt-2">
+                  <Link
+                    href="/cyber-security"
+                    className="text-sm block hover:text-blue-400"
+                  >
+                    Group
+                  </Link>
+                </li>
+                <li className="mt-2">
+                  <Link
+                    href="/network-analysis"
+                    className="text-sm block hover:text-blue-400"
+                  >
+                    Job Oriented
+                  </Link>
+                </li>
+                <li className="mt-2">
+                  <Link
+                    href="/data-recovery"
+                    className="text-sm block hover:text-blue-400"
+                  >
+                    Soft Skill
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-bold">Funding Solution</h4>
+              <ul>
+                <li className="mt-2">
+                  <Link href="" className="text-sm block hover:text-blue-400">
+                    New Startups
+                  </Link>
+                </li>
+                <li className="mt-2">
+                  <Link href="" className="text-sm block hover:text-blue-400">
+                    Seeking Expansion
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-bold">Meeting Room space rental</h4>
+              <ul>
+                <li className="mt-2">
+                  <Link href="" className="text-sm block hover:text-blue-400">
+                    Training Room
+                  </Link>
+                </li>
+                <li className="mt-2">
+                  <Link href="" className="text-sm block hover:text-blue-400">
+                    Conference Hall
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div>
           <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
