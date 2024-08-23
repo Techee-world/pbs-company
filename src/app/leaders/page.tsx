@@ -27,7 +27,7 @@ const page = () => {
             Our services go beyond traditional consulting. We offer
             comprehensive training programs designed to enhance both soft skills
             and technical expertise, ensuring that your team is equipped to meet
-            the challenges of tomorrow. Whether you're looking to sharpen your
+            the challenges of tomorrow. Whether you re looking to sharpen your
             leadership capabilities, improve communication within your
             organization, or master the latest technologies, our tailored
             solutions are here to guide you every step of the way.
