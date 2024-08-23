@@ -105,7 +105,7 @@ const NavBar = () => {
       {isMenuOpen && (
         <div className="md:hidden">
           <Link
-            href="/home"
+            href="/"
             className="block px-4 py-2 text-gray-900 hover:bg-gray-100"
           >
             Home
@@ -147,7 +147,7 @@ const NavBar = () => {
             )}
           </div>
           <Link
-            href="/leader"
+            href="/leaders"
             className="block px-4 py-2 text-gray-900 hover:bg-gray-100"
           >
             Leaders
