@@ -13,7 +13,7 @@ const HomeAbout = () => {
           tactics to fuel your growth and expansion. Business facing Challenges:
           Overcome obstacles with ease. We offer practical solutions to navigate
           through rough patches and emerge stronger than ever. Partner with us
-          today and let's chart a course to your business success!
+          today and let s chart a course to your business success!
         </p>
       </div>
     </div>

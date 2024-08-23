@@ -19,9 +19,9 @@ const page = () => {
           <p className="montserrat-font">
             I am thrilled to announce the launch of our new business
             consultancy, dedicated to empowering businesses and professionals to
-            reach their full potential. In today's rapidly evolving landscape,
+            reach their full potential. In today s rapidly evolving landscape,
             success requires not only strategic insight but also the continuous
-            development of essential skills. That's why we are not just a
+            development of essential skills. That s why we are not just a
             consultancy—we are your partner in growth.
             <br />
             Our services go beyond traditional consulting. We offer

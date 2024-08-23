@@ -15,7 +15,7 @@ const page: React.FC = () => {
               our state-of-the-art meeting rooms, designed for productivity and
               inspiration. With cutting-edge technology, customizable layouts,
               and a professional ambiance, our spaces are perfect for teams to
-              brainstorm, collaborate, and succeed. Whether it's a high-stakes
+              brainstorm, collaborate, and succeed. Whether it s a high-stakes
               presentation or an immersive workshop, we provide the ideal
               environment to make every event a success. Book today and
               experience the difference!
