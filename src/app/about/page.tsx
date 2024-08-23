@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function AboutPage() {
   return (
     <div className=" bg-gradient-to-r from-blue-50  to-white mx-auto p-4">
@@ -34,10 +36,12 @@ export default function AboutPage() {
           </div>
         </div>
         <div>
-          <img
+          <Image
             src="https://images.pexels.com/photos/3182750/pexels-photo-3182750.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt="Person giving thumbs up"
             className=" w-[100rem] h-auto shadow-sm"
+            width={500}
+            height={0}
           />
         </div>
       </div>

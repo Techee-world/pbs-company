@@ -1,4 +1,5 @@
 'use client'
+import Image from "next/image";
 import React from "react";
 
 const Banner: React.FC = () => {
@@ -27,10 +28,12 @@ const Banner: React.FC = () => {
           <div className="relative border border-gray-200 rounded-full p-4 shadow-sm ">
             <div className="border border-gray-300 rounded-full p-4 shadow-sm">
               <div className="border border-gray-400 rounded-full p-4 shadow-sm">
-                <img
+                <Image
                   src="https://images.pexels.com/photos/3799837/pexels-photo-3799837.jpeg?auto=compress&cs=tinysrgb&w=600"
                   alt="Person giving thumbs up"
                   className=" shadow-lg bg-blue-100 p-6 border border-gray-500 rounded-full w-80 h-full "
+                  height={500}
+                  width={200}
                 />
               </div>
             </div>

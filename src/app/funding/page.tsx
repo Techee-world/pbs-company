@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const page: React.FC = () => {
   return (
-    <div className="bg-white py-20 px-4 sm:px-6 lg:px-8">
+    <div className="bg-gradient-to-r from-blue-50  to-white py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold text-gray-900 mb-6 sm:text-4xl lg:text-4xl">
           FUNDING SOLUTIONS FOR EVERY STAGE

@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
     <footer className="bg-[#0A1128] text-gray-200 py-20 px-28">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ">
         <div>
-          <h2 className="text-2xl font-semibold">Bantec</h2>
+          <h2 className="text-2xl font-semibold">PBS</h2>
           <p className="mt-2 font-thin text-sm">
             Financial planners help people to gain knowledge about wealth
             management and investments.

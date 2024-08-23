@@ -43,7 +43,7 @@ const page = () => {
           src="https://www.investpr.org/wp-content/uploads/2023/07/ELLA-WEBSITE-EDITED-m.jpg"
           alt="ceo"
           className="h-80 object-cover rounded-tl-[120px] border-t-2 border-l-2 border-blue-300"
-          width={200}
+          width={250}
           height={100}
         />
       </div>

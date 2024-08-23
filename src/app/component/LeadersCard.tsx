@@ -1,12 +1,15 @@
+import Image from 'next/image';
 import React from 'react'
 
 const LeadersCard = () => {
   return (
     <div className='w-fit my-6'>
       <div>
-        <img
+        <Image
           src="https://www.investpr.org/wp-content/uploads/2021/01/John-EDITED-m.jpg"
           alt="leaders images"
+          height={500}
+          width={200}
           className='object-cover h-72 '
         />
       </div>

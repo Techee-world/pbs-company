@@ -12,10 +12,10 @@ const NavBar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            {/* <img
+            {/* <Image
               src="/path/to/logo.png"
               alt="PSB Logo"
-              className="h-8 w-auto"
+                            className="h-8 w-auto"
             /> */}
             <h1 className="text-2xl text-blue-700  font-black mt-4">
               <span>P</span>

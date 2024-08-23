@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { FiCheck } from "react-icons/fi";
 
@@ -47,21 +49,26 @@ const HomeFunding: React.FC = () => {
             <p className="text-gray-600">Seeking Expansion</p>
           </li>
         </ul>
-
-        <button className="mt-8 px-6 py-2 text-white bg-blue-500 rounded-full shadow-lg hover:bg-blue-600">
-          Discover More
-        </button>
+        <Link href="/funding">
+          <button className="mt-8 px-6 py-2 text-white bg-blue-500 rounded-full shadow-lg hover:bg-blue-600">
+            Discover More
+          </button>
+        </Link>
       </div>
       <div className="md:w-1/2 w-full lg:-ml-13 flex justify-start mt-16 md:mt-0 ">
         <div className="relative md:ml-20">
-          <img
+          <Image
             src="https://images.pexels.com/photos/5673488/pexels-photo-5673488.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt="VR Headset"
+            height={500}
+            width={200}
             className="rounded-tl-[120px] shadow-lg object-cover md:w-40 md:h-40   w-56 h-56 lg:w-64 lg:h-64 bg-blue-100  p-3"
           />
-          <img
+          <Image
             src="https://images.pexels.com/photos/3760529/pexels-photo-3760529.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt="VR Headset"
+            height={500}
+            width={200}
             className="rounded-tl-[120px] absolute shadow-lg bottom-0 md:w-40 md:h-56  left-40 md:left-28 lg:left-56 object-cover w-64 h-72 lg:w-72 lg:h-80 bg-blue-100 p-3"
           />
         </div>
