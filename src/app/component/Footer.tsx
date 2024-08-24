@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 import Link from "next/link";
 import {
@@ -10,148 +10,176 @@ import {
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#0A1128] text-gray-200 py-20 px-28">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ">
-        <div>
-          <h2 className="text-2xl font-semibold">PBS</h2>
-          <p className="mt-2 font-thin text-sm">
-            Navigate Business Success with Expert Consultation Embark on your
-            business journey with confidence! At PBS
+    <footer className="bg-[#0A1128] text-gray-200 py-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="space-y-4">
+          <h2 className="text-3xl font-bold">PBS</h2>
+          <p className="text-sm text-gray-300 leading-relaxed">
+            Navigate Business Success with Expert Consultation. Embark on your
+            business journey with confidence! At PBS...
           </p>
         </div>
-        <div>
-          <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-          <ul>
-            <li className="mt-2">
-              <Link
-                href="/services"
-                className="text-sm block  hover:text-blue-400"
-              >
-                Home
-              </Link>
-            </li>
-            <li className="mt-2">
-              <Link href="/faq" className="text-sm block hover:text-blue-400">
-                About
-              </Link>
-            </li>
-            <li className="mt-2">
-              <Link
-                href="/testimonials"
-                className="text-sm block hover:text-blue-400"
-              >
-                Leaders
-              </Link>
-            </li>
-            <li className="mt-2">
-              <Link href="/about" className="text-sm block hover:text-blue-400">
-                Contact
-              </Link>
-            </li>
-          </ul>
+
+        <div className="w-fit">
+          <h3 className="text-xl font-semibold mb-4 w-fit">Quick Links</h3>
+          <ul className=" flex md:flex-col flex-row md:gap-2 gap-10 items-center w-full md:w-auto ">
+            {["Home", "About", "Leaders", "Contact"].map((item) => (
+              <li key={item} className="w-fit ">
+                <Link
+                  href={`/${item.toLowerCase()}`}
+                  className="text-sm hover:text-blue-400 w-fit transition duration-300"
+                >
+                  {item}
+                </Link>
+              </li>
+            ))}
+          </ul> 
         </div>
-        <div>
-          <h3 className="text-lg font-semibold mb-4">Our Services</h3>
-          <div className="flex -ml-20 gap-6">
+        {/* desktop  */}
+        <div className="hidden lg:block">
+          <h3 className="text-xl font-semibold mb-4 ">Our Services</h3>
+          <div className="grid grid-cols-3 gap-4 -ml-40">
             <div>
-              <h4 className="font-bold">Training</h4>
-              <ul>
-                <li className="mt-2">
-                  <Link
-                    href="/hosting"
-                    className="text-sm block hover:text-blue-400"
-                  >
-                    Individual
-                  </Link>
-                </li>
-                <li className="mt-2">
-                  <Link
-                    href="/cyber-security"
-                    className="text-sm block hover:text-blue-400"
-                  >
-                    Group
-                  </Link>
-                </li>
-                <li className="mt-2">
-                  <Link
-                    href="/network-analysis"
-                    className="text-sm block hover:text-blue-400"
-                  >
-                    Job Oriented
-                  </Link>
-                </li>
-                <li className="mt-2">
-                  <Link
-                    href="/data-recovery"
-                    className="text-sm block hover:text-blue-400"
-                  >
-                    Soft Skill
-                  </Link>
-                </li>
+              <h4 className="font-bold mb-2 h-8 text-gray-300">Training</h4>
+              <ul className="space-y-2">
+                {["Individual", "Group", "Job Oriented", "Soft Skill"].map(
+                  (item) => (
+                    <li key={item}>
+                      <Link
+                        href="#"
+                        className="text-sm hover:text-blue-400 transition duration-300"
+                      >
+                        {item}
+                      </Link>
+                    </li>
+                  )
+                )}
               </ul>
             </div>
-            <div>
-              <h4 className="font-bold">Funding Solution</h4>
-              <ul>
-                <li className="mt-2">
-                  <Link href="" className="text-sm block hover:text-blue-400">
-                    New Startups
-                  </Link>
-                </li>
-                <li className="mt-2">
-                  <Link href="" className="text-sm block hover:text-blue-400">
-                    Seeking Expansion
-                  </Link>
-                </li>
-              </ul>
+            <div className="space-y-4 -ml-8">
+              <div>
+                <h4 className="font-bold mb-2 h-8 text-gray-300 w-40 ">
+                  Funding Solution
+                </h4>
+                <ul className="space-y-2">
+                  {["New Startups", "Seeking Expansion"].map((item) => (
+                    <li key={item}>
+                      <Link
+                        href="#"
+                        className="text-sm hover:text-blue-400 transition duration-300"
+                      >
+                        {item}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
             <div>
-              <h4 className="font-bold">Meeting Room space rental</h4>
-              <ul>
-                <li className="mt-2">
-                  <Link href="" className="text-sm block hover:text-blue-400">
-                    Training Room
-                  </Link>
-                </li>
-                <li className="mt-2">
-                  <Link href="" className="text-sm block hover:text-blue-400">
-                    Conference Hall
-                  </Link>
-                </li>
+              <h4 className="font-bold mb-2  text-gray-300 h-8">
+                Meeting Room
+              </h4>
+              <ul className="space-y-2">
+                {["Training Room", "Conference Hall"].map((item) => (
+                  <li key={item}>
+                    <Link
+                      href="#"
+                      className="text-sm hover:text-blue-400 transition duration-300"
+                    >
+                      {item}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
         </div>
-        <div>
-          <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
-          <p className="text-sm">
+        {/* desktop  */}
+        {/* mobile view  */}
+        <div className="lg:hidden">
+          <h3 className="text-center mb-4">Our Services</h3>
+          <div className="flex items-start gap-6 justify-around">
+            <div>
+              <h4 className="font-bold mb-2 h-8 text-sm text-gray-300">
+                Training
+              </h4>
+              <ul className="">
+                {["Individual", "Group", "Job Oriented", "Soft Skill"].map(
+                  (item) => (
+                    <li key={item}>
+                      <Link
+                        href="#"
+                        className="text-xs hover:text-blue-400 transition duration-300"
+                      >
+                        {item}
+                      </Link>
+                    </li>
+                  )
+                )}
+              </ul>
+            </div>
+            <div className="">
+              <div>
+                <h4 className="font-bold mb-2 h-8 text-gray-300 text-sm w-40 ">
+                  Funding Solution
+                </h4>
+                <ul className="space-y-2">
+                  {["New Startups", "Seeking Expansion"].map((item) => (
+                    <li key={item}>
+                      <Link
+                        href="#"
+                        className="text-xs hover:text-blue-400 transition duration-300"
+                      >
+                        {item}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            <div>
+              <h4 className="font-bold mb-2  text-sm text-gray-300 h-8">
+                Meeting Room
+              </h4>
+              <ul className="space-y-2">
+                {["Training Room", "Conference Hall"].map((item) => (
+                  <li key={item}>
+                    <Link
+                      href="#"
+                      className="text-xs hover:text-blue-400 transition duration-300"
+                    >
+                      {item}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+        {/* mobile view  */}
+
+        <div className="space-y-4">
+          <h3 className="text-xl font-semibold">Follow Us</h3>
+          <p className="text-sm text-gray-300">
             The Latest News, Articles, Sent To Your Inbox Weekly.
           </p>
-          <div className="flex mt-4 space-x-4">
-            <Link
-              href="https://facebook.com"
-              className="p-2 bg-blue-600 rounded-full hover:bg-blue-800"
-            >
-              <FaFacebookF />
-            </Link>
-            <Link
-              href="https://twitter.com"
-              className="p-2 bg-blue-600 rounded-full hover:bg-blue-800"
-            >
-              <FaTwitter />
-            </Link>
-            <Link
-              href="https://linkedin.com"
-              className="p-2 bg-blue-600 rounded-full hover:bg-blue-800"
-            >
-              <FaLinkedinIn />
-            </Link>
-            <Link
-              href="https://pinterest.com"
-              className="p-2 bg-blue-600 rounded-full hover:bg-blue-800"
-            >
-              <FaPinterestP />
-            </Link>
+          <div className="flex space-x-4">
+            {[
+              { icon: FaFacebookF, href: "https://facebook.com" },
+              { icon: FaTwitter, href: "https://twitter.com" },
+              { icon: FaLinkedinIn, href: "https://linkedin.com" },
+              { icon: FaPinterestP, href: "https://pinterest.com" },
+            ].map(({ icon: Icon, href }) => (
+              <Link
+                key={href}
+                href={href}
+                className="p-2 bg-blue-600 rounded-full hover:bg-blue-700 transition duration-300"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Icon className="w-4 h-4" />
+              </Link>
+            ))}
           </div>
         </div>
       </div>

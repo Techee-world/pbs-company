@@ -1,80 +1,78 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
-import logo from "../../img/logo.jpg"
+import { usePathname } from "next/navigation";
+import React, { useState, useEffect } from "react";
+import logo from "../../../public/logo.jpg";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
+
+  const menuItems = [
+    { path: "/", title: "Home" },
+    { path: "/about", title: "About" },
+    { path: "/services", title: "Services" },
+    { path: "/leaders", title: "Leaders" },
+    { path: "/contact", title: "Contact" },
+  ];
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <nav className="bg-gradient-to-r from-blue-50  to-white shadow-md  py-2">
+    <nav
+      className={`${
+        isScrolled ? "bg-white shadow-lg" : "bg-transparent"
+      } transition-all duration-300 fixed top-0 left-0 w-full z-50 ${
+        isMenuOpen ? "bg-white" : ""
+      }`}
+    >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            {/* <h1 className="text-2xl text-blue-700  font-black mt-4">
-              <span>P</span>
-              <span>B</span>
-              <span>S</span>
-              </h1> */}
-            <Link href="/">
+            <Link href="/" aria-label="Home">
               <Image
                 src={logo}
                 alt="PSB Logo"
                 width={100}
                 height={100}
                 className="h-12 w-auto"
+                priority
               />
             </Link>
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
-            <Link href="/" className="text-gray-900 hover:text-blue-600">
-              Home
-            </Link>
-            <Link href="/about" className="text-gray-900 hover:text-blue-600">
-              About
-            </Link>
-            <div
-              className="relative"
-              onMouseEnter={() => setIsDropdownOpen(true)}
-              onMouseLeave={() => setIsDropdownOpen(false)}
-            >
-              <button className="text-gray-900 hover:text-blue-600">
-                Services
-              </button>
-              {isDropdownOpen && (
-                <div className="absolute z-50 left-0 mt-0 w-48 bg-white shadow-lg rounded-lg py-2">
-                  <Link
-                    href="/training"
-                    className="block px-4 py-2 text-gray-900 hover:bg-gray-100"
-                  >
-                    Training
-                  </Link>
-                  <Link
-                    href="/funding"
-                    className="block px-4 py-2 text-gray-900 hover:bg-gray-100"
-                  >
-                    Funding Solution
-                  </Link>
-                  <Link
-                    href="/meeting"
-                    className="block px-4 py-2 text-gray-900 hover:bg-gray-100"
-                  >
-                    Meeting Room
-                  </Link>
-                </div>
-              )}
-            </div>
-            <Link href="/leaders" className="text-gray-900 hover:text-blue-600">
-              Leaders
-            </Link>
-            <Link href="/contact" className="text-gray-900 hover:text-blue-600">
-              Contact
-            </Link>
+            {menuItems.map((item) => (
+              <Link
+                key={item.path}
+                href={item.path}
+                className={`text-gray-900 hover:underline underline-offset-8 hover:text-blue-600 transition duration-300 ${
+                  pathname === item.path
+                    ? "underline underline-offset-8 text-blue-600"
+                    : ""
+                }`}
+              >
+                {item.title}
+              </Link>
+            ))}
           </div>
 
           {/* Mobile Menu Button */}
@@ -82,12 +80,14 @@ const NavBar = () => {
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-gray-900 hover:text-blue-600"
+              aria-label="Toggle Menu"
             >
               <svg
                 className="h-6 w-6"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
+                aria-hidden="true"
               >
                 <path
                   strokeLinecap="round"
@@ -104,61 +104,21 @@ const NavBar = () => {
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="md:hidden">
-          <Link
-            href="/"
-            className="block px-4 py-2 text-gray-900 hover:bg-gray-100"
-          >
-            Home
-          </Link>
-          <Link
-            href="/about"
-            className="block px-4 py-2 text-gray-900 hover:bg-gray-100"
-          >
-            About
-          </Link>
-          <div className="relative">
-            <button
-              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-              className="block px-4 py-2 text-gray-900 hover:bg-gray-100"
-            >
-              Services
-            </button>
-            {isDropdownOpen && (
-              <div className="pl-4">
-                <Link
-                  href="/training"
-                  className="block px-4 py-2 text-gray-900 hover:bg-gray-100"
-                >
-                  Training
-                </Link>
-                <Link
-                  href="/funding"
-                  className="block px-4 py-2 text-gray-900 hover:bg-gray-100"
-                >
-                  Funding Solution
-                </Link>
-                <Link
-                  href="/meeting"
-                  className="block px-4 py-2 text-gray-900 hover:bg-gray-100"
-                >
-                  Meeting Room
-                </Link>
-              </div>
-            )}
-          </div>
-          <Link
-            href="/leaders"
-            className="block px-4 py-2 text-gray-900 hover:bg-gray-100"
-          >
-            Leaders
-          </Link>
-
-          <Link
-            href="/contact"
-            className="block px-4 py-2 text-gray-900 hover:bg-gray-100"
-          >
-            Contact
-          </Link>
+          {menuItems.map((item) => (
+            <div key={item.path}>
+              <Link
+                href={item.path}
+                className={`block px-4 py-2 text-gray-900 hover:bg-gray-100 transition duration-300 ${
+                  pathname === item.path
+                    ? "underline underline-offset-8 text-blue-600"
+                    : ""
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {item.title}
+              </Link>
+            </div>
+          ))}
         </div>
       )}
     </nav>

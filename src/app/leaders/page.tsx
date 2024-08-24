@@ -6,14 +6,18 @@ import Image from "next/image";
 const page = () => {
   return (
     <div className="bg-gradient-to-r from-blue-50  to-white">
-      <div className="max-w-6xl m-auto py-10 mb-10 px-6 lg:px-0">
-        <h1 className="text-2xl font-black text-center my-4">Our Team</h1>
-        <p className="text-sm font-thin text-center montserrat-font">
+      <div className="max-w-7xl m-auto py-10 mb-10 px-6 lg:px-0">
+        <h1 className="text-3xl font-black text-center text-slate-700 my-4">
+          Our Team
+        </h1>
+        <p className="text-lg font-thin text-center montserrat-font lg:w-3/4 m-auto w-full">
           Our strength lies in our experienced directors and technical team, who
           bring a wealth of knowledge and innovation to every project.
         </p>
       </div>
-      <div className="flex lg:flex-row flex-col-reverse items-start justify-center  gap-10 px-6 lg:px-20 py-20 bg-blue-950 text-gray-200">
+      <div
+        className="flex lg:flex-row flex-col-reverse items-start justify-center  gap-10 px-6 lg:px-10 py-10   max-w-6xl rounded-lg  m-auto border border-gray-300"
+      >
         <div>
           <h2 className="text-2xl font-bold mb-4">Habeebu Rahiman , MD</h2>
           <p className="montserrat-font">
@@ -49,17 +53,18 @@ const page = () => {
         <Image
           src="https://th.bing.com/th?id=OIP.MkDe0JAMDwUZ78yqJaWUIAHaKX&w=211&h=295&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
           alt="ceo"
-          className="h-80 object-cover rounded-lg border-t-2 border-l-2 border-blue-300"
+          className="h-80 object-cover rounded-lg "
           width={250}
           height={100}
         />
       </div>
       <div className="max-w-6xl m-auto my-10">
-        <div className="my-6">
+        <div className="my-6 ">
           <h1 className="text-xl font-bold mt-4 text-center lg:text-start ">
             LEADERSHIP
           </h1>
-          <div className="grid grid-cols-1 place-items-center lg:place-items-start md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 place-items-center lg:place-items-start md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <LeadersCard />
             <LeadersCard />
             <LeadersCard />
             <LeadersCard />
@@ -77,7 +82,8 @@ const page = () => {
           <h1 className="text-xl font-bold mt-4  text-center lg:text-start ">
             BUSINESS DEVELOPMENT
           </h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 place-items-center lg:place-items-start  lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 place-items-center lg:place-items-start  lg:grid-cols-4 gap-4">
+            <LeadersCard />
             <LeadersCard />
             <LeadersCard />
             <LeadersCard />
@@ -87,7 +93,8 @@ const page = () => {
           <h1 className="text-xl font-bold mt-4  text-center lg:text-start ">
             MARKETING
           </h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 place-items-center lg:place-items-start  lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 place-items-center lg:place-items-start  lg:grid-cols-4 gap-4">
+            <LeadersCard />
             <LeadersCard />
             <LeadersCard />
             <LeadersCard />

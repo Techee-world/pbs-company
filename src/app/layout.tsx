@@ -4,7 +4,6 @@ import "./globals.css";
 import NavBar from "./component/NavBar";
 import Footer from "./component/Footer";
 
-
 // const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -14,16 +13,25 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body className="max-w-7xl m-auto">
-       <NavBar />
+      <head>
+        <link
+          href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="bg-gradient-to-r from-blue-50 to-white">
+        <NavBar />
         {children}
         <Footer />
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" async></script>
+        <script>{`AOS.init()`}</script>
       </body>
     </html>
   );
 }
+ 
