@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import NavBar from "./component/NavBar";
 import Footer from "./component/Footer";
 import "./globals.css";
+import "../app/style/fadeAnimation.css";
+
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -24,7 +26,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-gradient-to-r from-blue-100 to-gray-200">
+      <body className="bg-gradient-to-r from-blue-100 to-gray-100">
         <NavBar />
         {children}
         <Footer />

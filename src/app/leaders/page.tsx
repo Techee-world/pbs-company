@@ -3,12 +3,13 @@ import LeadersCard from "../component/LeadersCard";
 import Link from "next/link";
 import Image from "next/image";
 import { RiDoubleQuotesL } from "react-icons/ri";
+import Button from "../component/Button";
 
 const page = () => {
   return (
     <div className="max-w-7xl m-auto py-28 ">
-      <div className=" py-12 my-10 px-6 lg:px-0 bg-blue-500 text-white">
-        <h1 className="text-4xl font-black text-center helvetic-Head-font text-slate-200 my-4">
+      <div className=" py-12 my-10 px-6 lg:px-0 ">
+        <h1 className="text-4xl font-black text-center helvetic-Head-font text-slate-900 my-4">
           Our Team
         </h1>
         <p className="text-lg font-thin text-center  lg:w-3/4 m-auto w-full">
@@ -16,13 +17,13 @@ const page = () => {
           bring a wealth of knowledge and innovation to every project.
         </p>
       </div>
-      <div className="relative mt-32 flex flex-col md:flex-row gap-6 items-center  md:space-x-6 px-4">
-        <div className="border-8 z-10 -rotate-[9deg] absolute w-80 h-[60vh] top-12 left-8 border-orange-500 p-1 mb-4 md:mb-0">
+      <div className="relative mt-32 flex flex-col md:flex-row gap-6 items-center bg-blue-500 p-6 text-white  md:space-x-6 px-4">
+        <div className="border-8 z-10 -rotate-[9deg] absolute w-80 h-[60vh] top-12 left-8 border-black p-1 mb-4 md:mb-0">
         </div>
             <Image src="https://th.bing.com/th?id=OIP.MkDe0JAMDwUZ78yqJaWUIAHaKX&w=211&h=295&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" alt="Sridhar Vembu" width={300} height={500} className="z-40 rounded-sm w-full md:w-80 lg:w-96"/>
-                <RiDoubleQuotesL className="w-16 h-16 text-orange-500 absolute  -top-12 left-80" />
+                <RiDoubleQuotesL className="w-16 h-16 text-black absolute  -top-12 left-80" />
         <div className="max-w-4xl  ">
-            <p className="text-base md:text-lg ml-6  text-gray-700 leading-relaxed">
+            <p className="text-base md:text-lg ml-6   leading-relaxed">
                 I am thrilled to announce the launch of our new business
             consultancy, dedicated to empowering businesses and professionals to
             reach their full potential. In today s rapidly evolving landscape,
@@ -100,9 +101,9 @@ const page = () => {
           height={100}
         />
       </div> */}
-      <div className="max-w-6xl m-auto my-20">
+      <div className="max-w-7xl m-auto my-20">
         <div className="my-6 ">
-          <h1 className="text-xl font-bold mt-4 text-center lg:text-start ">
+          <h1 className="text-xl font-bold mt-4 text-center lg:text-start helvetic-sub-title-sub-font">
             LEADERSHIP
           </h1>
           <div className="grid grid-cols-1 place-items-center lg:place-items-start md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -113,7 +114,7 @@ const page = () => {
           </div>
         </div>
         <div className="my-6">
-          <h1 className="text-xl font-bold mt-4  text-center  lg:text-start ">
+          <h1 className="text-xl font-bold mt-4  text-center  lg:text-start helvetic-sub-title-sub-font">
             ADMINISTRATION
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 place-items-center lg:place-items-start  lg:grid-cols-3 gap-4">
@@ -121,7 +122,7 @@ const page = () => {
           </div>
         </div>
         <div className="my-6">
-          <h1 className="text-xl font-bold mt-4  text-center lg:text-start ">
+          <h1 className="text-xl font-bold mt-4  text-center lg:text-start helvetic-sub-title-sub-font ">
             BUSINESS DEVELOPMENT
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 place-items-center lg:place-items-start  lg:grid-cols-4 gap-4">
@@ -132,7 +133,7 @@ const page = () => {
           </div>
         </div>
         <div className="my-6">
-          <h1 className="text-xl font-bold mt-4  text-center lg:text-start ">
+          <h1 className="text-xl font-bold mt-4  text-center lg:text-start  helvetic-sub-title-sub-font">
             MARKETING
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 place-items-center lg:place-items-start  lg:grid-cols-4 gap-4">
@@ -144,8 +145,8 @@ const page = () => {
         </div>
       </div>
       <div className="max-w-6xl m-auto py-16 flex px-6 lg:px-0 flex-col items-center">
-        <h1 className="text-2xl font-bold text-center my-4">Ask Questions</h1>
-        <p className="text-sm font-thin text-center montserrat-font">
+        <h1 className="text-2xl font-bold text-center my-4 helvetic-Head-font">Ask Questions</h1>
+        <p className="text-lg font-thin text-center ">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione fuga
           modi perspiciatis voluptatum quaerat sed, accusamus numquam voluptas,
           minus vel, ullam odit aliquam facere esse.Lorem ipsum dolor sit, amet
@@ -154,9 +155,7 @@ const page = () => {
           odit aliquam facere esse.
         </p>
         <Link href="/contact">
-          <button className=" bg-blue-950 text-white px-6 py-2 text-sm font-thin my-6">
-            Contact
-          </button>
+         <Button title="Contact" />
         </Link>
       </div>
     </div>

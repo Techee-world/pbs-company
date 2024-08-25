@@ -15,7 +15,7 @@ const NavBar = () => {
     { path: "/about", title: "About" },
     { path: "/services", title: "Services" },
     { path: "/leaders", title: "Leaders" },
-    { path: "/contact", title: "Contact" },
+    // { path: "/contact", title: "Contact" },
   ];
 
   useEffect(() => {
@@ -37,9 +37,9 @@ const NavBar = () => {
   return (
     <nav
       className={`${
-        isScrolled ? "bg-white shadow-lg" : "bg-transparent"
-      } transition-all duration-300 fixed top-0 left-0 w-full py-4 z-50 ${
-        isMenuOpen ? "bg-white" : ""
+        isScrolled ? "bg-white shadow-lg " : "bg-transparent"
+      } transition-all duration-300 fixed top-0 left-0 w-full p-10 py-4 z-50 ${
+        isMenuOpen ? "bg-white " : ""
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -64,7 +64,7 @@ const NavBar = () => {
               <Link
                 key={item.path}
                 href={item.path}
-                className={`text-gray-900 font-bold hover:underline underline-offset-8 hover:text-blue-600 transition duration-300 ${
+                className={`text-gray-900 mt-2 font-bold hover:underline underline-offset-8 text-lg hover:text-blue-600 transition duration-300 ${
                   pathname === item.path
                     ? "underline underline-offset-8 text-blue-600"
                     : ""
@@ -73,7 +73,15 @@ const NavBar = () => {
                 {item.title}
               </Link>
             ))}
+            
+            <Link href='/contact' className={`text-blue-600 border hover:bg-blue-600 hover:text-white px-4 py-2 border-blue-600 rounded-lg  font-bold  text-lg  transition duration-300 ${
+                  pathname === '/contact'
+                    ? "text-blue-600 "
+                    : ""
+                }`}>Contact Us</Link>
           </div>
+         
+        
 
           {/* Mobile Menu Button */}
           <div className="md:hidden">

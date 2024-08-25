@@ -10,7 +10,14 @@ import {
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#0A1128] text-gray-200 py-16 px-4 sm:px-6 lg:px-8">
+    <>
+    <footer className="bg-[#0A1128]  text-gray-200 pt-48 pb-16 px-4 sm:px-6 lg:px-8 relative mt-40">
+    <div className="bg-blue-600 w-[60rem] rounded-lg z-50 absolute -top-[30%] left-[20%]  transform -translate-x-1/2 -translate-y-1/2  px-10 py-28" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="400">
+      <h3 className="helvetic-sub-title-font text-4xl text-center text-white" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="500">Be a part of
+The PBS</h3>
+    </div>
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
         <div className="space-y-4">
           <h2 className="text-3xl font-bold">PBS</h2>
@@ -184,6 +191,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
     </footer>
+    </>
   );
 };
 

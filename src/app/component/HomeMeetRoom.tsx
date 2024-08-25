@@ -7,7 +7,8 @@ import Button from "./Button";
 const HomeMeetRoom: React.FC = () => {
   return (
     <section className="py-4  px-4 md:px-8  flex flex-col-reverse sm:gap-0 gap-8 md:flex-row items-center max-w-7xl m-atuo">
-      <div className="md:w-1/2 w-full flex   justify-center">
+      <div className="md:w-1/2 w-full flex   justify-center" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="800">
         <div className="relative bg-transparent border p-6 border-gray-300 rounded-full">
           <div className="absolute top-10 right-16 transform translate-x-6 -translate-y-6">
             <div className="w-16 h-16 bg-blue-200 rounded-full flex items-center justify-center">
@@ -29,19 +30,23 @@ const HomeMeetRoom: React.FC = () => {
       </div>
 
       <div className="md:w-1/2 mt-8 md:mt-0 md:ml-8 sm:text-center md:text-left">
-        <p className="text-sm text-blue-500 uppercase font-semibold">
+        <p className="text-sm text-blue-500 uppercase font-semibold" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="200">
           Meeting Room space rental
         </p>
-        <h1 className="text-3xl sm:text-4xl uppercase  text-gray-900 mt-2 helvetic-Head-font">
+        <h1 className="text-3xl sm:text-4xl uppercase  text-gray-900 mt-2 helvetic-Head-font" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="400">
           Conference meeting rooms
         </h1>
-        <p className="text-gray-600 mt-4 text-lg">
+        <p className="text-gray-600 mt-4 text-lg" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="600">
           IT Technology is a broad category encompassing all aspects of
           information technology and the application of technology in various
           industries. It includes areas such as software development.
         </p>
 
-        <ul className="flex flex-wrap mt-6 sm:justify-center md:justify-start space-x-6">
+        <ul className="flex flex-wrap mt-6 sm:justify-center md:justify-start space-x-6" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="800">
           <li className="flex items-center gap-2">
             {/* <span className="text-blue-500">✓</span> */}
 
@@ -71,9 +76,12 @@ const HomeMeetRoom: React.FC = () => {
             <p className="text-gray-600 text-lg">Conference Hall</p>
           </li>
         </ul>
+        <div data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="1000">
         <Link href="/meeting">
          <Button title='Discover More'/>
         </Link>
+        </div>
       </div>
     </section>
   );

@@ -6,7 +6,7 @@ import HomeAbout from "./component/HomeAbout";
 
 export default function Home() {
   return (
-    <div className=" ">
+    <div className=" background-image-home-page">
       <Banner />
       <HomeAbout />
       <div className="">

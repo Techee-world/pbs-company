@@ -12,14 +12,7 @@ const Meeting: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <p className="text-gray-600 mb-6 text-lg ">
-              Host your next conference, training session, or corporate event in
-              our state-of-the-art meeting rooms, designed for productivity and
-              inspiration. With cutting-edge technology, customizable layouts,
-              and a professional ambiance, our spaces are perfect for teams to
-              brainstorm, collaborate, and succeed. Whether it s a high-stakes
-              presentation or an immersive workshop, we provide the ideal
-              environment to make every event a success. Book today and
-              experience the difference!
+            Elevate Your Skills with Tailored Training Sessions Unlock your potential with personalised training sessions designed to meet your specific needs.
             </p>
             <div className="flex flex-col space-y-4">
               <div className="flex items-center">

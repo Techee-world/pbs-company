@@ -11,7 +11,7 @@ const LeadersCard = () => {
           alt="leaders images"
           height={500}
           width={300}
-          className="object-cover rounded-lg border border-gray-400 h-64 w-64 "
+          className="object-cover rounded-lg border bg-blue-400 border-gray-400 h-64 w-64 "
         />
     </div>
       <div className="py-2 text-center ">

@@ -14,7 +14,7 @@ const Banner: React.FC = () => {
             Welcome to PBS
           </span>
           <h1  className="animated-text1 md:text-5xl text-4xl font-bold mb-6 uppercase mt-3 text-blue-600 tracking-normal leading-tight helvetic-Head-font  "> 
-          <span className="text-slate-800">your premier </span> one-stop business solution provide</h1>
+          <span className="text-slate-800">your premier </span> one-stop business solution provider</h1>
           <p  className="text-gray-600 mt-4 text-lg ">
             We are dedicated to empowering startups and businesses with
             comprehensive products and services that drive success.
@@ -25,7 +25,7 @@ const Banner: React.FC = () => {
           </div>
         </div>
 
-        <div className=" mt-4 lg:mt-0 flex justify-center ">
+        <div className=" mt-4 lg:mt-0 flex justify-center animated-box-fade" >
           <div className="relative border border-gray-200 rounded-full p-4 shadow-sm ">
             <div className="border border-gray-300 rounded-full p-4 shadow-sm">
               <div className="border border-gray-400 rounded-full p-4 shadow-sm">

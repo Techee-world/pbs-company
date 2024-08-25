@@ -7,8 +7,9 @@ import Button from "./Button";
 const HomeTraining: React.FC = () => {
   return (
     <section className="py-16 max-w-7xl m-auto px-4 md:px-8 lg:px-16 flex flex-col-reverse md:flex-row justify-between items-center gap-8">
-      <div className="flex justify-center md:justify-start -ml-12 md:-ml-0">
-        <div className="relative">
+      <div className="flex justify-center md:justify-start -ml-12 md:-ml-0"  >
+        <div className="relative" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="400">
           <Image
             src="https://images.pexels.com/photos/34092/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600"
             alt="VR Headset"
@@ -32,19 +33,23 @@ const HomeTraining: React.FC = () => {
       </div>
 
       <div className="md:w-1/2 md:text-left mt-8 md:mt-0">
-        <p className="text-sm text-blue-500 uppercase font-semibold">
+        <p className="text-sm text-blue-500 uppercase font-semibold" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="300">
           Training
         </p>
-        <h1 className="text-3xl sm:text-4xl uppercase  text-gray-900 mt-2 helvetic-Head-font">
+        <h1 className="text-3xl sm:text-4xl uppercase  text-gray-900 mt-2 helvetic-Head-font" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="500">
           Elevate Your Skills with Tailored Training Sessions
         </h1>
-        <p className="text-gray-600 mt-4 text-lg">
+        <p className="text-gray-600 mt-4 text-lg" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="800">
           Elevate Your Skills with Tailored Training Sessions. Unlock your
           potential with personalized training sessions designed to meet your
           specific needs.
         </p>
 
-        <ul className="flex flex-wrap mt-6 justify-start gap-4 sm:gap-6">
+        <ul className="flex flex-wrap mt-6 justify-start gap-4 sm:gap-6" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="900">
           <li className="flex items-center gap-2">
             <FiCheck
               style={{
@@ -94,9 +99,12 @@ const HomeTraining: React.FC = () => {
             <p className="text-gray-600 text-lg">Soft Skills</p>
           </li>
         </ul>
-        <Link href="/training">
+        <div data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="1000">
+        <Link href="/services" >
         <Button title='Discover More' />
         </Link>
+        </div>
       </div>
     </section>
   );

@@ -3,9 +3,9 @@ import Image from "next/image";
 
 const Training: React.FC = () => {
   return (
-    <div className="bg-gradient-to-r from-blue-100  to-gray-200 pt-40 pb-20 ">
+    <div className=" pt-40 pb-20 ">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-3xl font-bold text-gray-900 mb-6 sm:text-5xl helvetic-sub-title-font lg:text-4xl">
+        <h1 className="text-3xl font-bold text-blue-600 mb-6 sm:text-5xl helvetic-sub-title-font lg:text-4xl">
           TRAINING
         </h1>
         <p className="text-gray-600 mb-10 text-lg   lg:w-3/4 w-full helvetic-font">
@@ -17,7 +17,7 @@ const Training: React.FC = () => {
           <div>
             <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-4 helvetic-sub-title-sub-font">
-                Individual Training
+               <span className="text-blue-600">Individual</span>  Training
               </h2>
               <p className="text-gray-600 mb-6 text-lg montserrat-font">
                 Dive deep into your chosen skill set with one-on-one sessions
@@ -27,7 +27,7 @@ const Training: React.FC = () => {
             </div>
             <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-4 helvetic-sub-title-sub-font">
-                Group Training
+               <span className="text-blue-600">Group</span>  Training
               </h2>
               <p className="text-gray-600 mb-6 text-lg montserrat-font">
                 Join forces with like-minded individuals in our interactive
@@ -38,7 +38,7 @@ const Training: React.FC = () => {
             </div>
             <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-4 helvetic-sub-title-sub-font">
-                Our job-oriented training programs
+               <span className="text-blue-600">Our job-oriented</span>  training programs
               </h2>
               <p className="text-gray-600 mb-6 text-lg montserrat-font">
                 spanning 7 to 10 days, equip you with practical skills and
@@ -61,8 +61,8 @@ const Training: React.FC = () => {
         <div className="flex items-center lg:flex-row flex-col mt-10 lg:mt-0 ">
           <div className="flex items-center gap-4 lg:border-r sm:mb-6 lg:mb-0 mb-0 border-gray-400 pr-0 lg:pr-6">
             <div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4 helvetic-sub-title-sub-font">
-                Soft Skills Development
+              <h2 className="text-2xl font-bold text-blue-600 mb-4 helvetic-sub-title-sub-font">
+              <span className="text-blue-600">Soft Skills </span>  Development
               </h2>
               <p className="text-gray-600 mb-6 text-lg montserrat-font">
                 Training sessions focused on essential soft skills such as
@@ -81,8 +81,8 @@ const Training: React.FC = () => {
           </div>
           <div className="flex items-center gap-4 pl-0 lg:pl-6">
             <div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4 helvetic-sub-title-sub-font">
-                Executive Coaching
+              <h2 className="text-2xl font-bold text-blue-600 mb-4 helvetic-sub-title-sub-font">
+               <span className="text-blue-600">Executive</span>  Coaching
               </h2>
               <p className="text-gray-600 mb-6 text-lg montserrat-font">
                 One-on-one coaching sessions for executives and managers to
