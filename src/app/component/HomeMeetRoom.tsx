@@ -2,14 +2,15 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FiCheck } from "react-icons/fi";
+import Button from "./Button";
 
 const HomeMeetRoom: React.FC = () => {
   return (
-    <section className="py-4 lg:py-16 px-4 md:px-8 lg:px-16 flex flex-col-reverse sm:gap-0 gap-8 md:flex-row items-center">
-      <div className="md:w-1/2 w-full flex justify-center">
-        <div className="relative bg-transparent border p-6 border-gray-200 rounded-full">
+    <section className="py-4  px-4 md:px-8  flex flex-col-reverse sm:gap-0 gap-8 md:flex-row items-center max-w-7xl m-atuo">
+      <div className="md:w-1/2 w-full flex   justify-center">
+        <div className="relative bg-transparent border p-6 border-gray-300 rounded-full">
           <div className="absolute top-10 right-16 transform translate-x-6 -translate-y-6">
-            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
+            <div className="w-16 h-16 bg-blue-200 rounded-full flex items-center justify-center">
               <div className="bg-blue-300 w-10 h-10 rounded-full "></div>
             </div>
           </div>
@@ -31,10 +32,10 @@ const HomeMeetRoom: React.FC = () => {
         <p className="text-sm text-blue-500 uppercase font-semibold">
           Meeting Room space rental
         </p>
-        <h1 className="text-4xl uppercase font-bold text-gray-900 mt-2">
+        <h1 className="text-3xl sm:text-4xl uppercase  text-gray-900 mt-2 helvetic-Head-font">
           Conference meeting rooms
         </h1>
-        <p className="text-gray-600 mt-4">
+        <p className="text-gray-600 mt-4 text-lg">
           IT Technology is a broad category encompassing all aspects of
           information technology and the application of technology in various
           industries. It includes areas such as software development.
@@ -53,7 +54,7 @@ const HomeMeetRoom: React.FC = () => {
                 padding: "2px",
               }}
             />
-            <p className="text-gray-600">Training Room</p>
+            <p className="text-gray-600 text-lg">Training Room</p>
           </li>
           <li className="flex items-center gap-2 ">
             {/* <span className="text-blue-500">✓</span> */}
@@ -67,13 +68,11 @@ const HomeMeetRoom: React.FC = () => {
                 padding: "2px",
               }}
             />
-            <p className="text-gray-600">Conference Hall</p>
+            <p className="text-gray-600 text-lg">Conference Hall</p>
           </li>
         </ul>
         <Link href="/meeting">
-          <button className="mt-8 px-6 py-2 text-white bg-blue-500 rounded-full shadow-lg hover:bg-blue-600">
-            Discover More
-          </button>
+         <Button title='Discover More'/>
         </Link>
       </div>
     </section>

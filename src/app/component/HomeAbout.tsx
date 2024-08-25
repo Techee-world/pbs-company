@@ -2,10 +2,10 @@ import React from 'react'
 
 const HomeAbout = () => {
   return (
-    <div className='max-w-6xl m-auto my-6'>
-      <div className='flex flex-col '>
-        <h1 className='text-start text-2xl font-bold'>WHO NEEDS US</h1>
-        <p className='text-lg  my-6'>
+    <div className='my-6 bg-blue-600 text-white py-16 px-4'>
+      <div className='flex flex-col max-w-6xl m-auto  my-6  '>
+        <h1 className='text-center text-4xl font-bold   helvetic-Head-font '>WHO NEEDS US</h1>
+        <p className='text-lg text-gray-100 text-center  my-6'>
           Startups with Unique Ideas: Launch your venture with a solid
           foundation. We offer tailored advice and strategies to kickstart your
           success. Business aiming to expand Horizons: Ready to take your

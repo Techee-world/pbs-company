@@ -9,6 +9,7 @@ module.exports = {
       "t4.ftcdn.net",
       "th.bing.com",
       "img.freepik.com",
+      'www.zohowebstatic.com'
     ],
   },
 };

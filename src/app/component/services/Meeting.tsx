@@ -1,16 +1,17 @@
 import React from "react";
 import Image from "next/image";
+import Button from "../Button";
 
 const Meeting: React.FC = () => {
   return (
-    <div className="bg-gradient-to-r from-blue-50  to-white py-20 px-4 sm:px-6 lg:px-8">
+    <div className="bg-gradient-to-r from-blue-100 py-20 to-gray-200py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold text-gray-900 mb-6 sm:text-4xl lg:text-4xl">
+        <h2 className="text-3xl font-bold text-gray-900 mb-6 sm:text-4xl lg:text-4xl helvetic-sub-title-font">
           Elevate Your Events with Premium Meeting Spaces
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
-            <p className="text-gray-600 mb-6 text-base montserrat-font">
+            <p className="text-gray-600 mb-6 text-lg ">
               Host your next conference, training session, or corporate event in
               our state-of-the-art meeting rooms, designed for productivity and
               inspiration. With cutting-edge technology, customizable layouts,
@@ -36,7 +37,7 @@ const Meeting: React.FC = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <span className="text-gray-600 text-base montserrat-font">
+                <span className="text-gray-600 text-lg montserrat-font">
                   cutting-edge technology
                 </span>
               </div>
@@ -55,7 +56,7 @@ const Meeting: React.FC = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <span className="text-gray-600 text-base montserrat-font">
+                <span className="text-gray-600 text-lg montserrat-font">
                   customizable layouts
                 </span>
               </div>
@@ -74,14 +75,13 @@ const Meeting: React.FC = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <span className="text-gray-600 text-base montserrat-font">
+                <span className="text-gray-600 text-lg montserrat-font">
                   professional ambiance
                 </span>
               </div>
             </div>
-            <button className="bg-blue-400 text-white px-6 py-3 rounded-lg mt-6 hover:bg-red-600">
-              GET A QUOTE
-            </button>
+            <Button title='GET A QUOTE' />
+            
           </div>
           <div>
             <Image

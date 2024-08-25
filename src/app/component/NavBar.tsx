@@ -20,7 +20,7 @@ const NavBar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 50) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -38,11 +38,11 @@ const NavBar = () => {
     <nav
       className={`${
         isScrolled ? "bg-white shadow-lg" : "bg-transparent"
-      } transition-all duration-300 fixed top-0 left-0 w-full z-50 ${
+      } transition-all duration-300 fixed top-0 left-0 w-full py-4 z-50 ${
         isMenuOpen ? "bg-white" : ""
       }`}
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
@@ -64,7 +64,7 @@ const NavBar = () => {
               <Link
                 key={item.path}
                 href={item.path}
-                className={`text-gray-900 hover:underline underline-offset-8 hover:text-blue-600 transition duration-300 ${
+                className={`text-gray-900 font-bold hover:underline underline-offset-8 hover:text-blue-600 transition duration-300 ${
                   pathname === item.path
                     ? "underline underline-offset-8 text-blue-600"
                     : ""

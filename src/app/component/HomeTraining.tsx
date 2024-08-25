@@ -2,10 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FiCheck } from "react-icons/fi";
+import Button from "./Button";
 
 const HomeTraining: React.FC = () => {
   return (
-    <section className="py-16 px-4 md:px-8 lg:px-16 flex flex-col-reverse md:flex-row justify-between items-center gap-8">
+    <section className="py-16 max-w-7xl m-auto px-4 md:px-8 lg:px-16 flex flex-col-reverse md:flex-row justify-between items-center gap-8">
       <div className="flex justify-center md:justify-start -ml-12 md:-ml-0">
         <div className="relative">
           <Image
@@ -30,20 +31,20 @@ const HomeTraining: React.FC = () => {
         </div>
       </div>
 
-      <div className="md:w-1/2 text-center md:text-left mt-8 md:mt-0">
+      <div className="md:w-1/2 md:text-left mt-8 md:mt-0">
         <p className="text-sm text-blue-500 uppercase font-semibold">
           Training
         </p>
-        <h1 className="text-3xl sm:text-4xl uppercase font-bold text-gray-900 mt-2">
+        <h1 className="text-3xl sm:text-4xl uppercase  text-gray-900 mt-2 helvetic-Head-font">
           Elevate Your Skills with Tailored Training Sessions
         </h1>
-        <p className="text-gray-600 mt-4 text-base">
+        <p className="text-gray-600 mt-4 text-lg">
           Elevate Your Skills with Tailored Training Sessions. Unlock your
           potential with personalized training sessions designed to meet your
           specific needs.
         </p>
 
-        <ul className="flex flex-wrap mt-6 justify-center md:justify-start gap-4 sm:gap-6">
+        <ul className="flex flex-wrap mt-6 justify-start gap-4 sm:gap-6">
           <li className="flex items-center gap-2">
             <FiCheck
               style={{
@@ -54,7 +55,7 @@ const HomeTraining: React.FC = () => {
                 padding: "2px",
               }}
             />
-            <p className="text-gray-600 text-base">Individual</p>
+            <p className="text-gray-600 text-lg">Individual</p>
           </li>
           <li className="flex items-center gap-2">
             <FiCheck
@@ -66,7 +67,7 @@ const HomeTraining: React.FC = () => {
                 padding: "2px",
               }}
             />
-            <p className="text-gray-600 text-base">Group</p>
+            <p className="text-gray-600 text-lg">Group</p>
           </li>
           <li className="flex items-center gap-2">
             <FiCheck
@@ -78,7 +79,7 @@ const HomeTraining: React.FC = () => {
                 padding: "2px",
               }}
             />
-            <p className="text-gray-600 text-base">Job Oriented</p>
+            <p className="text-gray-600 text-lg">Job Oriented</p>
           </li>
           <li className="flex items-center gap-2">
             <FiCheck
@@ -90,13 +91,11 @@ const HomeTraining: React.FC = () => {
                 padding: "2px",
               }}
             />
-            <p className="text-gray-600 text-base">Soft Skills</p>
+            <p className="text-gray-600 text-lg">Soft Skills</p>
           </li>
         </ul>
         <Link href="/training">
-          <button className="mt-8 px-6 py-2 text-white bg-blue-500 rounded-full shadow-md hover:bg-blue-600">
-            Discover More
-          </button>
+        <Button title='Discover More' />
         </Link>
       </div>
     </section>

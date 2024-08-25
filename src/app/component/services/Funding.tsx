@@ -3,12 +3,12 @@ import Image from "next/image";
 
 const Funding: React.FC = () => {
   return (
-    <div className="bg-gradient-to-r from-blue-50  to-white py-20 px-4 sm:px-6 lg:px-8">
+    <div className="bg-blue-600  py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold text-gray-900 mb-6 sm:text-4xl lg:text-4xl">
+        <h2 className="text-3xl font-bold  mb-6 text-gray-200 sm:text-4xl helvetic-sub-title-font lg:text-4xl">
           FUNDING SOLUTIONS FOR EVERY STAGE
         </h2>
-        <p className="text-gray-600 mb-10 text-base montserrat-font">
+        <p className="text-gray-200  mb-10 text-lg montserrat-font helvetic-font">
           Step into success with our dynamic funding options tailored to your
           business needs. Lorem Ipsum has been the industry s standard dummy
           text ever since the 1500s, when an unknown printer took a galley type
@@ -19,10 +19,10 @@ const Funding: React.FC = () => {
         <div className="flex items-center lg:flex-row flex-col mt-10 lg:mt-0 ">
           <div className="flex items-center w-full gap-4 lg:border-r sm:mb-6 lg:mb-0 mb-0 border-gray-400 pr-0 lg:pr-6">
             <div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">
+              <h2 className="text-2xl font-bold text-gray-200  mb-4 helvetic-sub-title-sub-font">
                 New Startups
               </h2>
-              <p className="text-gray-600 mb-6 text-base montserrat-font">
+              <p className="text-gray-200  mb-6 text-lg montserrat-font">
                 Ignite your entrepreneurial journey with our startup-friendly
                 funding. From initial seed capital to expansion financing, were
                 committed to fueling your vision and driving growth from day
@@ -39,10 +39,10 @@ const Funding: React.FC = () => {
           </div>
           <div className="flex items-center gap-4 w-full pl-0 lg:pl-6">
             <div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">
+              <h2 className="text-2xl font-bold text-gray-200  mb-4 helvetic-sub-title-sub-font">
                 Existing Companies Seeking Expansion
               </h2>
-              <p className="text-gray-600 mb-6 text-base montserrat-font">
+              <p className="text-gray-200  mb-6 text-lg ">
                 Ready to scale up? Our strategic partnerships offer the capital
                 infusion and expertise needed to elevate your business to new
                 heights. Whether it s launching new products, entering new
