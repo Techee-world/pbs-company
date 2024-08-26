@@ -10,16 +10,16 @@ const Banner: React.FC = () => {
       <div className=" flex flex-col   justify-between md:gap-10 md:flex-row items-center ">
         {/* Text Content */}
         <div  className="lg:w-3/4 ">
-          <span className="text-blue-500  text-sm font-semibold uppercase  " >
+          <span className="text-blue-500  text-sm font-semibold uppercase animated-box-fade-2s  animated-box-fade " >
             Welcome to PBS
           </span>
-          <h1  className="animated-text1 md:text-5xl text-4xl font-bold mb-6 uppercase mt-3 text-blue-600 tracking-normal leading-tight helvetic-Head-font  "> 
+          <h1  className="animated-box-fade animated-box-fade-4s  md:text-5xl text-4xl font-bold mb-6 uppercase mt-3 text-blue-600 tracking-normal leading-tight helvetic-Head-font  "> 
           <span className="text-slate-800">your premier </span> one-stop business solution provider</h1>
-          <p  className="text-gray-600 mt-4 text-lg ">
+          <p  className="text-gray-600 mt-4 text-lg  animated-box-fade-6s animated-box-fade ">
             We are dedicated to empowering startups and businesses with
             comprehensive products and services that drive success.
           </p>
-          <div className="animated-text">
+          <div className="animated-text animated-box-fade animated-box-fade-8s">
          <Button title='About Us' />
 
           </div>

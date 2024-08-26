@@ -11,10 +11,16 @@ const ContactUs: React.FC = () => {
     <section className=" h-screen   flex items-center justify-center  py-40 px-4">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3   gap-8">
         <div className="lg:col-span-2">
-          <button className="bg-blue-200 text-blue-600 py-1 px-4  rounded-full text-sm mb-4">
+          <button className="bg-blue-200 text-blue-600 py-1 px-4  rounded-full text-sm mb-4"  data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="800"
+            data-aos-delay="100">
             Contact Us
           </button>
-          <h2 className="text-3xl sm:text-3xl font-bold text-gray-800 mb-6 helvetic-sub-title-font ">
+          <h2 className="text-3xl sm:text-3xl font-bold text-gray-800 mb-6 helvetic-sub-title-font "  data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="800"
+            data-aos-delay="200">
             Do you have any question?
           </h2>
           {/* <p className="text-gray-500 mb-8 montserrat-font">
@@ -23,30 +29,54 @@ const ContactUs: React.FC = () => {
           </p> */}
           <form className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <input
+             data-aos="fade-up"
+             data-aos-anchor-placement="top-bottom"
+             data-aos-duration="800"
+             data-aos-delay="300"
               type="text"
               placeholder="Your Name"
               className="border text-sm bg-transparent montserrat-font border-gray-400 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <input
+             data-aos="fade-up"
+             data-aos-anchor-placement="top-bottom"
+             data-aos-duration="800"
+             data-aos-delay="400"
               type="email"
               placeholder="Your E-mail"
               className="border text-sm bg-transparent border-gray-400 montserrat-font rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <input
+             data-aos="fade-up"
+             data-aos-anchor-placement="top-bottom"
+             data-aos-duration="800"
+             data-aos-delay="500"
               type="text"
               placeholder="Phone Number"
               className="border text-sm bg-transparent border-gray-400 montserrat-font rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <input
+             data-aos="fade-up"
+             data-aos-anchor-placement="top-bottom"
+             data-aos-duration="800"
+             data-aos-delay="600"
               type="text"
               placeholder="Subject"
               className="border text-sm bg-transparent border-gray-400 montserrat-font rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <textarea
+             data-aos="fade-up"
+             data-aos-anchor-placement="top-bottom"
+             data-aos-duration="800"
+             data-aos-delay="700"
               placeholder="Your Message"
               className="border bg-transparent border-gray-400 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500 sm:col-span-2 h-24"
             ></textarea>
             <button
+             data-aos="fade-up"
+             data-aos-anchor-placement="top-bottom"
+             data-aos-duration="800"
+             data-aos-delay="800"
               type="submit"
               className="bg-blue-600 text-white py-3 px-6 rounded-lg text-base font-medium sm:col-span-2 hover:bg-blue-700"
             >
@@ -55,7 +85,10 @@ const ContactUs: React.FC = () => {
           </form>
         </div>
         <div className="grid grid-cols-1 gap-6">
-          <div className="flex items-center p-6 rounded-lg border border-gray-400">
+          <div className="flex items-center p-6 rounded-lg border border-gray-400"  data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="800"
+            data-aos-delay="400">
             <FaEnvelope className="text-blue-500 text-3xl mr-4" />
             <div className="montserrat-font">
               <h4 className="text-lg font-semibold text-gray-700 helvetic-sub-title-sub-font">Email</h4>
@@ -63,7 +96,10 @@ const ContactUs: React.FC = () => {
               <p className="text-gray-500">willie.jennings@example.com</p>
             </div>
           </div>
-          <div className="flex items-center p-6 rounded-lg border border-gray-400">
+          <div className="flex items-center p-6 rounded-lg border border-gray-400"  data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="800"
+            data-aos-delay="600">
             <FaPhone className="text-blue-500 text-3xl mr-4" />
             <div className="montserrat-font">
               <h4 className="text-lg font-semibold text-gray-700 helvetic-sub-title-sub-font">Contacts</h4>
@@ -79,7 +115,10 @@ const ContactUs: React.FC = () => {
               <p className="text-gray-500">Sunday 2.Pm To 7.Pm</p>
             </div>
           </div> */}
-          <div className="flex items-center p-6  rounded-lg border border-gray-400">
+          <div className="flex items-center p-6  rounded-lg border border-gray-400"  data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="800"
+            data-aos-delay="800">
             <FaMapMarkerAlt className="text-blue-500 text-3xl mr-4" />
             <div className="montserrat-font">
               <h4 className="text-lg font-semibold text-gray-700 helvetic-sub-title-sub-font">Location</h4>

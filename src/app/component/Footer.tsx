@@ -7,6 +7,8 @@ import {
   FaLinkedinIn,
   FaPinterestP,
 } from "react-icons/fa";
+import logo from "../../../public/darkLogo.png";
+import Image from "next/image";
 
 const Footer: React.FC = () => {
   return (
@@ -20,7 +22,18 @@ The PBS</h3>
     </div>
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
         <div className="space-y-4">
-          <h2 className="text-3xl font-bold">PBS</h2>
+        <div className="flex-shrink-0">
+            <Link href="/" aria-label="Home">
+              <Image
+                src={logo}
+                alt="PSB Logo"
+                width={100}
+                height={100}
+                className="h-16 w-auto"
+                priority
+              />
+            </Link>
+          </div>
           <p className="text-sm text-gray-300 leading-relaxed">
             Navigate Business Success with Expert Consultation. Embark on your
             business journey with confidence! At PBS...
@@ -53,7 +66,7 @@ The PBS</h3>
                   (item) => (
                     <li key={item}>
                       <Link
-                        href="#"
+                        href={`/services`}
                         className="text-sm hover:text-blue-400 transition duration-300"
                       >
                         {item}
@@ -72,7 +85,7 @@ The PBS</h3>
                   {["New Startups", "Seeking Expansion"].map((item) => (
                     <li key={item}>
                       <Link
-                        href="#"
+                        href="/funding"
                         className="text-sm hover:text-blue-400 transition duration-300"
                       >
                         {item}
@@ -90,7 +103,7 @@ The PBS</h3>
                 {["Training Room", "Conference Hall"].map((item) => (
                   <li key={item}>
                     <Link
-                      href="#"
+                      href="/meeting"
                       className="text-sm hover:text-blue-400 transition duration-300"
                     >
                       {item}
@@ -115,7 +128,7 @@ The PBS</h3>
                   (item) => (
                     <li key={item}>
                       <Link
-                        href="#"
+                        href="/services"
                         className="text-xs hover:text-blue-400 transition duration-300"
                       >
                         {item}
@@ -134,7 +147,7 @@ The PBS</h3>
                   {["New Startups", "Seeking Expansion"].map((item) => (
                     <li key={item}>
                       <Link
-                        href="#"
+                        href="/services"
                         className="text-xs hover:text-blue-400 transition duration-300"
                       >
                         {item}
@@ -152,7 +165,7 @@ The PBS</h3>
                 {["Training Room", "Conference Hall"].map((item) => (
                   <li key={item}>
                     <Link
-                      href="#"
+                      href="/services"
                       className="text-xs hover:text-blue-400 transition duration-300"
                     >
                       {item}

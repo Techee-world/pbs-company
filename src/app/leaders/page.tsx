@@ -7,100 +7,101 @@ import Button from "../component/Button";
 
 const page = () => {
   return (
-    <div className="max-w-7xl m-auto py-28 ">
-      <div className=" py-12 my-10 px-6 lg:px-0 ">
-        <h1 className="text-4xl font-black text-center helvetic-Head-font text-slate-900 my-4">
-          Our Team
-        </h1>
-        <p className="text-lg font-thin text-center  lg:w-3/4 m-auto w-full">
-          Our strength lies in our experienced directors and technical team, who
-          bring a wealth of knowledge and innovation to every project.
-        </p>
-      </div>
-      <div className="relative mt-32 flex flex-col md:flex-row gap-6 items-center bg-blue-500 p-6 text-white  md:space-x-6 px-4">
-        <div className="border-8 z-10 -rotate-[9deg] absolute w-80 h-[60vh] top-12 left-8 border-black p-1 mb-4 md:mb-0">
-        </div>
-            <Image src="https://th.bing.com/th?id=OIP.MkDe0JAMDwUZ78yqJaWUIAHaKX&w=211&h=295&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" alt="Sridhar Vembu" width={300} height={500} className="z-40 rounded-sm w-full md:w-80 lg:w-96"/>
-                <RiDoubleQuotesL className="w-16 h-16 text-black absolute  -top-12 left-80" />
-        <div className="max-w-4xl  ">
-            <p className="text-base md:text-lg ml-6   leading-relaxed">
-                I am thrilled to announce the launch of our new business
-            consultancy, dedicated to empowering businesses and professionals to
-            reach their full potential. In today s rapidly evolving landscape,
-            success requires not only strategic insight but also the continuous
-            development of essential skills. That s why we are not just a
-            consultancy—we are your partner in growth.
-            <br />
-            Our services go beyond traditional consulting. We offer
-            comprehensive training programs designed to enhance both soft skills
-            and technical expertise, ensuring that your team is equipped to meet
-            the challenges of tomorrow. Whether you re looking to sharpen your
-            leadership capabilities, improve communication within your
-            organization, or master the latest technologies, our tailored
-            solutions are here to guide you every step of the way.
-            <br />
-            At the heart of our mission is a commitment to excellence and a deep
-            understanding of the unique needs of each client. We believe that by
-            investing in people, we create the foundation for lasting success. I
-            invite you to explore how we can collaborate to drive your business
-            forward and achieve remarkable results.
-            <br />
-
-            Thank you for your trust, and I look forward to embarking on this
-            journey with you.
-            <br />
-            <br />
-            Warm regards,
-            </p>
-            <p className="mt-4 text-right text-base md:text-lg font-bold text-orange-500">
-                - Habeebu Rahiman <br />
-                <span className="text-sm md:text-base font-normal">MD - PBS</span>
-            </p>
-        </div>
-    </div>
-      {/* <div
-        className="flex lg:flex-row flex-col-reverse items-start justify-center  gap-10 px-6 lg:px-10 py-10   max-w-6xl rounded-lg  m-auto border border-gray-300"
-      >
-        <div>
-          <h2 className="text-2xl font-bold mb-4">Habeebu Rahiman , MD</h2>
-          <p className="">
-            I am thrilled to announce the launch of our new business
-            consultancy, dedicated to empowering businesses and professionals to
-            reach their full potential. In today s rapidly evolving landscape,
-            success requires not only strategic insight but also the continuous
-            development of essential skills. That s why we are not just a
-            consultancy—we are your partner in growth.
-            <br />
-            Our services go beyond traditional consulting. We offer
-            comprehensive training programs designed to enhance both soft skills
-            and technical expertise, ensuring that your team is equipped to meet
-            the challenges of tomorrow. Whether you re looking to sharpen your
-            leadership capabilities, improve communication within your
-            organization, or master the latest technologies, our tailored
-            solutions are here to guide you every step of the way.
-            <br />
-            At the heart of our mission is a commitment to excellence and a deep
-            understanding of the unique needs of each client. We believe that by
-            investing in people, we create the foundation for lasting success. I
-            invite you to explore how we can collaborate to drive your business
-            forward and achieve remarkable results.
-            <br />
-            <br />
-            Thank you for your trust, and I look forward to embarking on this
-            journey with you.
-            <br />
-            <br />
-            Warm regards,
+    <div className=" ">
+      <div className="max-w-7xl m-auto h-screen  px-6   grid place-items-center ">
+        <div className="">
+          <h1 className="text-4xl font-black text-center helvetic-Head-font text-slate-900 mb-4 animated-box-fade animated-box-fade-2s ">
+            Our Team
+          </h1>
+          <p className="text-lg font-thin text-center  lg:w-3/4 m-auto w-full animated-box-fade animated-box-fade-4s ">
+            Our strength lies in our experienced directors and technical team,
+            who bring a wealth of knowledge and innovation to every project.
           </p>
         </div>
-        <Image
-          src="https://th.bing.com/th?id=OIP.MkDe0JAMDwUZ78yqJaWUIAHaKX&w=211&h=295&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
-          alt="ceo"
-          className="h-80 object-cover rounded-lg "
-          width={250}
-          height={100}
-        />
-      </div> */}
+      </div>
+      <div
+        style={{
+          backgroundImage: `url("https://www.thechennaiangels.com/wp-content/uploads/2023/03/bca-bg-1.png")`,
+          height: "100vh",
+          width: "100%",
+          marginTop: "10rem",
+        }}
+      >
+        <div className="max-w-7xl m-auto relative mt- flex flex-col md:flex-row gap-6 pt-28  items-center  text-white  md:space-x-6 px-4">
+          <div
+            className=" border-8 z-10 -rotate-[9deg] absolute w-80 h-[60vh] top-32 left-5 border-white p-1 mb-4 md:mb-0"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="800"
+            data-aos-delay="300"
+          >
+            {" "}
+          </div>
+          <Image
+            src="https://th.bing.com/th?id=OIP.MkDe0JAMDwUZ78yqJaWUIAHaKX&w=211&h=295&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+            alt="Sridhar Vembu"
+            width={300}
+            height={500}
+            className="z-40 rounded-sm w-full md:w-80 lg:w-96"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="800"
+            data-aos-delay="500"
+          />
+          <RiDoubleQuotesL
+            className="w-16 h-16 text-white absolute  top-16 left-80"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="800"
+            data-aos-delay="700"
+          />
+          <div
+            className="max-w-4xl  "
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="800"
+            data-aos-delay="700"
+          >
+            <p className="text-base md:text-lg ml-6   leading-relaxed">
+              I am thrilled to announce the launch of our new business
+              consultancy, dedicated to empowering businesses and professionals
+              to reach their full potential. In today s rapidly evolving
+              landscape, success requires not only strategic insight but also
+              the continuous development of essential skills. That s why we are
+              not just a consultancy—we are your partner in growth.
+              <br />
+              Our services go beyond traditional consulting. We offer
+              comprehensive training programs designed to enhance both soft
+              skills and technical expertise, ensuring that your team is
+              equipped to meet the challenges of tomorrow. Whether you re
+              looking to sharpen your leadership capabilities, improve
+              communication within your organization, or master the latest
+              technologies, our tailored solutions are here to guide you every
+              step of the way.
+              <br />
+              At the heart of our mission is a commitment to excellence and a
+              deep understanding of the unique needs of each client. We believe
+              that by investing in people, we create the foundation for lasting
+              success. I invite you to explore how we can collaborate to drive
+              your business forward and achieve remarkable results.
+              <br />
+              Thank you for your trust, and I look forward to embarking on this
+              journey with you.
+              <br />
+              <br />
+              Warm regards,
+            </p>
+            <p className="mt-4 text-right text-base md:text-lg font-bold text-white"  data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="800"
+            data-aos-delay="1000">
+              - Habeebu Rahiman <br />
+              <span className="text-sm md:text-base font-normal">MD - PBS</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
       <div className="max-w-7xl m-auto my-20">
         <div className="my-6 ">
           <h1 className="text-xl font-bold mt-4 text-center lg:text-start helvetic-sub-title-sub-font">
@@ -144,8 +145,10 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-6xl m-auto py-16 flex px-6 lg:px-0 flex-col items-center">
-        <h1 className="text-2xl font-bold text-center my-4 helvetic-Head-font">Ask Questions</h1>
+      <div className="max-w-7xl m-auto py-16 flex px-6 lg:px-0 flex-col items-center">
+        <h1 className="text-2xl font-bold text-center my-4 helvetic-Head-font">
+          Ask Questions
+        </h1>
         <p className="text-lg font-thin text-center ">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione fuga
           modi perspiciatis voluptatum quaerat sed, accusamus numquam voluptas,
@@ -155,7 +158,7 @@ const page = () => {
           odit aliquam facere esse.
         </p>
         <Link href="/contact">
-         <Button title="Contact" />
+          <Button title="Contact" />
         </Link>
       </div>
     </div>

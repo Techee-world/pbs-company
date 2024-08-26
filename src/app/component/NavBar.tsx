@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useState, useEffect } from "react";
-import logo from "../../../public/logo.jpg";
+import logo from "../../../public/logo.png";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,9 +37,11 @@ const NavBar = () => {
   return (
     <nav
       className={`${
-        isScrolled ? "bg-white shadow-lg " : "bg-transparent"
+        isScrolled
+          ? "bg-gradient-to-b from-white/100 to-white/60 shadow-md"
+          : "bg-transparent"
       } transition-all duration-300 fixed top-0 left-0 w-full p-10 py-4 z-50 ${
-        isMenuOpen ? "bg-white " : ""
+        isMenuOpen ? "bg-white" : ""
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -52,7 +54,7 @@ const NavBar = () => {
                 alt="PSB Logo"
                 width={100}
                 height={100}
-                className="h-12 w-auto"
+                className="h-28 w-auto"
                 priority
               />
             </Link>
@@ -73,15 +75,16 @@ const NavBar = () => {
                 {item.title}
               </Link>
             ))}
-            
-            <Link href='/contact' className={`text-blue-600 border hover:bg-blue-600 hover:text-white px-4 py-2 border-blue-600 rounded-lg  font-bold  text-lg  transition duration-300 ${
-                  pathname === '/contact'
-                    ? "text-blue-600 "
-                    : ""
-                }`}>Contact Us</Link>
+
+            <Link
+              href="/contact"
+              className={`text-blue-600 border hover:bg-blue-600 hover:text-white px-4 py-2 border-blue-600 rounded-lg font-bold text-lg transition duration-300 ${
+                pathname === "/contact" ? "text-blue-600" : ""
+              }`}
+            >
+              Contact Us
+            </Link>
           </div>
-         
-        
 
           {/* Mobile Menu Button */}
           <div className="md:hidden">

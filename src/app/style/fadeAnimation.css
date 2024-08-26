@@ -5,6 +5,20 @@
     animation: fadeInUp 0.6s ease-out forwards;
 
 }
+.animated-box-fade-2s {
+    animation-delay: .4s;
+}
+.animated-box-fade-4s {
+    animation-delay: .8s;
+}
+
+.animated-box-fade-6s {
+    animation-delay: 01.5s;
+}
+
+.animated-box-fade-8s {
+    animation-delay: 2s;
+}
 @keyframes fadeInUp {
     0% {
         opacity: 0;
