@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
   return (
     <>
       <footer className="bg-[#0A1128]  text-gray-200 pt-48 pb-16 px-4 sm:px-6 lg:px-8 relative mt-40">
-      <div
+      {/* <div
   className="bg-blue-600 w-full md:w-[60rem] rounded-lg z-50 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-4 md:px-10 py-14 md:py-28"
   data-aos="fade-up"
   data-aos-anchor-placement="top-bottom"
@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
   >
     Be a part of The PBS
   </h3>
-</div>
+</div> */}
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div className="space-y-4">
             <div className="flex-shrink-0">
