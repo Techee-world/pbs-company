@@ -1,11 +1,23 @@
-import React from "react";
+'use client'
+import React, { useEffect } from "react";
 import LeadersCard from "../component/LeadersCard";
 import Link from "next/link";
 import Image from "next/image";
 import { RiDoubleQuotesL } from "react-icons/ri";
 import Button from "../component/Button";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import the AOS CSS
 
 const page = () => {
+  useEffect(() => {
+    AOS.init({
+      once: true, // Whether animation should happen only once - while scrolling down
+      mirror: false, // Whether elements should animate out while scrolling past them
+    });
+
+    // Refresh AOS when the component is re-rendered
+    AOS.refresh();
+  }, []);
   return (
     <div className=" ">
       <div className="max-w-7xl m-auto h-screen  px-6   grid place-items-center ">

@@ -5,6 +5,7 @@ import '../globals.css';
 import Button from "./Button";
 
 const Banner: React.FC = () => {
+  
   return (
     <section className=" max-w-6xl m-auto mt-16 h-[90vh] place-items-center grid py-10 px-4 md:px-0">
       <div className=" flex flex-col   justify-between md:gap-10 md:flex-row items-center ">

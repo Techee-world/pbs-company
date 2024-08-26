@@ -1,7 +1,19 @@
-import React from "react";
+'use client'
+import React, { useEffect } from "react";
 import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import the AOS CSS
 
 const Training: React.FC = () => {
+  useEffect(() => {
+    AOS.init({
+      once: true, // Whether animation should happen only once - while scrolling down
+      mirror: false, // Whether elements should animate out while scrolling past them
+    });
+
+    // Refresh AOS when the component is re-rendered
+    AOS.refresh();
+  }, []);
   return (
     <div className=" pt-40 pb-20 ">
       <div className="max-w-7xl mx-auto p-4 lg:p-0">

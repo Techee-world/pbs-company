@@ -1,6 +1,19 @@
+'use client'
+import React, { useEffect } from "react";
 import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import the AOS CSS
 
 export default function AboutPage() {
+  useEffect(() => {
+    AOS.init({
+      once: true, // Whether animation should happen only once - while scrolling down
+      mirror: false, // Whether elements should animate out while scrolling past them
+    });
+
+    // Refresh AOS when the component is re-rendered
+    AOS.refresh();
+  }, []);
   return (
     <div className="  mx-auto p-4 py-[2rem]">
       <div className="max-w-7xl m-auto px-2 md:px-8 flex md:flex-row flex-col items-center justify-between">
