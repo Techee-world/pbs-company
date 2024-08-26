@@ -1,5 +1,5 @@
 import React from "react";
-import '../style/WhoNeedUsCard.css'
+import '../style/whoNeedUsCard.css'
 
 const WhoNeedUsCard: React.FC = () => {
   return (
