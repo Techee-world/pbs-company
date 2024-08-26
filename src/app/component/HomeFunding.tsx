@@ -7,7 +7,7 @@ import Button from "./Button";
 const HomeFunding: React.FC = () => {
   return (
     <>
-    <section  className=" relative py-24 max-w-7xl m-auto  text-white px-4 md:px-0 lg:px-8 flex sm:gap-0 gap-20 flex-col md:flex-row md:items-center lg:items-end">
+    <section  className=" relative py-6 lg:py-24 max-w-7xl m-auto  text-white px-4 md:px-0 lg:px-8 flex sm:gap-0 gap-20 flex-col md:flex-row md:items-center lg:items-end">
       <div className="md:w-1/2 mt-8 md:mt-0  sm:text-center md:text-left">
         <p className="text-sm text-blue-500 uppercase font-semibold" data-aos="fade-up"
      data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="200">
@@ -63,23 +63,7 @@ const HomeFunding: React.FC = () => {
         </div>
       </div>
      
-      <div  className="md:w-1/2 w-full lg:-ml-13 flex justify-start mt-16 md:mt-0 ">
-        {/* <div className="relative md:ml-20">
-          <Image
-            src="https://images.pexels.com/photos/5673488/pexels-photo-5673488.jpeg?auto=compress&cs=tinysrgb&w=600"
-            alt="VR Headset"
-            height={500}
-            width={200}
-            className="rounded-tl-[120px] shadow-lg object-cover md:w-40 md:h-40   w-56 h-56 lg:w-64 lg:h-64 bg-blue-100  p-3"
-          />
-          <Image
-            src="https://images.pexels.com/photos/3760529/pexels-photo-3760529.jpeg?auto=compress&cs=tinysrgb&w=600"
-            alt="VR Headset"
-            height={500}
-            width={200}
-            className="rounded-tl-[120px] absolute shadow-lg bottom-0 md:w-40 md:h-56  left-40 md:left-28 lg:left-56 object-cover w-64 h-72 lg:w-72 lg:h-80 bg-blue-100 p-3"
-          />
-        </div> */}
+      <div  className="md:w-1/2 w-full lg:-ml-13 flex justify-start  mt-6 md:mt-0 ">
           <div className=" md:ml-20" data-aos="fade-up"
      data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="800">
           <Image

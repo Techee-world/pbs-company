@@ -7,7 +7,7 @@ const HomeAbout = () => {
       style={{
         backgroundImage: ` url("https://www.thechennaiangels.com/wp-content/uploads/2023/03/bca-bg-1.png")`,
       }}
-      className="my-6 py-16 px-4 h-[90vh] "
+      className="my-6 py-16 px-4 lg:h-[90vh] h-[130vh] "
     >
       <h1 className="text-center text-4xl font-bold helvetic-Head-font text-white" data-aos="fade-up"
      data-aos-anchor-placement="top-bottom" data-aos-duration='800'>WHO NEEDS US</h1>
