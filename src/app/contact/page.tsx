@@ -8,7 +8,7 @@ import {
 
 const ContactUs: React.FC = () => {
   return (
-    <section className=" h-screen   flex items-center justify-center  py-40 px-4">
+    <section className=" h-screen   flex items-center justify-center mt-40 lg:mt-40 mb-28 lg:mb-0 py-40 px-4">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3   gap-8">
         <div className="lg:col-span-2">
           <button className="bg-blue-200 text-blue-600 py-1 px-4  rounded-full text-sm mb-4"  data-aos="fade-up"
