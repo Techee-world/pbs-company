@@ -5,8 +5,8 @@ export default function AboutPage() {
     <div className="  mx-auto p-4 py-[2rem]">
       <div className="max-w-7xl m-auto px-2 md:px-8 flex md:flex-row flex-col items-center justify-between">
         <div className="mb-10">
-          <div className="flex items-center justify-between h-screen">
-            <div className="my-6 w-1/2 animated-box-fade">
+          <div className="flex items-center lg:flex-row flex-col lg:justify-between gap-8 lg:gap-0 mt-20 lg:mt-0 lg:h-screen">
+            <div className="my-6 w-full lg:w-1/2 animated-box-fade">
               <h1 className="text-3xl font-bold my-4 helvetic-Head-font text-blue-600">
                 Company Overview
               </h1>
@@ -28,9 +28,13 @@ export default function AboutPage() {
               />
             </div>
           </div>
-          <div className="flex justify-between items-cneter">
-            <div data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="400">
+          <div className="flex justify-between items-cneter lg:flex-row flex-col-reverse lg:justify-between gap-8 lg:gap-0">
+            <div
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="800"
+              data-aos-delay="400"
+            >
               <Image
                 src="https://images.unsplash.com/photo-1557804483-ef3ae78eca57?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y29tcGFueSUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D"
                 alt="Person giving thumbs up"
@@ -39,14 +43,24 @@ export default function AboutPage() {
                 height={300}
               />
             </div>
-            <div className="w-1/2">
+            <div className="lg:w-1/2 w-full">
               <div className="my-6 ">
-                <h1 className="text-3xl font-bold my-4 helvetic-sub-title-font text-blue-600" data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="200">
+                <h1
+                  className="text-3xl font-bold my-4 helvetic-sub-title-font text-blue-600"
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom"
+                  data-aos-duration="800"
+                  data-aos-delay="200"
+                >
                   Vision
                 </h1>
-                <p className="text-lg font-light  md:w-[90%] w-full border-b   montserrat-font border-gray-400 pb-4" data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="400">
+                <p
+                  className="text-lg font-light  md:w-[90%] w-full border-b   montserrat-font border-gray-400 pb-4"
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom"
+                  data-aos-duration="800"
+                  data-aos-delay="400"
+                >
                   Our vision is to become the leading support hub for budding
                   entrepreneurs across India, we catalyze innovative ideas into
                   successful enterprises through expert guidance, resources, and
@@ -54,12 +68,22 @@ export default function AboutPage() {
                 </p>
               </div>
               <div className="my-6">
-                <h1 className="text-3xl font-bold my-4 helvetic-sub-title-font text-blue-600" data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="600">
+                <h1
+                  className="text-3xl font-bold my-4 helvetic-sub-title-font text-blue-600"
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom"
+                  data-aos-duration="800"
+                  data-aos-delay="600"
+                >
                   Mission
                 </h1>
-                <p className="text-lg font-light montserrat-font  md:w-[90%]   w-full" data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="800">
+                <p
+                  className="text-lg font-light montserrat-font  md:w-[90%]   w-full"
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom"
+                  data-aos-duration="800"
+                  data-aos-delay="800"
+                >
                   At PBS, our mission is clear: empower, support, and grow. We
                   offer personalized training, expert consulting, and dedicated
                   support services to help businesses navigate challenges and
