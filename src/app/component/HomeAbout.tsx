@@ -11,7 +11,7 @@ const HomeAbout = () => {
     >
       <h1 className="text-center text-4xl font-bold helvetic-Head-font text-white" data-aos="fade-up"
      data-aos-anchor-placement="top-bottom" data-aos-duration='800'>WHO NEEDS US</h1>
-      <div className="flex gap-20 max-w-7xl justify-center items-center m-auto my-6">
+      <div className="flex lg:flex-row flex-col gap-20 max-w-7xl justify-center items-center m-auto my-6">
         <WhoNeedUsCard />
         <WhoNeedUsCard />
         <WhoNeedUsCard />
