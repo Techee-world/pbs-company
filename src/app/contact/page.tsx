@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   FaEnvelope,
   FaPhone,
-  FaCalendarAlt,
   FaMapMarkerAlt,
 } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import the AOS CSS
 
 const ContactUs: React.FC = () => {
+  useEffect(() => {
+    AOS.init({
+      once: true, // Whether animation should happen only once - while scrolling down
+      mirror: false, // Whether elements should animate out while scrolling past them
+    });
+
+    // Refresh AOS when the component is re-rendered
+    AOS.refresh();
+  }, []);
   return (
     <section className=" h-screen   flex items-center justify-center mt-40 lg:mt-40 mb-28 lg:mb-0 py-40 px-4">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3   gap-8">
