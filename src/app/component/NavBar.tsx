@@ -114,7 +114,7 @@ const NavBar = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden">
+        <div className="md:hidden flex flex-col gap-">
           {menuItems.map((item) => (
             <div key={item.path}>
               <Link
@@ -128,8 +128,17 @@ const NavBar = () => {
               >
                 {item.title}
               </Link>
+              
             </div>
           ))}
+            <Link
+              href="/contact"
+              className={`text-blue-600 border hover:bg-blue-600 w-fit  hover:text-white px-4 py-2 border-blue-600 rounded-lg font-bold text-lg transition duration-300 ${
+                pathname === "/contact" ? "text-blue-600" : ""
+              }`}
+            >
+              Contact Us
+            </Link>
         </div>
       )}
     </nav>

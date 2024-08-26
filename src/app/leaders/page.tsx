@@ -19,17 +19,17 @@ const page = () => {
           </p>
         </div>
       </div>
-      <div
+      <div className="h-[195vh] lg:h-[100vh] lg:w-full lg:mt-[10rem]"
         style={{
           backgroundImage: `url("https://www.thechennaiangels.com/wp-content/uploads/2023/03/bca-bg-1.png")`,
-          height: "100vh",
-          width: "100%",
-          marginTop: "10rem",
+          // height: "100vh",
+          // width: "100%",
+          // marginTop: "10rem",
         }}
       >
         <div className="max-w-7xl m-auto relative mt- flex flex-col md:flex-row gap-6 pt-28  items-center  text-white  md:space-x-6 px-4">
           <div
-            className=" border-8 z-10 -rotate-[9deg] absolute w-80 h-[60vh] top-32 left-5 border-white p-1 mb-4 md:mb-0"
+            className=" border-8 z-10 -rotate-[9deg] absolute w-[25rem]  lg:w-80 h-[58vh] lg:h-[60vh] top-28 lg:top-32 left-4 lg:left-5 border-white p-1 mb-4 md:mb-0"
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="800"
@@ -42,14 +42,14 @@ const page = () => {
             alt="Sridhar Vembu"
             width={300}
             height={500}
-            className="z-40 rounded-sm w-full md:w-80 lg:w-96"
+            className="z-40 rounded-sm w-full md:w-80 lg:w-96 p-4"
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="800"
             data-aos-delay="500"
           />
           <RiDoubleQuotesL
-            className="w-16 h-16 text-white absolute  top-16 left-80"
+            className="w-16 h-16 text-white lg:absolute  top-16 left-80"
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="800"
@@ -62,7 +62,7 @@ const page = () => {
             data-aos-duration="800"
             data-aos-delay="700"
           >
-            <p className="text-base md:text-lg ml-6   leading-relaxed">
+            <p className="text-lg md:text-lg lg:ml-6  leading-relaxed">
               I am thrilled to announce the launch of our new business
               consultancy, dedicated to empowering businesses and professionals
               to reach their full potential. In today s rapidly evolving
