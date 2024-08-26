@@ -4,12 +4,12 @@ import Image from "next/image";
 const Training: React.FC = () => {
   return (
     <div className=" pt-40 pb-20 ">
-      <div className="max-w-7xl mx-auto">
-      <div className="flex relative items-center mb-20 animated-box-fade">
+      <div className="max-w-7xl mx-auto p-4 lg:p-0">
+      <div className="flex relative items-center mb-20 animated-box-fade ">
             <Image
               src="https://images.pexels.com/photos/3205570/pexels-photo-3205570.jpeg?auto=compress&cs=tinysrgb"
               alt="Elevating Businesses Through Edge"
-              className="w-full h-[70vh] object-cover rounded-lg "
+              className="w-full h-auto lg:w-full lg:h-[70vh] object-cover rounded-lg "
               width={400}
               height={100}
             />
@@ -94,7 +94,7 @@ const Training: React.FC = () => {
         </div>
 
         <div className="flex items-center lg:flex-row flex-col mt-10 lg:mt-0 ">
-          <div className="flex items-center gap-4 lg:border-r sm:mb-6 lg:mb-0 mb-0 border-gray-400 pr-0 lg:pr-6">
+          <div className="flex items-center lg:flex-row flex-col gap-4 lg:border-r sm:mb-6 lg:mb-0 mb-0 border-gray-400 pr-0 lg:pr-6">
             <div  data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="800"
@@ -122,7 +122,7 @@ const Training: React.FC = () => {
             />
             </div>
           </div>
-          <div className="flex items-center gap-4 pl-0 lg:pl-6">
+          <div className="flex items-center mt-6 lg:mt-0 g:flex-row flex-col gap-4 pl-0 lg:pl-6">
             <div  data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="800"
