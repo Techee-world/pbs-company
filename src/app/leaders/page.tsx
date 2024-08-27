@@ -20,7 +20,7 @@ const page = () => {
   }, []);
   return (
     <div className=" ">
-      <div className="max-w-7xl m-auto h-screen  px-6   grid place-items-center ">
+      <div className="max-w-7xl m-auto mt-64  px-6   grid place-items-center ">
         <div className="">
           <h1 className="text-4xl font-black text-center helvetic-Head-font text-slate-900 mb-4 animated-box-fade animated-box-fade-2s ">
             Our Team

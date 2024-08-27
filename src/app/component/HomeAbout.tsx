@@ -12,7 +12,7 @@ const HomeAbout = () => {
       className="my-6 py-12 sm:py-16 px-4 sm:px-6 lg:px-8 min-h-screen h-[65rem] md:h-[55rem] lg:h-[15rem] flex flex-col justify-start"
     >
       <h1 
-        className="text-center text-3xl sm:text-4xl font-bold helvetic-Head-font text-white mb-8 sm:mb-12" 
+        className="text-center text-3xl sm:text-5xl font-bold helvetic-Head-font text-white mb-8 sm:mb-12" 
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom" 
         data-aos-duration='800'

@@ -3,8 +3,17 @@
 @tailwind utilities;
 /* @import 'swiper/swiper-bundle.min.css'; */
 
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 html {
   scroll-behavior: smooth;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
@@ -60,3 +69,21 @@ body {
 }
 
 
+/* <div className="mx-auto p-4 py-[2rem] mb-28 lg:mb-0 z-50">
+<div className="max-w-7xl m-auto px-2 md:px-8 flex md:flex-row flex-col items-center justify-between">
+  <div className="mb-10 relative w-full">
+    <div 
+      className="absolute left-0 top-0 w-full h-full bg-no-repeat bg-contain"
+      style={{
+        backgroundImage: `url(${line})`,
+        zIndex: -1,
+        opacity: 0.1  // Adjust this value to change the background opacity
+      }}
+    ></div>
+
+    <div className="flex items-center lg:flex-row flex-col lg:justify-between gap-8 lg:gap-0 lg:mt-0 lg:min-h-screen">
+    
+    </div>
+  </div>
+</div>
+</div> */

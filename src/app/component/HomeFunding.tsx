@@ -7,7 +7,7 @@ import Button from "./Button";
 const HomeFunding: React.FC = () => {
   return (
     <>
-    <section  className=" relative py-6 lg:py-24 max-w-7xl m-auto  text-white px-4 md:px-0 lg:px-8 flex sm:gap-0 gap-20 flex-col md:flex-row md:items-center lg:items-end">
+    <section  className=" relative py-6 lg:py-24 max-w-7xl m-auto  text-white px-4 md:px-0 lg:px-8 flex sm:gap-0 gap-20 flex-col-reverse md:flex-row md:items-center lg:items-end">
       <div className="md:w-1/2 mt-8 md:mt-0  sm:text-center md:text-left">
         <p className="text-sm text-blue-500 uppercase font-semibold" data-aos="fade-up"
      data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="200">

@@ -134,7 +134,7 @@ const Training: React.FC = () => {
             />
             </div>
           </div>
-          <div className="flex items-center mt-6 lg:mt-0 g:flex-row flex-col gap-4 pl-0 lg:pl-6">
+          <div className="flex items-center mt-6 lg:mt-0 lg:flex-row flex-col gap-4 pl-0 lg:pl-6">
             <div  data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="800"

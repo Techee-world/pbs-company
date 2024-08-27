@@ -3,18 +3,22 @@ import Image from "next/image";
 import React from "react";
 import '../globals.css';
 import Button from "./Button";
+import one from '../../../public/one.png'
+import two from '../../../public/two.png'
+import three from '../../../public/three.png'
+import four from '../../../public/four.png'
 
 const Banner: React.FC = () => {
   return (
     <section className="max-w-6xl mx-auto mt-8 sm:mt-12 md:mt-16 min-h-[90vh] flex items-center py-10 px-4 sm:px-6 lg:px-8">
-      <div className="w-full flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
+      <div className="w-full flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 relative">
         {/* Text Content */}
         <div className="w-full lg:w-1/2 space-y-4 lg:space-y-6 text-start lg:text-left">
           <span className="text-blue-500 text-xs sm:text-sm font-semibold uppercase animated-box-fade-2s animated-box-fade">
             Welcome to PBS
           </span>
-          <h1 className="animated-box-fade animated-box-fade-4s text-3xl sm:text-4xl md:text-5xl font-bold uppercase text-blue-600 tracking-normal leading-tight helvetic-Head-font">
-            <span className="text-slate-800">your premier </span> one-stop business solution provider
+          <h1 className="animated-box-fade animated-box-fade-4s text-3xl sm:text-4xl md:text-6xl font-bold  text-blue-600 tracking-normal leading-tight helvetic-Head-font">
+            <span className="text-slate-800">Your Premier </span> One-stop Business Solution Provider
           </h1>
           <p className="text-gray-600 text-base sm:text-lg animated-box-fade-6s animated-box-fade">
             We are dedicated to empowering startups and businesses with
@@ -26,7 +30,7 @@ const Banner: React.FC = () => {
         </div>
 
         {/* Image Content */}
-        <div className="w-full lg:w-1/2 mt-8 lg:mt-0 flex justify-center animated-box-fade">
+        {/* <div className="w-full lg:w-1/2 mt-8 lg:mt-0 flex justify-center animated-box-fade">
           <div className="relative">
             <div className="border border-gray-200 rounded-full p-2 sm:p-3 md:p-4 shadow-sm">
               <div className="border border-gray-300 rounded-full p-2 sm:p-3 md:p-4 shadow-sm">
@@ -42,7 +46,7 @@ const Banner: React.FC = () => {
               </div>
             </div>
 
-            {/* Decorative elements */}
+ 
             <div className="absolute top-0 right-1/4 transform translate-x-1/2 -translate-y-1/2">
               <div className="w-10 sm:w-12 md:w-16 h-10 sm:h-12 md:h-16 bg-blue-200 border border-gray-200 shadow-sm rounded-full p-1 sm:p-2 flex items-center justify-center">
                 <div className="bg-blue-400 w-6 sm:w-8 md:w-10 h-6 sm:h-8 md:h-10 rounded-full shadow-sm"></div>
@@ -59,6 +63,42 @@ const Banner: React.FC = () => {
               </div>
             </div>
           </div>
+        </div> */}
+        <div className="absolute top-[77px] right-[304px]">
+        <Image
+                    src={one}
+                    alt="Person giving thumbs up"
+                    className=" w-48 sm:w-56 md:w-64 lg:w-28 h-auto"
+                    width={300}
+                    height={300}
+                  />
+        </div>
+        <div className="absolute top-[15px] right-[15rem]">
+        <Image
+                    src={two}
+                    alt="Person giving thumbs up"
+                    className=" w-48 sm:w-56 md:w-64 lg:w-28 h-auto"
+                    width={300}
+                    height={300}
+                  />
+        </div>
+        <div className="absolute top-[18px] right-[95px]">
+        <Image
+                    src={three}
+                    alt="Person giving thumbs up"
+                    className="  w-48 sm:w-56 md:w-64 lg:w-28 h-auto"
+                    width={300}
+                    height={300}
+                  />
+        </div>
+        <div className="absolute top-[73px] right-[25px]">
+        <Image
+                    src={four}
+                    alt="Person giving thumbs up"
+                    className=" w-48 sm:w-56 md:w-64 lg:w-28 h-auto"
+                    width={300}
+                    height={300}
+                  />
         </div>
       </div>
     </section>

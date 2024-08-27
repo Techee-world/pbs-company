@@ -39,7 +39,7 @@ const Funding: React.FC = () => {
           essentially unchanged.
         </p>
         <div className="flex items-center lg:flex-row flex-col mt-10 lg:mt-0">
-          <div className="flex items-center g:flex-row flex-col w-full gap-4 lg:border-r sm:mb-6 lg:mb-0 mb-0 border-gray-400 pr-0 lg:pr-6">
+          <div className="flex items-center lg:flex-row flex-col w-full gap-4 lg:border-r sm:mb-6 lg:mb-0 mb-0 border-gray-400 pr-0 lg:pr-6">
             <div>
               <h2
                 className="text-2xl font-bold text-gray-200 mb-4 helvetic-sub-title-sub-font"
@@ -79,7 +79,7 @@ const Funding: React.FC = () => {
               />
             </div>
           </div>
-          <div className="flex items-center g:flex-row flex-col gap-4 w-full mt-6 lg:mt-0 pl-0 lg:pl-6">
+          <div className="flex items-center lg:flex-row flex-col gap-4 w-full mt-6 lg:mt-0 pl-0 lg:pl-6">
             <div>
               <h2
                 className="text-2xl font-bold text-gray-200 mb-4 helvetic-sub-title-sub-font"

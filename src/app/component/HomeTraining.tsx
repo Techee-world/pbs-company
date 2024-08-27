@@ -6,7 +6,7 @@ import Button from "./Button";
 
 const HomeTraining: React.FC = () => {
   return (
-    <section className="py-16 max-w-7xl m-auto px-4 md:px-8 lg:px-16 flex flex-col-reverse md:flex-row justify-between items-center gap-8">
+    <section className="py-16 max-w-7xl m-auto px-4 md:px-8 lg:px-16 flex flex-col md:flex-row justify-between items-center gap-8 ">
       <div className="flex justify-center md:justify-start -ml-12 md:-ml-0"  >
         <div className="relative mt-16 md:mt-0" data-aos="fade-up"
      data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="400">
