@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
   return (
     <>
       <footer className="bg-[#0A1128]  text-gray-200  pt-48 pb-16 px-4 sm:px-6 lg:px-8 relative mt-16 lg:mt-40">
-        <div
+        {/* <div
           className="bg-blue-600 w-full md:w-[60rem] rounded-lg z-50 -mt-60 mb-12 lg:-mt-0 lg:mb-0 lg:absolute -top-28 left-64 transform -translate-x-1/2 -translate-y-1/2 px-4 md:px-10 py-14 md:py-28"
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
@@ -30,6 +30,14 @@ const Footer: React.FC = () => {
           >
             Be a part of The PBS
           </h3>
+        </div> */}
+        <div   data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="800"
+          data-aos-delay="400" className="  max-w-4xl m-auto -mt-80 mb-20 rounded-lg px-4">
+          <div className="bg-blue-600  text-white w-full flex  justify-center  items-center h-40 lg:h-64 text-center">
+            <h4 className="helvetic-sub-title-font text-2xl md:text-4xl tex-white"> Be a part of The PBS</h4>
+          </div>
         </div>
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div className="space-y-4">

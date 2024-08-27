@@ -40,7 +40,7 @@ const NavBar = () => {
         isScrolled
           ? "bg-gradient-to-b from-white/100 to-white/60 shadow-md"
           : "bg-transparent"
-      } transition-all duration-300 fixed top-0 left-0 w-full p-10 py-4 z-50 ${
+      } transition-all duration-300 lg:fixed top-0 left-0 w-full  p-10 py-4 z-50 ${
         isMenuOpen ? "bg-white" : ""
       }`}
     >
