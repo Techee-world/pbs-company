@@ -15,10 +15,10 @@ export default function AboutPage() {
     AOS.refresh();
   }, []);
   return (
-    <div className="  mx-auto p-4 py-[2rem]">
+    <div className="  mx-auto p-4 py-[2rem] mb-28 lg:mb-0">
       <div className="max-w-7xl m-auto px-2 md:px-8 flex md:flex-row flex-col items-center justify-between">
         <div className="mb-10">
-          <div className="flex items-center lg:flex-row flex-col lg:justify-between gap-8 lg:gap-0 mt-20 lg:mt-0 lg:h-screen">
+          <div className="flex items-center lg:flex-row flex-col lg:justify-between gap-8 lg:gap-0 lg:mt-0 lg:h-screen">
             <div className="my-6 w-full lg:w-1/2 animated-box-fade">
               <h1 className="text-3xl font-bold my-4 helvetic-Head-font text-blue-600">
                 Company Overview
@@ -56,7 +56,7 @@ export default function AboutPage() {
                 height={300}
               />
             </div>
-            <div className="lg:w-1/2 w-full">
+            <div className="lg:w-1/2 w-full ">
               <div className="my-6 ">
                 <h1
                   className="text-3xl font-bold my-4 helvetic-sub-title-font text-blue-600"

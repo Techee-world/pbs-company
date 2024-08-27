@@ -17,7 +17,7 @@ const Meeting: React.FC = () => {
   }, []);
 
   return (
-    <div className="py-20 px-4 sm:px-6 lg:px-8">
+    <div className="py-20 px-4 sm:px-6 lg:px-8 mb-20 lg:mb-0">
       <div className="max-w-7xl mx-auto">
         <div className="flex lg:flex-row flex-col items-center justify-between gap-8">
           <div>
