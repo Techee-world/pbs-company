@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
     <>
       <footer className="bg-[#0A1128]  text-gray-200  pt-48 pb-16 px-4 sm:px-6 lg:px-8 relative mt-16 lg:mt-40">
         <div
-          className="bg-blue-600 w-full md:w-[60rem] rounded-lg z-50 -mt-60 mb-12 lg:-mt-0 lg:mb-0 lg:absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-4 md:px-10 py-14 md:py-28"
+          className="bg-blue-600 w-full md:w-[60rem] rounded-lg z-50 -mt-60 mb-12 lg:-mt-0 lg:mb-0 lg:absolute -top-28 left-64 transform -translate-x-1/2 -translate-y-1/2 px-4 md:px-10 py-14 md:py-28"
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
           data-aos-duration="800"
