@@ -5,7 +5,10 @@ import Button from "../Button";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import the AOS CSS
 
-const Meeting: React.FC = () => {
+interface Title {
+  title:string
+}
+const Meeting: React.FC<Title> = ({title}) => {
   useEffect(() => {
     AOS.init({
       once: true, // Whether animation should happen only once - while scrolling down
@@ -28,7 +31,7 @@ const Meeting: React.FC = () => {
               data-aos-duration="800"
               data-aos-delay="100"
             >
-              Elevate Your Events with{" "}
+             {title} Elevate Your Events with{" "}
               <span className="text-blue-600">Premium Meeting Spaces</span>
             </h2>
             <p
@@ -44,7 +47,7 @@ const Meeting: React.FC = () => {
             </p>
             <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-3 py-4">
               <div
-                className="bg-blue-600 text-white rounded-lg px-3 py-2 text-center w-full outline outline-offset-2 outline-2 outline-blue-600"
+                className="border border-gray-600 rounded-lg px-3 py-2 text-center w-full outline outline-offset-2 outline-2 outline-blue-600"
                 data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom"
                 data-aos-duration="800"
@@ -53,7 +56,7 @@ const Meeting: React.FC = () => {
                 Conference Hall
               </div>
               <div
-                className="bg-blue-600 text-white rounded-lg px-3 py-2 text-center w-full outline outline-offset-2 outline-2 outline-blue-600"
+                className="border border-gray-600 rounded-lg px-3 py-2 text-center w-full outline outline-offset-2 outline-2 outline-blue-600"
                 data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom"
                 data-aos-duration="800"
@@ -62,7 +65,7 @@ const Meeting: React.FC = () => {
                 10 nos
               </div>
               <div
-                className="bg-blue-600 text-white rounded-lg px-3 py-2 text-center w-full outline outline-offset-2 outline-2 outline-blue-600"
+                className="border border-gray-600 rounded-lg px-3 py-2 text-center w-full outline outline-offset-2 outline-2 outline-blue-600"
                 data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom"
                 data-aos-duration="800"
@@ -71,7 +74,7 @@ const Meeting: React.FC = () => {
                 $ 2000
               </div>
               <div
-                className="bg-blue-600 text-white rounded-lg px-3 py-2 text-center w-full outline outline-offset-2 outline-2 outline-blue-600"
+                className="border border-gray-600 rounded-lg px-3 py-2 text-center w-full outline outline-offset-2 outline-2 outline-blue-600"
                 data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom"
                 data-aos-duration="800"

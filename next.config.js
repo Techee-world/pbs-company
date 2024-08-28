@@ -14,7 +14,8 @@ module.exports = {
       "images.unsplash.com",
       "easy.razorpay.com",
       "pngtree.com",
-"w7.pngwing.com"
+"w7.pngwing.com",
+"plus.unsplash.com"
 
     ],
   },

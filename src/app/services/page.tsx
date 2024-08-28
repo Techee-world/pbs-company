@@ -1,6 +1,7 @@
 import Training from "../component/services/Training";
 import Funding from "../component/services/Funding";
-import Meeting from "../component/services/Meeting";
+import ServicesHome from "../component/services/ServicesHome";
+// import Meeting from "../component/services/Meeting";
 // import '../font.css'
 
 export default function Services() {
@@ -8,7 +9,8 @@ export default function Services() {
       <div className="">
        <Training />
        <Funding />
-       <Meeting />
+       <ServicesHome />
+       {/* <Meeting /> */}
       </div>
   );
 }

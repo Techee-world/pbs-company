@@ -52,17 +52,6 @@ body {
   letter-spacing: 0.8px;
 }
 
-
-
-/* .background-image-home-page {
-  background-image: url('https://www.zohowebstatic.com/sites/zweb/images/crmplus/images/zcplus-zia-bg.webp');
-  background-color: whitesmoke;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; 
-  height: fit-content;
-  width: 100%;
-} */
 .who-need-us {
   background-image: url('https://www.zohowebstatic.com/sites/zweb/images/crmplus/images/zcplus-zia-bg.webp');
 
@@ -87,3 +76,10 @@ body {
   </div>
 </div>
 </div> */
+
+
+
+.one{
+  transition: background-color 0.5s ease;
+        transition: transform 0.2s ease-in-out ;
+}
