@@ -8,7 +8,7 @@ import Button from "../component/Button";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import the AOS CSS
 
-const page = () => {
+const Page = () => {  // Changed 'page' to 'Page'
   useEffect(() => {
     AOS.init({
       once: true, // Whether animation should happen only once - while scrolling down
@@ -18,6 +18,7 @@ const page = () => {
     // Refresh AOS when the component is re-rendered
     AOS.refresh();
   }, []);
+
   return (
     <div className=" ">
       <div className="max-w-7xl m-auto mt-64  px-6   grid place-items-center ">
@@ -34,9 +35,6 @@ const page = () => {
       <div className="h-[195vh] lg:h-[100vh] lg:w-full lg:mt-[10rem]"
         style={{
           backgroundImage: `url("https://www.thechennaiangels.com/wp-content/uploads/2023/03/bca-bg-1.png")`,
-          // height: "100vh",
-          // width: "100%",
-          // marginTop: "10rem",
         }}
       >
         <div className="max-w-7xl m-auto relative mt- flex flex-col md:flex-row gap-6 pt-28  items-center  text-white  md:space-x-6 px-4">
@@ -177,4 +175,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;  // Also make sure to export 'Page' with uppercase
