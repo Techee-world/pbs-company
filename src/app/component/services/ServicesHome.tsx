@@ -8,7 +8,7 @@ const ServicesHome: React.FC = () => {
   return (
     <div>
       <div className="flex justify-center items-center mt-4 space-x-4">
-        <div className="flex justify-center items-center mt-4 space-x-4 w-full ">
+        <div className="flex max-w-7xl m-auto justify-center items-center mt-4 space-x-4 w-full ">
           {hallData.map((hall, index) => (
             <div
             onClick={()=>setPageSwitch(index)}

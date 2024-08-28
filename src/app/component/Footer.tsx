@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
           data-aos-duration="800"
           data-aos-delay="400" className="  max-w-4xl m-auto -mt-80 mb-20 rounded-lg px-4">
           <div className="bg-blue-600 rounded-2xl  text-white w-full flex  justify-center  items-center h-40 lg:h-64 text-center">
-            <h4 className="helvetic-sub-title-font text-2xl md:text-4xl tex-white"> Be a part of The PBS</h4>
+            <Link href='/contact'><h4 className="helvetic-sub-title-font text-2xl md:text-4xl tex-white"> Contact Us</h4></Link> 
           </div>
         </div>
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">

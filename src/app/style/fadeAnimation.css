@@ -29,3 +29,35 @@
         transform: translateY(0);
     }
 }
+
+
+/* zoom in animation effect in banner  */
+/* Basic reset */
+
+
+/* Container for the zoom effect */
+.zoom-in-box {
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    transform: scale(0.8);
+    opacity: 0;
+    animation: zoomIn 1.5s forwards ease-in-out 0.3s;
+}
+
+/* Animation keyframes */
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Hover effect (optional) */
+.zoom-in-box:hover {
+    transform: scale(1.1);
+}
+
+/* zoom in animation effect in banner  */

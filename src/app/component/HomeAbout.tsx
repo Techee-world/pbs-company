@@ -11,7 +11,7 @@ const HomeAbout = () => {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
-      className="my-6 py-12 sm:py-16 px-4 sm:px-6 lg:px-8 min-h-screen g h-[65rem] md:h-[55rem] lg:h-[4rem] items-center flex flex-col justify-center"
+      className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 min-h-screen g h-[65rem] md:h-[55rem] lg:h-[4rem] items-center flex flex-col justify-center"
     >
       <h1 
         className="text-center text-3xl sm:text-5xl font-bold helvetic-Head-font text-white mb-8 sm:mb-12" 

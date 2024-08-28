@@ -34,7 +34,7 @@ const slides: Slide[] = [
 
 const Banner: React.FC = () => {
   return (
-    <div className="h-screen w-full overflow-hidden">
+    <div style={{backgroundImage:`url("https://www.zohowebstatic.com/sites/zweb/images/crm/crm-banner-bg.jpg")`}} className="h-screen w-full boject-cover bg-center bg-cover">
       <Swiper
         modules={[Autoplay, EffectFade]}
         effect="fade"
@@ -46,7 +46,7 @@ const Banner: React.FC = () => {
         centeredSlides={true}
         slidesPerView={1}
         autoplay={{
-          delay: 5000,
+          delay: 6000,
           disableOnInteraction: false,
         }}
         loop={true}
@@ -60,19 +60,19 @@ const Banner: React.FC = () => {
                   initial={{ opacity: 0, y: 50 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
-                  className="w-full lg:w-1/2 space-y-4 lg:space-y-6 text-start lg:text-left"
+                  className="w-full lg:w-1/2 space-y-4  text-start lg:text-left"
                 >
-                  <span className="inline-block text-sm font-semibold uppercase bg-blue-200 text-blue-600 py-1 px-4 rounded-lg mb-4">
+                  <span className="inline-block text-sm font-semibold uppercase bg-blue-200 text-blue-600 py-1 px-4 rounded-lg mb-4 animated-box-fade animated-box-fade-2s">
                     Welcome to PBS
                   </span>
-                  <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-800 leading-tight helvetic-Head-font">
+                  <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-800 leading-tight helvetic-Head-font animated-box-fade animated-box-fade-4s" >
                     <span className="text-blue-600 ">{slide.title.split(' ')[0]}</span>{' '}
                     {slide.title.split(' ').slice(1).join(' ')}
                   </h1>
-                  <p className="text-gray-600 text-base sm:text-lg">
+                  <p className="text-gray-600 text-base sm:text-lg animated-box-fade animated-box-fade-6s">
                     {slide.description}
                   </p>
-                  <div className="pt-2">
+                  <div className="animated-box-fade  animated-box-fade-8s">
                     <Button title='About Us' />
                   </div>
                 </motion.div>
@@ -83,7 +83,12 @@ const Banner: React.FC = () => {
                   transition={{ duration: 0.8, delay: 0.4 }}
                   className="w-full lg:w-1/2 mt-8 lg:mt-0 flex justify-center"
                 >
-                  <div className="relative">
+                  <div className="relative animated-box-fade animated-box-fade-4s">
+                    <div className='zoom-in-box absolute top-16 right-10 border border-gray-400 px-4 z-50 bg-gray-100 text-blue-600  py-1 rounded-md shadow-lg' > Business Training</div>
+                    <div className='zoom-in-box absolute top-6 left-10 border border-gray-400 px-4 z-50 bg-gray-100 text-blue-600  py-1 rounded-md shadow-md' > Development Training</div>
+                    <div className='zoom-in-box absolute bottom-28 right-10 border border-gray-400 px-4 z-50 bg-gray-100 text-blue-600  py-1 rounded-md shadow-md' > Funding Solutions</div>
+                    <div className='zoom-in-box absolute bottom-6 left-10 border border-gray-400 px-4 z-50 bg-gray-100 text-blue-600  py-1 rounded-md shadow-md' > Prefessional Meeting Space</div>
+                  
                     <div className="border border-gray-200 rounded-full p-2 sm:p-3 md:p-4 shadow-sm">
                       <div className="border border-gray-300 rounded-full p-2 sm:p-3 md:p-4 shadow-sm">
                         <div className="border border-gray-400 rounded-full p-2 sm:p-3 md:p-4 shadow-sm">
@@ -108,6 +113,16 @@ const Banner: React.FC = () => {
                       innerSize="w-5 h-5"
                     />
                     <DecorativeCircle
+                      position="top-10 left-20 transform translate-x-1/2 translate-y-1/2"
+                      size="w-8 h-8"
+                      innerSize="w-5 h-5"
+                    />
+                    <DecorativeCircle
+                      position="top-1/2 right-4 transform translate-x-1/2 translate-y-1/2"
+                      size="w-10 h-10"
+                      innerSize="w-6 h-6"
+                    />
+                    <DecorativeCircle
                       position="bottom-1/4 left-0 transform -translate-x-1/2"
                       size="w-6 h-6"
                       innerSize="w-3 h-3"
@@ -130,7 +145,7 @@ interface DecorativeCircleProps {
 }
 
 const DecorativeCircle: React.FC<DecorativeCircleProps> = ({ position, size, innerSize }) => (
-  <div className={`absolute ${position}`}>
+  <div className={`absolute ${position} zoom-in-box`}>
     <div className={`${size} bg-blue-200 border border-gray-200 shadow-sm rounded-full p-1 flex items-center justify-center`}>
       <div className={`bg-blue-400 ${innerSize} rounded-full shadow-sm`}></div>
     </div>
