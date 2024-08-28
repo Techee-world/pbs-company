@@ -6,7 +6,7 @@ import Button from "./Button";
 
 const HomeMeetRoom: React.FC = () => {
   return (
-    <section className="py-4  px-4 md:px-8 mb-40 md:mb-36 lg:mb-0 flex flex-col sm:gap-0 gap-8 md:flex-row items-center max-w-7xl m-atuo">
+    <section className="py-4  px-4 md:px-8 mb-40 md:mb-36 lg:mb-0 flex flex-col lg:mt-10 sm:gap-0 gap-8 md:flex-row items-center max-w-7xl m-atuo">
       <div className="md:w-1/2 w-full flex   justify-center" data-aos="fade-up"
      data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="800">
         <div className="relative bg-transparent border p-6 border-gray-300 rounded-full">
@@ -30,7 +30,7 @@ const HomeMeetRoom: React.FC = () => {
       </div>
 
       <div className="md:w-1/2 mt-8 md:mt-0 md:ml-8 sm:text-center md:text-left">
-        <p className="text-sm text-blue-500 uppercase font-semibold" data-aos="fade-up"
+        <p className="inline-block text-sm font-semibold uppercase bg-blue-200 text-blue-600 py-1 px-4 rounded-lg mb-4" data-aos="fade-up"
      data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="200">
           Meeting Room space rental
         </p>

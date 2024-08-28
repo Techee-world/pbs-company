@@ -62,29 +62,36 @@ const NavBar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
-            {menuItems.map((item) => (
-              <Link
-                key={item.path}
-                href={item.path}
-                className={`text-gray-900 mt-2 font-bold hover:underline underline-offset-8 text-lg hover:text-blue-600 transition duration-300 ${
-                  pathname === item.path
-                    ? "underline underline-offset-8 text-blue-600"
-                    : ""
-                }`}
-              >
-                {item.title}
-              </Link>
-            ))}
-
-            <Link
-              href="/contact"
-              className={`text-blue-600 border hover:bg-blue-600 hover:text-white px-4 py-2 border-blue-600 rounded-lg font-bold text-lg transition duration-300 ${
-                pathname === "/contact" ? "text-blue-600" : ""
-              }`}
-            >
-              Contact Us
-            </Link>
-          </div>
+        {menuItems.map((item) => (
+          <Link
+            key={item.path}
+            href={item.path}
+            className={`relative text-gray-900 mt-2 ${
+              pathname === item.path ? 'text-blue-700' : ''
+            } font-normal text-lg hover:text-blue-600 transition duration-300 group`}
+          >
+            {item.title}
+            <span
+              className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-600 transform origin-left transition-all duration-300 ease-out ${
+                pathname === item.path ? 'scale-x-100' : 'scale-x-0'
+              } group-hover:scale-x-100`}
+            ></span>
+          </Link>
+        ))}
+        <Link
+          href="/contact"
+          className={`relative text-blue-600 border hover:bg-blue-600 hover:text-white px-4 py-2 border-blue-600 rounded-lg font-bold text-lg transition duration-300 group ${
+            pathname === "/contact" ? "bg-blue-600 text-white" : ""
+          }`}
+        >
+          Contact Us
+          <span
+            className={`absolute bottom-0 left-0 w-full h-0.5 transform origin-left transition-all duration-300 ease-out ${
+              pathname === '/contact' ? 'scale-x-100 bg-white' : 'scale-x-0 bg-white'
+            } group-hover:scale-x-100 group-hover:bg-white`}
+          ></span>
+        </Link>
+      </div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden">

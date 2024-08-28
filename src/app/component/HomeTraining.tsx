@@ -33,7 +33,7 @@ const HomeTraining: React.FC = () => {
       </div>
 
       <div className="md:w-1/2 md:text-left mt-8 md:mt-0">
-        <p className="text-sm text-blue-500 uppercase font-semibold" data-aos="fade-up"
+        <p className="inline-block text-sm font-semibold uppercase bg-blue-200 text-blue-600 py-1 px-4 rounded-lg mb-4" data-aos="fade-up"
      data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="300">
           Training
         </p>
