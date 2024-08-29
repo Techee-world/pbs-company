@@ -3,11 +3,12 @@ import Link from "next/link";
 import React from "react";
 import { FiCheck } from "react-icons/fi";
 import Button from "./Button";
+import meeting from '../../../public/meeting2.png'
 
 const HomeMeetRoom: React.FC = () => {
   return (
-    <section className="py-4  px-4 md:px-8 mb-40 md:mb-36 lg:mb-0 flex flex-col lg:mt-10 sm:gap-0 gap-8 md:flex-row items-center max-w-7xl m-atuo">
-      <div className="md:w-1/2 w-full flex   justify-center" data-aos="fade-up"
+    <section className="py-16 max-w-7xl m-auto px-4 md:px-8 lg:px-16 flex flex-col md:flex-row justify-between items-center gap-8">
+      {/* <div className="md:w-1/2 w-full flex   justify-center" data-aos="fade-up"
      data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="800">
         <div className="relative bg-transparent border p-6 border-gray-300 rounded-full">
           <div className="absolute top-10 right-16 transform translate-x-6 -translate-y-6">
@@ -18,7 +19,7 @@ const HomeMeetRoom: React.FC = () => {
           <div className="border p-6 border-gray-300 rounded-full ">
             <div className="border p-6 border-gray-400 rounded-full ">
               <Image
-                src="https://images.pexels.com/photos/1181607/pexels-photo-1181607.jpeg?auto=compress&cs=tinysrgb&w=600"
+                src={meeting}
                 alt="VR Headset"
                 height={500}
                 width={200}
@@ -27,16 +28,17 @@ const HomeMeetRoom: React.FC = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+  
 
-      <div className="md:w-1/2 mt-8 md:mt-0 md:ml-8 sm:text-center md:text-left">
+      {/* <div className="md:w-1/2 mt-8 md:mt-0 md:ml-8 sm:text-center md:text-left">
         <p className="inline-block text-sm font-semibold uppercase bg-blue-200 text-blue-600 py-1 px-4 rounded-lg mb-4" data-aos="fade-up"
      data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="200">
           Meeting Room space rental
         </p>
         <h1 className="text-3xl sm:text-4xl uppercase  text-gray-900 mt-2 helvetic-Head-font" data-aos="fade-up"
      data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="400">
-          Conference meeting rooms
+          Conference <span className="text-blue-600">meeting rooms</span> 
         </h1>
         <p className="text-gray-600 mt-4 text-lg" data-aos="fade-up"
      data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="600">
@@ -48,7 +50,7 @@ const HomeMeetRoom: React.FC = () => {
         <ul className="flex flex-wrap mt-6 sm:justify-center md:justify-start space-x-6" data-aos="fade-up"
      data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="800">
           <li className="flex items-center gap-2">
-            {/* <span className="text-blue-500">✓</span> */}
+           
 
             <FiCheck
               style={{
@@ -62,7 +64,7 @@ const HomeMeetRoom: React.FC = () => {
             <p className="text-gray-600 text-lg">Training Room</p>
           </li>
           <li className="flex items-center gap-2 ">
-            {/* <span className="text-blue-500">✓</span> */}
+          
 
             <FiCheck
               style={{
@@ -73,14 +75,88 @@ const HomeMeetRoom: React.FC = () => {
                 padding: "2px",
               }}
             />
-            <p className="text-gray-600 text-lg">Conference Hall</p>
+            <p className="text-gray-600 text-lg">Conference Meeting Rooms</p>
           </li>
         </ul>
         <div data-aos="fade-up"
      data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="1000">
-        <Link href="/meeting">
-         <Button title='Discover More'/>
-        </Link>
+
+         <Button title='Discover More' path='/meeting'/>
+        </div>
+      </div> */}
+         <div className="flex justify-center md:justify-start -ml-12 md:-ml-0"  >
+        <div className="relative mt-16 md:mt-0" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="400">
+          <Image
+            src={meeting}
+            alt="VR Headset"
+            height={500}
+            width={200}
+            className="rounded-lg   w-80 h-80 sm:w-56 sm:h-72 lg:w-64 lg:h-80 xl:w-[30rem] xl:h-96"
+          />
+          {/* <Image
+            src="https://images.pexels.com/photos/796602/pexels-photo-796602.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="VR Headset"
+            height={500}
+            width={200}
+            className="rounded-lg absolute bottom-4 sm:bottom-8 left-4 sm:left-32 lg:left-48 xl:left-56 bg-white p-2 sm:p-4 object-cover w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 xl:w-64 xl:h-64"
+          /> */}
+          <div className="  absolute w-[10rem] sm:w-[12rem] shadow-lg top-4 sm:top-6 left-24 sm:left-28 lg:left-40 xl:left-52 bg-blue-500 text-white rounded-lg p-2 sm:p-4">
+            <p className="text-xs sm:text-sm font-semibold zoom-in-box">
+              31+ Years Experience
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="md:w-1/2 md:text-left mt-8 md:mt-0">
+        <p className="inline-block text-sm font-semibold uppercase bg-blue-200 text-blue-600 py-1 px-4 rounded-lg mb-4" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="300">
+          Meeting Room space rental
+        </p>
+        <h1 className="text-3xl sm:text-4xl uppercase  text-gray-900 mt-2 helvetic-Head-font" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="500">
+          Conference <span className="text-blue-600">meeting rooms</span> 
+        </h1>
+        <p className="text-gray-600 mt-4 text-lg" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="800">
+         IT Technology is a broad category encompassing all aspects of
+          information technology and the application of technology in various
+          industries. It includes areas such as software development.
+        </p>
+
+        <ul className="flex flex-wrap mt-6 justify-start gap-4 sm:gap-6" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="900">
+          <li className="flex items-center gap-2">
+            <FiCheck
+              style={{
+                color: "green",
+                fontSize: "15px",
+                border: "1px solid black",
+                borderRadius: "40px",
+                padding: "2px",
+              }}
+            />
+            <p className="text-gray-600 text-lg">Training Room</p>
+          </li>
+          <li className="flex items-center gap-2">
+            <FiCheck
+              style={{
+                color: "green",
+                fontSize: "15px",
+                border: "1px solid black",
+                borderRadius: "40px",
+                padding: "2px",
+              }}
+            />
+            <p className="text-gray-600 text-lg">Conference Meeting Rooms</p>
+          </li>
+
+        </ul>
+        <div data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="1000">
+
+        <Button title='Discover More' path='/services' />
         </div>
       </div>
     </section>

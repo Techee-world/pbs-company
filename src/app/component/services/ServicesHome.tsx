@@ -7,6 +7,16 @@ const ServicesHome: React.FC = () => {
   const hallData = ["Training Romm", "Conference Room", "Conference Room Plus"];
   return (
     <div>
+          <h2
+              className="text-3xl font-bold text-gray-900 mb-6 sm:text-4xl lg:text-4xl helvetic-sub-title-font"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="800"
+              data-aos-delay="100"
+            >
+             Elevate Your Events with{" "}
+              <span className="text-blue-600">Premium Meeting Spaces</span>
+            </h2>
       <div className="flex justify-center items-center mt-4 space-x-4">
         <div className="flex max-w-7xl m-auto justify-center items-center mt-4 space-x-4 w-full ">
           {hallData.map((hall, index) => (

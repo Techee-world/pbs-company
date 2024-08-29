@@ -4,6 +4,7 @@ import React from "react";
 import { FiCheck } from "react-icons/fi";
 import Button from "./Button";
 
+
 const HomeTraining: React.FC = () => {
   return (
     <section className="py-16 max-w-7xl m-auto px-4 md:px-8 lg:px-16 flex flex-col md:flex-row justify-between items-center gap-8 ">
@@ -24,9 +25,9 @@ const HomeTraining: React.FC = () => {
             width={200}
             className="rounded-lg absolute bottom-4 sm:bottom-8 left-4 sm:left-32 lg:left-48 xl:left-56 bg-white p-2 sm:p-4 object-cover w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 xl:w-64 xl:h-64"
           />
-          <div className="absolute w-[10rem] sm:w-[12rem] shadow-lg top-4 sm:top-6 left-24 sm:left-28 lg:left-40 xl:left-52 bg-blue-500 text-white rounded-lg p-2 sm:p-4">
-            <p className="text-xs sm:text-sm font-semibold">
-              25+ Years Experience
+          <div className="  absolute w-[10rem] sm:w-[12rem] shadow-lg top-4 sm:top-6 left-24 sm:left-28 lg:left-40 xl:left-52 bg-blue-500 text-white rounded-lg p-2 sm:p-4">
+            <p className="text-xs sm:text-sm font-semibold zoom-in-box">
+              31+ Years Experience
             </p>
           </div>
         </div>
@@ -39,7 +40,7 @@ const HomeTraining: React.FC = () => {
         </p>
         <h1 className="text-3xl sm:text-4xl uppercase  text-gray-900 mt-2 helvetic-Head-font" data-aos="fade-up"
      data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="500">
-          Elevate Your Skills with Tailored Training Sessions
+          Elevate Your Skills with Tailored <span className="text-blue-600">Training Sessions</span> 
         </h1>
         <p className="text-gray-600 mt-4 text-lg" data-aos="fade-up"
      data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="800">
@@ -101,9 +102,8 @@ const HomeTraining: React.FC = () => {
         </ul>
         <div data-aos="fade-up"
      data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="1000">
-        <Link href="/services" >
-        <Button title='Discover More' />
-        </Link>
+
+        <Button title='Discover More' path='/services' />
         </div>
       </div>
     </section>

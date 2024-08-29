@@ -68,7 +68,7 @@ const NavBar = () => {
             href={item.path}
             className={`relative text-gray-900 mt-2 ${
               pathname === item.path ? 'text-blue-700' : ''
-            } font-normal text-lg hover:text-blue-600 transition duration-300 group`}
+            } font-black text-lg hover:text-blue-600 transition duration-300 group`}
           >
             {item.title}
             <span
@@ -80,7 +80,7 @@ const NavBar = () => {
         ))}
         <Link
           href="/contact"
-          className={`relative text-blue-600 border hover:bg-blue-600 hover:text-white px-4 py-2 border-blue-600 rounded-lg font-bold text-lg transition duration-300 group ${
+          className={`relative text-blue-600 border hover:bg-blue-600 hover:text-white px-4 py-2 border-blue-600 rounded-lg font-black text-lg transition duration-300 group ${
             pathname === "/contact" ? "bg-blue-600 text-white" : ""
           }`}
         >

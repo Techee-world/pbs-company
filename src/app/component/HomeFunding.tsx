@@ -11,11 +11,11 @@ const HomeFunding: React.FC = () => {
       <div className="md:w-1/2 mt-8 md:mt-0  sm:text-center md:text-left">
         <p className="inline-block text-sm font-semibold uppercase bg-blue-200 text-blue-600 py-1 px-4 rounded-lg mb-4" data-aos="fade-up"
      data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="200">
-          Funding Soln
+          Funding Solutions
         </p>
         <h1 className="text-3xl sm:text-4xl uppercase  text-gray-900 mt-2 helvetic-Head-font" data-aos="fade-up"
      data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="400">
-          FUNDING SOLUTIONS FOR EVERY STAGE
+         <span className="text-blue-600">FUNDING SOLUTIONS</span>  FOR EVERY STAGE
         </h1>
         <p className="text-gray-600 mt-4 text-lg" data-aos="fade-up"
      data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="600">
@@ -57,9 +57,7 @@ const HomeFunding: React.FC = () => {
         </ul>
         <div data-aos="fade-up"
      data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="1000">
-        <Link href="/funding">
-          <Button title="Discover More" />
-        </Link>
+          <Button title="Discover More" path='/funding' />
         </div>
       </div>
      

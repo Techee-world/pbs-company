@@ -7,6 +7,9 @@ import { motion } from 'framer-motion';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import Button from './Button';
+// import bannerImage from '../../../public/banner.jpeg'
+// import bannerImage from '../../../public/zero.png'
+import bannerImage from '../../../public/line7.jpg'
 
 interface Slide {
   title: string;
@@ -34,7 +37,7 @@ const slides: Slide[] = [
 
 const Banner: React.FC = () => {
   return (
-    <div style={{backgroundImage:`url("https://www.zohowebstatic.com/sites/zweb/images/crm/crm-banner-bg.jpg")`}} className="h-screen w-full boject-cover bg-center bg-cover">
+    <div style={{backgroundImage:`url(${bannerImage.src})`}} className="h-screen  bg-blue-50 w-full boject-cover bg-center bg-cover">
       <Swiper
         modules={[Autoplay, EffectFade]}
         effect="fade"
@@ -65,15 +68,15 @@ const Banner: React.FC = () => {
                   <span className="inline-block text-sm font-semibold uppercase bg-blue-200 text-blue-600 py-1 px-4 rounded-lg mb-4 animated-box-fade animated-box-fade-2s">
                     Welcome to PBS
                   </span>
-                  <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-800 leading-tight helvetic-Head-font animated-box-fade animated-box-fade-4s" >
+                  <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-slate-800 leading-tight helvetic-Head-font animated-box-fade animated-box-fade-4s" >
                     <span className="text-blue-600 ">{slide.title.split(' ')[0]}</span>{' '}
                     {slide.title.split(' ').slice(1).join(' ')}
                   </h1>
                   <p className="text-gray-600 text-base sm:text-lg animated-box-fade animated-box-fade-6s">
                     {slide.description}
                   </p>
-                  <div className="animated-box-fade  animated-box-fade-8s">
-                    <Button title='About Us' />
+                  <div className="animated-box-fade   animated-box-fade-8s">
+                    <Button title='About Us' path='/about' />
                   </div>
                 </motion.div>
 
@@ -84,10 +87,10 @@ const Banner: React.FC = () => {
                   className="w-full lg:w-1/2 mt-8 lg:mt-0 flex justify-center"
                 >
                   <div className="relative animated-box-fade animated-box-fade-4s">
-                    <div className='zoom-in-box absolute top-16 right-10 border border-gray-400 px-4 z-50 bg-gray-100 text-blue-600  py-1 rounded-md shadow-lg' > Business Training</div>
-                    <div className='zoom-in-box absolute top-6 left-10 border border-gray-400 px-4 z-50 bg-gray-100 text-blue-600  py-1 rounded-md shadow-md' > Development Training</div>
-                    <div className='zoom-in-box absolute bottom-28 right-10 border border-gray-400 px-4 z-50 bg-gray-100 text-blue-600  py-1 rounded-md shadow-md' > Funding Solutions</div>
-                    <div className='zoom-in-box absolute bottom-6 left-10 border border-gray-400 px-4 z-50 bg-gray-100 text-blue-600  py-1 rounded-md shadow-md' > Prefessional Meeting Space</div>
+                    <div className='zoom-in-box absolute top-16 right-10  px-4 z-50 bg-blue-600 text-white py-1 rounded-md shadow-lg' > Business Training</div>
+                    <div className='zoom-in-box absolute top-6 left-10  px-4 z-50 bg-blue-600 text-white py-1 rounded-md shadow-md' > Development Training</div>
+                    <div className='zoom-in-box absolute bottom-28 right-10  px-4 z-50 bg-blue-600 text-white py-1 rounded-md shadow-md' > Funding Solutions</div>
+                    <div className='zoom-in-box absolute bottom-6 left-10  px-4 z-50 bg-blue-600 text-white py-1 rounded-md shadow-md' > Prefessional Meeting Space</div>
                   
                     <div className="border border-gray-200 rounded-full p-2 sm:p-3 md:p-4 shadow-sm">
                       <div className="border border-gray-300 rounded-full p-2 sm:p-3 md:p-4 shadow-sm">

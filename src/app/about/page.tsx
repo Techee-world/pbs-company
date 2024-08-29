@@ -3,7 +3,8 @@ import React, { useEffect } from "react";
 import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import line from '../../../public/line.png'
+// import line from '../../../public/line.png'
+import logo from '../../../public/logo.png'
 
 export default function AboutPage() {
   useEffect(() => {
@@ -42,7 +43,7 @@ export default function AboutPage() {
               </div>
               <div className="animated-box-fade">
                 <Image
-                  src="https://images.unsplash.com/photo-1557804483-ef3ae78eca57?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y29tcGFueSUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D"
+                  src={logo}
                   alt="Person giving thumbs up"
                   className="w-full h-96 object-cover shadow-sm"
                   width={500}
@@ -64,7 +65,7 @@ export default function AboutPage() {
                 data-aos-delay="400"
               >
                 <Image
-                  src="https://images.unsplash.com/photo-1557804483-ef3ae78eca57?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y29tcGFueSUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D"
+                  src="https://img.freepik.com/free-vector/vision-statement-concept-illustration_114360-7576.jpg?t=st=1724962423~exp=1724966023~hmac=1f42281f81ab4bc3df7403c22595105fd518649e63cd8a3b4fd0ea01abe5de48&w=740"
                   alt="Person giving thumbs up"
                   className="w-full h-96 object-cover shadow-sm"
                   width={500}

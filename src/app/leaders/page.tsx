@@ -7,6 +7,7 @@ import { RiDoubleQuotesL } from "react-icons/ri";
 import Button from "../component/Button";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import the AOS CSS
+import ourTeam from '../../../public/10.jpg'
 
 const Page = () => {  // Changed 'page' to 'Page'
   useEffect(() => {
@@ -20,18 +21,28 @@ const Page = () => {  // Changed 'page' to 'Page'
   }, []);
 
   return (
-    <div className=" ">
-      <div className="max-w-7xl m-auto mt-64  px-6   grid place-items-center ">
-        <div className="">
-          <h1 className="text-4xl font-black text-center helvetic-Head-font text-slate-900 mb-4 animated-box-fade animated-box-fade-2s ">
-            Our Team
-          </h1>
-          <p className="text-lg font-thin text-center  lg:w-3/4 m-auto w-full animated-box-fade animated-box-fade-4s ">
-            Our strength lies in our experienced directors and technical team,
-            who bring a wealth of knowledge and innovation to every project.
-          </p>
-        </div>
+    <div className=" mt-24">
+      <div
+      className="relative h-screen px-6 "
+      style={{
+        backgroundImage: `url(${ourTeam.src})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
+      <div className="absolute inset-0 bg-black bg-opacity-40"></div> {/* Black overlay with low opacity */}
+      <div className="relative z-10 text-center pt-40">
+        <h1 className="text-4xl helvetic-sub-title-font font-black text-white mb-4 animated-box-fade animated-box-fade-2s">
+          Our Team
+        </h1>
+        <p className="text-lg font-thin text-white lg:w-3/4 mx-auto w-full animated-box-fade animated-box-fade-4s">
+          Our strength lies in our experienced directors and technical team,
+          who bring a wealth of knowledge and innovation to every project.
+        </p>
       </div>
+    </div>
+
+
       <div className="h-[195vh] lg:h-[100vh] lg:w-full lg:mt-[10rem]"
         style={{
           backgroundImage: `url("https://www.thechennaiangels.com/wp-content/uploads/2023/03/bca-bg-1.png")`,
