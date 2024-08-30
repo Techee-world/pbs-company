@@ -21,7 +21,7 @@ const Page = () => {  // Changed 'page' to 'Page'
   }, []);
 
   return (
-    <div className=" mt-24">
+    <div className=" lg:mt-24">
       <div
       className="relative h-screen px-6 "
       style={{
@@ -128,7 +128,7 @@ const Page = () => {  // Changed 'page' to 'Page'
           <h1 className="text-xl font-bold mt-4 text-center lg:text-start helvetic-sub-title-sub-font">
             LEADERSHIP
           </h1>
-          <div className="grid grid-cols-1 place-items-center lg:place-items-start md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 place-items-center lg:place-items-start md:grid-cols-2 lg:grid-cols-4 gap-4">
             <LeadersCard />
             <LeadersCard />
             <LeadersCard />
@@ -147,7 +147,7 @@ const Page = () => {  // Changed 'page' to 'Page'
           <h1 className="text-xl font-bold mt-4  text-center lg:text-start helvetic-sub-title-sub-font ">
             BUSINESS DEVELOPMENT
           </h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 place-items-center lg:place-items-start  lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-2 place-items-center lg:place-items-start  lg:grid-cols-4 gap-4">
             <LeadersCard />
             <LeadersCard />
             <LeadersCard />
@@ -158,7 +158,7 @@ const Page = () => {  // Changed 'page' to 'Page'
           <h1 className="text-xl font-bold mt-4  text-center lg:text-start  helvetic-sub-title-sub-font">
             MARKETING
           </h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 place-items-center lg:place-items-start  lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-2 place-items-center lg:place-items-start  lg:grid-cols-4 gap-4">
             <LeadersCard />
             <LeadersCard />
             <LeadersCard />
@@ -166,7 +166,7 @@ const Page = () => {  // Changed 'page' to 'Page'
           </div>
         </div>
       </div>
-      <div className="max-w-7xl m-auto py-16 flex px-6 lg:px-0 flex-col items-center">
+      <div className="max-w-7xl m-auto lg:py-16 flex px-6 lg:px-0 flex-col items-center">
         <h1 className="text-2xl font-bold text-center my-4 helvetic-Head-font">
           Ask Questions
         </h1>

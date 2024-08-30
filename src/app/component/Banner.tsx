@@ -1,5 +1,5 @@
 'use client'
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectFade } from 'swiper/modules';
 import Image from 'next/image';
@@ -36,8 +36,31 @@ const slides: Slide[] = [
 ];
 
 const Banner: React.FC = () => {
+  const [isDesktop, setIsDesktop] = useState(false);
+  useEffect(() => {
+    const desktopQuery = window.matchMedia('(min-width: 1024px)');
+    
+    const handleDeviceChange = (e:any) => {
+      setIsDesktop(e.matches);
+    };
+
+    // Initial check
+    handleDeviceChange(desktopQuery);
+
+    // Listen for changes in screen size
+    desktopQuery.addEventListener('change', handleDeviceChange);
+
+    // Cleanup listener on component unmount
+    return () => {
+      desktopQuery.removeEventListener('change', handleDeviceChange);
+    };
+  }, []);
+  // const mobileQuery = window.matchMedia('(max-width: 639px)');
+  // const tabletQuery = window.matchMedia('(min-width: 640px) and (max-width: 1023px)');
+  // const desktopQuery = window.matchMedia('(min-width: 1024px)');
+
   return (
-    <div style={{backgroundImage:`url(${bannerImage.src})`}} className="h-screen  bg-blue-50 w-full boject-cover bg-center bg-cover">
+    <div style={{ backgroundImage: isDesktop ? `url(${bannerImage.src})`: ''}} className="h-screen  relative  bg-blue-50 w-full boject-cover bg-center bg-cover">
       <Swiper
         modules={[Autoplay, EffectFade]}
         effect="fade"
@@ -57,7 +80,7 @@ const Banner: React.FC = () => {
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <div className="max-w-6xl mx-auto min-h-screen flex items-center py-10 px-4 sm:px-6 lg:px-8">
+            <div className="max-w-6xl mx-auto min-h-screen flex items-start lg:items-center mt-16 lg:mt-0 lg:py-10 px-4 sm:px-6 lg:px-8">
               <div className="w-full flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 relative">
                 <motion.div
                   initial={{ opacity: 0, y: 50 }}

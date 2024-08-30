@@ -7,8 +7,8 @@ import Button from "./Button";
 const HomeFunding: React.FC = () => {
   return (
     <div className="bg-blue-100">
-    <section  className=" relative py-6 lg:py-24 max-w-7xl m-auto text-white px-4 md:px-0 lg:px-8 flex sm:gap-0 gap-20 flex-col-reverse md:flex-row md:items-center lg:items-end">
-      <div className="md:w-1/2 mt-8 md:mt-0  sm:text-center md:text-left">
+    <section  className=" relative py-6 lg:py-24 max-w-7xl m-auto text-white px-4 md:px-0 lg:px-8 flex sm:gap-0 gap-8 flex-col-reverse md:flex-row md:items-center lg:items-end">
+      <div className="md:w-1/2   sm:text-center md:text-left">
         <p className="inline-block text-sm font-semibold uppercase bg-blue-200 text-blue-600 py-1 px-4 rounded-lg mb-4" data-aos="fade-up"
      data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="200">
           Funding Solutions

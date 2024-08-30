@@ -5,6 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 // import line from '../../../public/line.png'
 import logo from '../../../public/logo.png'
+import vission from '../../../public/vission.png'
 
 export default function AboutPage() {
   useEffect(() => {
@@ -28,12 +29,12 @@ export default function AboutPage() {
       <div className="relative z-10 max-w-7xl mx-auto p-4 py-[2rem] mb-28 lg:mb-0">
         <div className="flex md:flex-row flex-col items-center justify-between">
           <div className="mb-10 w-full">
-            <div className="flex items-center lg:flex-row flex-col lg:justify-between lg:items-center lg:pt-20 gap-8 lg:gap-0 lg:mt-0 lg:h-screen">
+            <div className="flex items-center lg:flex-row flex-col lg:justify-between lg:items-center lg:pt-20 gap-8 lg:gap-0 lg:mt-0 lg:h-3/4">
               <div className="my-6 w-full lg:w-1/2 animated-box-fade">
-                <h1 className="text-3xl font-bold my-4 helvetic-Head-font text-blue-600">
+                <h1 className="text-3xl lg:text-5xl font-bold my-4 helvetic-Head-font text-blue-600">
                   Company Overview
                 </h1>
-                <p className="text-lg font-light md:w-[90%] w-full border-b">
+                <p className="text-lg font-light md:w-[90%] w-full ">
                   We pride ourselves on staying ahead with the latest technology
                   and maintaining the highest standards of compliance and quality
                   in all our ventures. Join us at PBS, where your business
@@ -45,7 +46,7 @@ export default function AboutPage() {
                 <Image
                   src={logo}
                   alt="Person giving thumbs up"
-                  className="w-full h-96 object-cover shadow-sm"
+                  className="w-full h-96 object-cover "
                   width={500}
                   height={300}
                 />
@@ -65,7 +66,7 @@ export default function AboutPage() {
                 data-aos-delay="400"
               >
                 <Image
-                  src="https://img.freepik.com/free-vector/vision-statement-concept-illustration_114360-7576.jpg?t=st=1724962423~exp=1724966023~hmac=1f42281f81ab4bc3df7403c22595105fd518649e63cd8a3b4fd0ea01abe5de48&w=740"
+                  src={vission}
                   alt="Person giving thumbs up"
                   className="w-full h-96 object-cover shadow-sm"
                   width={500}
