@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useState, useEffect } from "react";
-import logo from "../../../public/logo.png";
+import logo from "../../../public/images/logo.png";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -40,11 +40,11 @@ const NavBar = () => {
         isScrolled
           ? "bg-gradient-to-b from-white/100 to-white/60 shadow-md"
           : "bg-transparent"
-      } transition-all duration-300  lg:fixed top-0 left-0 w-full  lg:p-10 py-4 z-50 ${
-        isMenuOpen ? "bg-white fade-in sticky top-0 left-0 " : ""
+      } transition-all duration-300  sticky top-0 left-0 w-full  lg:p-4 p-0 py-4 z-50 ${
+        isMenuOpen ? "bg-white  sticky top-0 left-0 " : ""
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="2xl:max-w-7xl max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">

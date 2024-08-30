@@ -21,7 +21,7 @@ const HomeAbout = () => {
       >
         WHO <span className='text-blue-600'>NEEDS US </span> 
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12 lg:gap-16 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12 lg:gap-16 2xl:max-w-7xl max-w-6xl mx-auto">
         <WhoNeedUsCard />
         <WhoNeedUsCard />
         <WhoNeedUsCard />

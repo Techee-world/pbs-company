@@ -3,11 +3,11 @@ import Link from "next/link";
 import React from "react";
 import { FiCheck } from "react-icons/fi";
 import Button from "./Button";
-import meeting from '../../../public/meeting2.png'
+import meeting from '../../../public/images/meeting2.png'
 
 const HomeMeetRoom: React.FC = () => {
   return (
-    <section className="py-0 pb-16 max-w-7xl m-auto px-4 md:px-8 lg:px-16 flex flex-col md:flex-row justify-between items-center gap-8">
+    <section className="py-10 pb-16 2xl:max-w-7xl max-w-6xl m-auto px-4 md:px-8 lg:px-16 flex flex-col md:flex-row justify-between items-center gap-8">
       {/* <div className="md:w-1/2 w-full flex   justify-center" data-aos="fade-up"
      data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="800">
         <div className="relative bg-transparent border p-6 border-gray-300 rounded-full">

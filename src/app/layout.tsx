@@ -26,7 +26,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-gradient-to-r from-blue-50 to-gray-100">
+      <body className="bg-white">
         <NavBar />
         {children}
         <Footer />

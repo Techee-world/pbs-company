@@ -1,14 +1,19 @@
 'use client'
 import React, { useEffect } from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Button from "../Button";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import the AOS CSS
 
 interface Title {
-  title:string
+  img: string | StaticImageData; 
+  capacity:string;
+  rite:string;
+  second?:string;
+  name:string;
+  subTitle:string
 }
-const Meeting: React.FC<Title> = ({title}) => {
+const  Meeting: React.FC<Title> = ({  name, img , capacity, rite , second ,subTitle}) => {
   useEffect(() => {
     AOS.init({
       once: true, // Whether animation should happen only once - while scrolling down
@@ -20,8 +25,8 @@ const Meeting: React.FC<Title> = ({title}) => {
   }, []);
 
   return (
-    <div className="py-20 px-4 sm:px-6 lg:px-8 mb-20 lg:mb-0">
-      <div className="max-w-7xl mx-auto">
+    <div className="lg:py-20 py-8 px-4 sm:px-6 lg:px-8 mb-20 lg:mb-0">
+      <div className="2xl:max-w-7xl max-w-6xl mx-auto">
         <div className="flex lg:flex-row flex-col items-center justify-between gap-8">
           <div>
             <h2
@@ -31,8 +36,7 @@ const Meeting: React.FC<Title> = ({title}) => {
               data-aos-duration="800"
               data-aos-delay="100"
             >
-             {title} Elevate Your Events with{" "}
-              <span className="text-blue-600">Premium Meeting Spaces</span>
+           {  subTitle}
             </h2>
             <p
               className="text-gray-600 mb-6 text-lg"
@@ -53,7 +57,7 @@ const Meeting: React.FC<Title> = ({title}) => {
                 data-aos-duration="800"
                 data-aos-delay="300"
               >
-                Conference Hall
+                {name}
               </div>
               <div
                 className="border border-gray-600 rounded-lg px-3 py-2 text-center w-full outline outline-offset-2 outline-2 outline-blue-600"
@@ -62,7 +66,7 @@ const Meeting: React.FC<Title> = ({title}) => {
                 data-aos-duration="800"
                 data-aos-delay="400"
               >
-                10 nos
+               Capacity Up to   {capacity} People
               </div>
               <div
                 className="border border-gray-600 rounded-lg px-3 py-2 text-center w-full outline outline-offset-2 outline-2 outline-blue-600"
@@ -71,17 +75,18 @@ const Meeting: React.FC<Title> = ({title}) => {
                 data-aos-duration="800"
                 data-aos-delay="500"
               >
-                $ 2000
+                 {rite}
               </div>
-              <div
-                className="border border-gray-600 rounded-lg px-3 py-2 text-center w-full outline outline-offset-2 outline-2 outline-blue-600"
+             <div
+                className={`${second === '' ? '' :" border outline outline-offset-2 outline-2 outline-blue-600"} border-gray-600 rounded-lg px-3 py-2 text-center w-full `}
                 data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom"
                 data-aos-duration="800"
                 data-aos-delay="600"
               >
-                1000+
-              </div>
+                {second}
+              </div> 
+             
             </div>
             <div className="flex flex-col space-y-4">
               <div
@@ -177,7 +182,7 @@ const Meeting: React.FC<Title> = ({title}) => {
             data-aos-delay="400"
           >
             <Image
-              src="https://t4.ftcdn.net/jpg/00/80/91/11/360_F_80911186_RoBCsyLrNTrG7Y1EOyCsaCJO5DyHgTox.jpg"
+              src={img}
               alt="Coworking in India"
               className="w-full h-auto rounded-lg"
               width={500}

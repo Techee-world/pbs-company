@@ -7,6 +7,7 @@ import {
 } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import the AOS CSS
+import Link from "next/link";
 
 const ContactUs: React.FC = () => {
   useEffect(() => {
@@ -20,7 +21,7 @@ const ContactUs: React.FC = () => {
   }, []);
   return (
     <section className=" h-screen   flex items-center justify-center mt-6 lg:mt-2 mb-28 lg:mb-0 py-40 px-4">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3   gap-8">
+      <div className="2xl:max-w-7xl max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3   gap-8">
         <div className="lg:col-span-2">
           <button className="bg-blue-200 text-blue-600 py-1 px-4  rounded-full text-sm mb-4"  data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
@@ -103,8 +104,8 @@ const ContactUs: React.FC = () => {
             <FaEnvelope className="text-blue-500 text-3xl mr-4" />
             <div className="montserrat-font">
               <h4 className="text-lg font-semibold text-gray-700 helvetic-sub-title-sub-font">Email</h4>
-              <p className="text-gray-500">michelle.rivera@example.com</p>
-              <p className="text-gray-500">willie.jennings@example.com</p>
+              <p className="text-gray-500">shafi@pbsgroup.in</p>
+              {/* <p className="text-gray-500">willie.jennings@example.com</p> */}
             </div>
           </div>
           <div className="flex items-center p-6 rounded-lg border border-gray-400"  data-aos="fade-up"
@@ -126,6 +127,7 @@ const ContactUs: React.FC = () => {
               <p className="text-gray-500">Sunday 2.Pm To 7.Pm</p>
             </div>
           </div> */}
+          <Link href='https://www.google.com/maps/place/PBS+GLOBAL+BUSINESS/@11.3196759,75.9960522,20.11z/data=!4m15!1m8!3m7!1s0x3ba641801beef9e9:0xb2830e78854a4e17!2sMukkam,+Kerala!3b1!8m2!3d11.3214948!4d75.9952897!16s%2Fm%2F064mnv5!3m5!1s0x3ba641004cc869c9:0x594e7c93a7ea90c6!8m2!3d11.3196559!4d75.9967332!16s%2Fg%2F11w2f_91_n?entry=ttu&g_ep=EgoyMDI0MDgyOC4wIKXMDSoASAFQAw%3D%3D' >
           <div className="flex items-center p-6  rounded-lg border border-gray-400"  data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="800"
@@ -134,10 +136,12 @@ const ContactUs: React.FC = () => {
             <div className="montserrat-font">
               <h4 className="text-lg font-semibold text-gray-700 helvetic-sub-title-sub-font">Location</h4>
               <p className="text-gray-500">
-                8502 Preston Rd. Inglewood, Maine 98380
+              PBS GLOBAL 
+Business networking company
               </p>
             </div>
           </div>
+          </Link>
         </div>
       </div>
     </section>

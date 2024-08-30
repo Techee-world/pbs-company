@@ -3,7 +3,8 @@ import React, { useEffect } from "react";
 import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import the AOS CSS
-import service1 from '../../../../public/service1.jpg'
+import service1 from '../../../../public/images/service1.jpg'
+import Link from "next/link";
 
 const Training: React.FC = () => {
   useEffect(() => {
@@ -16,8 +17,8 @@ const Training: React.FC = () => {
     AOS.refresh();
   }, []);
   return (
-    <div className=" lg:pt-40 pb-20">
-      <div className="max-w-7xl mx-auto p-4 lg:p-0">
+    <div className=" lg:pt-10 pb-20">
+      <div className="2xl:max-w-7xl max-w-6xl mx-auto p-4 lg:p-0">
       <div className="flex relative items-center lg:mb-20 mb-10 animated-box-fade ">
             <Image
               src={service1}
@@ -45,12 +46,13 @@ const Training: React.FC = () => {
         <div className="flex flex-col gap-8">
           <div >
             <div className="w-full">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4 helvetic-sub-title-sub-font"  data-aos="fade-up"
+              <h2 id="five" className="text-2xl font-bold text-gray-900 mb-4 helvetic-sub-title-sub-font"  data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="800"
             data-aos-delay="300">
                <span className="text-blue-600">Individual</span>  Training
               </h2>
+    
               <p className="text-gray-600 mb-6 text-lg w-full"  data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="800"
@@ -61,7 +63,7 @@ const Training: React.FC = () => {
               </p>
             </div>
             <div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4 helvetic-sub-title-sub-font"  data-aos="fade-up"
+              <h2 id="six" className="text-2xl font-bold text-gray-900 mb-4 helvetic-sub-title-sub-font"  data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="800"
             data-aos-delay="500">
@@ -112,7 +114,7 @@ const Training: React.FC = () => {
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="800"
             data-aos-delay="900">
-              <h2 className="text-2xl font-bold text-blue-600 mb-4 helvetic-sub-title-sub-font" >
+              <h2 id="seven" className="text-2xl font-bold text-blue-600 mb-4 helvetic-sub-title-sub-font" >
               <span className="text-blue-600">Soft Skills </span>  Development
               </h2>
               <p className="text-gray-600 mb-6 text-lg w-full">
@@ -122,7 +124,7 @@ const Training: React.FC = () => {
                 overall performance.
               </p>
             </div>
-            <div className="w-full h-auto rounded-lg "  data-aos="fade-up"
+            {/* <div className="w-full h-auto rounded-lg "  data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="800"
             data-aos-delay="1000">
@@ -133,14 +135,14 @@ const Training: React.FC = () => {
               width={100}
               height={30}
             />
-            </div>
+            </div> */}
           </div>
           <div className="flex items-center mt-6 lg:mt-0 lg:flex-row flex-col gap-4 pl-0 lg:pl-6">
             <div  data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="800"
             data-aos-delay="900">
-              <h2 className="text-2xl font-bold text-blue-600 mb-4 helvetic-sub-title-sub-font">
+              <h2 id="eight" className="text-2xl font-bold text-blue-600 mb-4 helvetic-sub-title-sub-font">
                <span className="text-blue-600">Executive</span>  Coaching
               </h2>
               <p className="text-gray-600 mb-6 text-lg w-full">
@@ -150,7 +152,7 @@ const Training: React.FC = () => {
                 capabilities.
               </p>
             </div>
-            <div className="w-full h-auto rounded-lg "  data-aos="fade-up"
+            {/* <div className="w-full h-auto rounded-lg "  data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="800"
             data-aos-delay="1000">
@@ -162,7 +164,7 @@ const Training: React.FC = () => {
               width={100}
               height={30}
             />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

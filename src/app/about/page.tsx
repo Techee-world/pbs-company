@@ -4,8 +4,8 @@ import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 // import line from '../../../public/line.png'
-import logo from '../../../public/logo.png'
-import vission from '../../../public/vission.png'
+import logo from '../../../public/images/logo.png'
+import vission from '../../../public/images/vission.png'
 
 export default function AboutPage() {
   useEffect(() => {
@@ -26,7 +26,7 @@ export default function AboutPage() {
       ></div> */}
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto p-4 py-[2rem] mb-28 lg:mb-0">
+      <div className="relative z-10 2xl:max-w-7xl max-w-6xl mx-auto p-4 py-[2rem] mb-28 lg:mb-0">
         <div className="flex md:flex-row flex-col items-center justify-between">
           <div className="mb-10 w-full">
             <div className="flex items-center lg:flex-row flex-col lg:justify-between lg:items-center lg:pt-20 gap-8 lg:gap-0 lg:mt-0 lg:h-3/4">
@@ -42,7 +42,8 @@ export default function AboutPage() {
                   mutual growth and success.
                 </p>
               </div>
-              <div className="animated-box-fade">
+              <div data-aos="fade-left" data-aos-duration="800"
+                data-aos-delay="400" >
                 <Image
                   src={logo}
                   alt="Person giving thumbs up"
@@ -60,8 +61,7 @@ export default function AboutPage() {
 
             <div className="flex justify-between items-center  lg:flex-row flex-col-reverse lg:justify-between gap-8 lg:gap-0">
               <div
-                data-aos="fade-up"
-                data-aos-anchor-placement="top-bottom"
+                data-aos="fade-right"
                 data-aos-duration="800"
                 data-aos-delay="400"
               >
@@ -77,7 +77,7 @@ export default function AboutPage() {
               <div className="lg:w-1/2 w-full">
                 <div className="my-6">
                   <h1
-                    className="text-3xl font-bold my-4 helvetic-sub-title-font text-blue-600"
+                    className="text-3xl lg:text-5xl font-bold my-4 helvetic-sub-title-font text-blue-600"
                     data-aos="fade-up"
                     data-aos-anchor-placement="top-bottom"
                     data-aos-duration="800"
@@ -100,7 +100,7 @@ export default function AboutPage() {
                 </div>
                 <div className="my-6">
                   <h1
-                    className="text-3xl font-bold my-4 helvetic-sub-title-font text-blue-600"
+                    className="text-3xl font-bold lg:text-5xl my-4 helvetic-sub-title-font text-blue-600"
                     data-aos="fade-up"
                     data-aos-anchor-placement="top-bottom"
                     data-aos-duration="800"

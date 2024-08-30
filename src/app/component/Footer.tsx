@@ -7,7 +7,7 @@ import {
   FaLinkedinIn,
   FaPinterestP,
 } from "react-icons/fa";
-import logo from "../../../public/darkLogo.png";
+import logo from "../../../public/images/darkLogo.png";
 import Image from "next/image";
 
 const Footer: React.FC = () => {
@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
             <Link href='/contact'><h4 className="helvetic-sub-title-font text-2xl md:text-4xl tex-white"> Contact Us</h4></Link> 
           </div>
         </div>
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="2xl:max-w-7xl max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div className="space-y-4">
             <div className="flex-shrink-0">
               <Link href="/" aria-label="Home">
