@@ -7,7 +7,7 @@ import training from '../../../../public/images/training.jpeg'
 
 const ServicesHome: React.FC = () => {
     const [pageSwitch, setPageSwitch] = useState(0)
-  const hallData = ["Training Romm", "Conference Room", "Conference Room Plus"];
+  const hallData = ["Training Room", "Conference Room", "Conference Room Plus"];
   return (
     <div>
       <div className=" pt-16 px-4 lg:px-0 2xl:max-w-7xl max-w-6xl m-auto">

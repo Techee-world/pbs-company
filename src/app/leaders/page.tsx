@@ -45,12 +45,13 @@ const Page = () => {  // Changed 'page' to 'Page'
     </div>
 
 
-      <div className="h-fit pb-6 lg:pb-0  lg:h-[100vh] lg:w-full lg:mt-[10rem] "
+      <div className="h-fit pb-6 lg:pb-0  lg:h-fit  lg:w-full lg:mt-[10rem] "
         style={{
           backgroundImage: `url(${mdBackground.src})`,
         }}
       >
-        <div className="2xl:max-w-7xl max-w-6xl m-auto relativ mt-8 flex flex-col md:flex-row gap-6 pt-28  items-start  text-white  md:space-x-6 px-4">
+        <h3 className="text-center  text-white font-black helvetic-Head-font text-3xl lg:text-4xl pt-10">CEO</h3>
+        <div className="2xl:max-w-7xl pb-8 max-w-6xl m-auto relativ  flex flex-col md:flex-row gap-6 pt-6 items-start  text-white  md:space-x-6 px-4">
           {/* <div
             className=" border-8 z-10 -rotate-[9deg] absolute sm:w-[25rem] w-[21rem]  lg:w-80 h-[60vh] lg:h-[60vh] top-28 lg:top-32 left-4 lg:left-5 border-white p-1 mb-4 md:mb-0"
             data-aos="fade-up"

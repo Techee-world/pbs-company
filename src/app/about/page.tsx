@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 // import line from '../../../public/line.png'
 import logo from '../../../public/images/logo.png'
 import vission from '../../../public/images/vission.png'
+import Seo from "../seo/Seo";
 
 export default function AboutPage() {
   useEffect(() => {
@@ -17,7 +18,15 @@ export default function AboutPage() {
   }, []);
 
   return (
-    // <div className="h-auto w-full bg-no-repeat bg-cover center " style={{backgroundImage:`url(${line.src})`}}>
+    <>
+     <Seo
+        title="About Us"
+        description="Learn about PBS Group, our mission, values, and leadership team."
+        url="https://pbsgroup.in/about"
+        keywords='pbs, pbsgroup , pbs about'
+        image="/images/og-image-about.jpg"
+      />
+    {/* <div className="h-auto w-full bg-no-repeat bg-cover center " style={{backgroundImage:`url(${line.src})`}}> */}
     <div className="relative min-h-screen">
       {/* Background Image */}
       {/* <div  
@@ -127,6 +136,7 @@ export default function AboutPage() {
         </div>
       </div>
     </div>
-    // </div>
+     {/* </div> */}
+    </>
   );
 }

@@ -15,7 +15,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="UTF-8" />
       </Head>
-    <div className=" background-image-home-page">
+    <div >
       <Banner />
       <HomeAbout />
       <div className="">

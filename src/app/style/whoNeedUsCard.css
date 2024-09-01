@@ -25,7 +25,7 @@
     height: 295px;
     padding: 14px 24px;
     background: #fff;
-
+    border-radius: 14px;
     transition: .4s .15s cubic-bezier(.17,.67,.5,1.03);
 }
 
