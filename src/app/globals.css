@@ -64,3 +64,31 @@ body {
 }
 
 
+/* .............. */
+/* Position pagination dots at the bottom of the banner */
+.swiper-pagination-custom {
+  position: absolute;
+  bottom: 190px !important; /* Adjust the bottom position */
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+
+.swiper-pagination-bullet {
+  width: 20px !important; 
+  height: 5px !important; 
+  border-radius: 10px !important; 
+  background-color: #007bff !important;
+  margin: 0 5px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ff4500; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important; 
+  width: 20px !important; 
+  height: 5px !important; 
+}
+

@@ -1,10 +1,11 @@
 'use client'
 import React, { useEffect } from "react";
-import Image from "next/image";
+// import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import the AOS CSS
-import service1 from '../../../../public/images/service1.jpg'
-import Link from "next/link";
+import TrainingTopCart from "../TrainingTopCart";
+// import service1 from '../../../../public/images/service1.jpg'
+// import Link from "next/link";
 
 const Training: React.FC = () => {
   useEffect(() => {
@@ -19,14 +20,20 @@ const Training: React.FC = () => {
   return (
     <div className=" lg:pt-10 pb-20">
       <div className="2xl:max-w-7xl max-w-6xl mx-auto p-4 lg:p-0">
-      <div className="flex relative items-center lg:mb-20 mb-10 animated-box-fade ">
-            <Image
+      <div className=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6  relative items-center lg:mb-20 mb-10 animated-box-fade ">
+            {/* <Image
               src={service1}
               alt="Elevating Businesses Through Edge"
               className="w-full h-auto lg:w-full lg:h-[70vh] object-cover rounded-lg "
               width={400}
               height={100}
-            />
+            /> */}
+            <TrainingTopCart />
+            <TrainingTopCart />
+            <TrainingTopCart />
+            <TrainingTopCart />
+            <TrainingTopCart />
+            <TrainingTopCart />
              {/* <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent rounded-lg"> </div> */}
           </div>
         <h1 className="text-3xl font-bold text-blue-600 mb-6 sm:text-5xl helvetic-Head-font lg:text-5xl"  data-aos="fade-up"

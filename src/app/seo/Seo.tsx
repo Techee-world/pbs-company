@@ -12,7 +12,7 @@ interface SEOProps {
 const Seo: React.FC<SEOProps> = ({ title, description, keywords, url, image, twitterHandle }) => {
   const defaultTitle = "PBS Group";
   const defaultDescription = "PBS Group provides professional business services tailored to your needs.";
-  const defaultKeywords = "Business Services, PBS Group, Consulting";
+  const defaultKeywords = "Business Services, PBS Group, Consulting,pbs , pbsgroup , business training , business developement , individul training ";
   const defaultUrl = "https://pbsgroup.in";
   const defaultImage = "/images/og-image.jpg"; // Add a default image
   const defaultTwitterHandle = "@PBSGroup";

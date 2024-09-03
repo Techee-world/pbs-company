@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'helvetic';
+    src: url('../fonts/HelveticaNeue-Light.otf') format('opentype'),
+         url('../fonts/HelveticaNeue-LightCondObl.otf') format('opentype'),
+         url('../fonts/HelveticaNeue-LightExt.otf') format('opentype'),
+         url('../fonts/HelveticaNeue-LightExtObl.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'helvetic 75';
+    src: url('../fonts/HelveticaNeue-Condensed.otf') format('opentype'),
+         url('../fonts/HelveticaNeue-CondensedObl.otf') format('opentype'),
+         url('../fonts/HelveticaNeueCondensedBlack.ttf') format('truetype'),
+         url('../fonts/HelveticaNeueCondensedBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.helvetic-font {
+    font-family: 'helvetic', sans-serif;
+}
+
+body {
+    font-family: 'helvetic 75', sans-serif;
+}
+
+.montserrat-font {
+    font-family: 'helvetic', sans-serif;
+}

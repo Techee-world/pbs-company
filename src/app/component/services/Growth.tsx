@@ -4,7 +4,7 @@ import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import the AOS CSS
 
-const Funding: React.FC = () => {
+const Growth: React.FC = () => {
   useEffect(() => {
     AOS.init({
       once: true, // Whether animation should happen only once - while scrolling down
@@ -23,9 +23,9 @@ const Funding: React.FC = () => {
           data-aos-duration="800"
           data-aos-delay="300"
         >
-          FUNDING SOLUTIONS FOR EVERY STAGE
+          BUSINESS GROWTH DEVELOPMENT
         </h2>
-        <p
+        {/* <p
           className="text-gray-200 mb-10 text-lg montserrat-font helvetic-font"
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
@@ -38,7 +38,7 @@ const Funding: React.FC = () => {
           type and scrambled it to make a type specimen book. It has survived
           not only five centuries into electronic typesetting remaining
           essentially unchanged.
-        </p>
+        </p> */}
         <div className="flex items-center lg:flex-row flex-col mt-10 lg:mt-0">
           <div className="flex items-center lg:flex-row flex-col w-full gap-4 lg:border-r sm:mb-6 lg:mb-0 mb-0 border-gray-400 pr-0 lg:pr-6">
             <div>
@@ -49,7 +49,7 @@ const Funding: React.FC = () => {
                 data-aos-duration="800"
                 data-aos-delay="500"
               >
-                New Startups
+                YBN
               </h2>
               <p
                 className="text-gray-200 mb-6 text-lg montserrat-font"
@@ -58,10 +58,8 @@ const Funding: React.FC = () => {
                 data-aos-duration="800"
                 data-aos-delay="600"
               >
-                Ignite your entrepreneurial journey with our startup-friendly
-                funding. From initial seed capital to expansion financing,
-                we're committed to fueling your vision and driving growth
-                from day one.
+               YBN offers a wide range of comprehensive consultancy services, custom tailored to suit client requirements, vision and market value.
+For more details <span className="underline text-red-300 cursor-pointer">visit here</span> 
               </p>
             </div>
             {/* <div
@@ -81,7 +79,7 @@ const Funding: React.FC = () => {
             </div> */}
           </div>
           <div className="flex items-center lg:flex-row flex-col gap-4 w-full mt-6 lg:mt-0 pl-0 lg:pl-6">
-            <div>
+            <div className="w-full">
               <h2 id="ten"
                 className="text-2xl font-bold text-gray-200 mb-4 helvetic-sub-title-sub-font"
                 data-aos="fade-up"
@@ -89,9 +87,30 @@ const Funding: React.FC = () => {
                 data-aos-duration="800"
                 data-aos-delay="800"
               >
-                Existing Companies Seeking Expansion
+                ACS – financial and compliance Services
               </h2>
-              <p
+              <div className="flex justify-between  items-center">
+              <ul  data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="800"
+              data-aos-delay="800" className="text-white ">
+                <li className="list-disc">GST Services</li>
+                <li className="list-disc">Income Tax Services</li>
+                <li className="list-disc">Audit & Certification</li>
+                <li className="list-disc">Registration & Compliances</li>
+              </ul>
+              <ul  data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="800"
+              data-aos-delay="900" className="text-white ">
+                <li className="list-disc">Accounting & Book Keeping</li>
+                <li className="list-disc">Drafting & Documentation</li>
+                <li className="list-disc">Management Consultancy</li>
+                <li className="list-disc">Human Resource Services</li>
+              </ul>
+
+              </div>
+              {/* <p
                 className="text-gray-200 mb-6 text-lg"
                 data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom"
@@ -103,7 +122,7 @@ const Funding: React.FC = () => {
                 business to new heights. Whether it's launching new products,
                 entering new markets, or optimizing operations, we're your
                 trusted ally for sustainable expansion.
-              </p>
+              </p> */}
             </div>
             {/* <div
               className="w-full h-auto rounded-lg"
@@ -129,4 +148,4 @@ const Funding: React.FC = () => {
   );
 };
 
-export default Funding;
+export default Growth;
