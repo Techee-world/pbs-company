@@ -20,7 +20,7 @@ const NavBar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 0) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -40,7 +40,7 @@ const NavBar = () => {
         isScrolled
           ? "bg-gradient-to-b from-white/100 to-white/60 shadow-md"
           : "bg-transparent"
-      } transition-all duration-300  sticky top-0 left-0 w-full  lg:p-4 p-0 py-4 z-50 ${
+      } transition-all duration-300  fixed top-0 left-0 w-full  lg:p-4 p-0 py-4 z-50 ${
         isMenuOpen ? "bg-white  sticky top-0 left-0 " : ""
       }`}
     >
@@ -68,7 +68,7 @@ const NavBar = () => {
                 href={item.path}
                 className={`relative text-gray-900 mt-2 ${
                   pathname === item.path ? "text-blue-700" : ""
-                } font-black text-lg hover:text-blue-600 transition duration-300 group`}
+                } font-normal text-lg hover:text-blue-600 transition duration-300 group`}
               >
                 {item.title}
                 <span
@@ -80,7 +80,7 @@ const NavBar = () => {
             ))}
             <Link
               href="/contact"
-              className={`relative text-blue-600 border hover:bg-blue-600 hover:text-white px-4 py-2 border-blue-600 rounded-lg font-black text-lg transition duration-300 group ${
+              className={`relative text-blue-600 border hover:bg-blue-600 hover:text-white px-4 py-2 border-blue-600 rounded-lg font-normal text-lg transition duration-300 group ${
                 pathname === "/contact" ? "bg-blue-600 text-white" : ""
               }`}
             >

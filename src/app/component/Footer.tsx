@@ -34,8 +34,8 @@ const Footer: React.FC = () => {
         <div   data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
           data-aos-duration="800"
-          data-aos-delay="400" className="  max-w-4xl m-auto -mt-72 mb-20 rounded-lg px-4">
-          <div className="bg-blue-600 rounded-2xl  text-white w-full flex  justify-center  items-center h-40 lg:h-64 text-center">
+          data-aos-delay="400" className="  max-w-3xl m-auto -mt-72 mb-20 rounded-lg px-4">
+          <div className="bg-blue-600 rounded-2xl  text-white w-full flex  justify-center  items-center h-28 lg:h-40 text-center">
             <Link href='/contact'><h4 className="helvetic-sub-title-font text-2xl md:text-4xl tex-white"> Contact Us</h4></Link> 
           </div>
         </div>

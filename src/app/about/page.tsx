@@ -38,12 +38,12 @@ export default function AboutPage() {
       <div className="relative z-10 2xl:max-w-7xl max-w-6xl mx-auto p-4 py-[2rem] mb-28 lg:mb-0">
         <div className="flex md:flex-row flex-col items-center justify-between">
           <div className="mb-10 w-full">
-            <div className="flex items-center lg:flex-row flex-col lg:justify-between lg:items-center lg:pt-20 gap-8 lg:gap-0 lg:mt-0 lg:h-3/4">
-              <div className="my-6 w-full lg:w-1/2 animated-box-fade">
-                <h1 className="text-3xl lg:text-5xl font-bold my-4 helvetic-Head-font text-blue-600">
+            <div className="flex items-center lg:flex-row flex-col lg:justify-center lg:items-center gap-8 lg:gap-0 lg:mt-0 lg:h-screen">
+              <div className=" w-full lg:w-full text-center animated-box-fade">
+                <h1 className="text-3xl lg:text-5xl font-bold mb-10 helvetic-Head-font text-blue-600">
                   Company Overview
                 </h1>
-                <p className="text-lg font-light md:w-[90%] w-full ">
+                <p className="text-base font-normal  w-full ">
                   We pride ourselves on staying ahead with the latest technology
                   and maintaining the highest standards of compliance and quality
                   in all our ventures. Join us at PBS, where your business
@@ -51,7 +51,7 @@ export default function AboutPage() {
                   mutual growth and success.
                 </p>
               </div>
-              <div data-aos="fade-left" data-aos-duration="800"
+              {/* <div data-aos="fade-left" data-aos-duration="800"
                 data-aos-delay="400" >
                 <Image
                   src={logo}
@@ -60,7 +60,7 @@ export default function AboutPage() {
                   width={500}
                   height={300}
                 />
-              </div>
+              </div> */}
             </div>
 
             {/* <div 
@@ -118,7 +118,7 @@ export default function AboutPage() {
                     Mission
                   </h1>
                   <p
-                    className="text-lg font-light montserrat-font md:w-[90%] w-full"
+                    className="text-lg font-light montserrat-font md:w-[90%] w-full border-b border-gray-400 pb-4"
                     data-aos="fade-up"
                     data-aos-anchor-placement="top-bottom"
                     data-aos-duration="800"
@@ -129,6 +129,35 @@ export default function AboutPage() {
                     support services to help businesses navigate challenges and
                     scale new heights ensuring sustainable success
                   </p>
+                </div>
+                <div className="my-6">
+                  <h1
+                    className="text-3xl font-bold lg:text-5xl my-4 helvetic-sub-title-font text-blue-600"
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-duration="800"
+                    data-aos-delay="600"
+                  >
+                    Values
+                  </h1>
+                  <div className="grid md:grid-cols-2 grid-cols-1 gap-6">
+
+                  {[Array(6).fill(0).map((_,i)=>
+                  <div className="flex items-center gap-2">
+<div className="w-1  h-6 bg-blue-600">
+</div>
+                  <span
+                    className="text-lg font-light montserrat-font md:w-[90%] w-full"
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-duration="800"
+                    data-aos-delay="800"
+                  >
+                   Accountability
+                  </span>
+                  </div>
+                    )]}
+                  </div>
                 </div>
               </div>
             </div>

@@ -15,7 +15,8 @@ module.exports = {
       "easy.razorpay.com",
       "pngtree.com",
 "w7.pngwing.com",
-"plus.unsplash.com"
+"plus.unsplash.com",
+"cdn-icons-png.flaticon.com"
 
     ],
   },

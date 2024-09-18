@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'helvetic';
     src: url('../fonts/HelveticaNeue-Light.otf') format('opentype'),
          url('../fonts/HelveticaNeue-LightCondObl.otf') format('opentype'),
@@ -28,4 +28,29 @@ body {
 
 .montserrat-font {
     font-family: 'helvetic', sans-serif;
+} */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.helvetic-Head-font{
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+.helvetic-sub-title-font{
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 600;
+  }
+.helvetic-sub-title-sub-font {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 400;
+  }
+
+  body {
+    font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.8px;
 }

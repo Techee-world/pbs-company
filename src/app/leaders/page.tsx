@@ -86,7 +86,7 @@ const Page = () => {  // Changed 'page' to 'Page'
             data-aos-duration="800"
             data-aos-delay="700"
           >
-            <p className="text-lg md:text-lg lg:ml-6  leading-relaxed">
+            <p className="text-base lg:ml-6   ">
               I am thrilled to announce the launch of our new business
               consultancy, dedicated to empowering businesses and professionals
               to reach their full potential. In today s rapidly evolving

@@ -1,0 +1,90 @@
+.hover-effect-container {
+    --c: rgb(108, 108, 253); 
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+}
+  
+  .hover-effect-container h3 {
+    position: relative;
+    z-index: 2;
+  }
+
+  
+  .hover-effect-container::before,
+  .hover-effect-container::after,
+  .hover-effect-container .span-1,
+  .hover-effect-container .span-2 {
+    content: '';
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    border-radius: 50%;
+    transform: translateY(150%);
+    transition: 0.5s;
+    z-index: 1;
+  }
+  
+  .hover-effect-container:hover {
+    color: black;
+  }
+  
+  .hover-effect-container:hover::before {
+    transform: translateY(0) scale(2);
+  }
+  
+  .hover-effect-container:hover .span-1 {
+    transform: translateY(0) scale(2);
+  }
+  
+  .hover-effect-container:hover .span-2 {
+    transform: translateY(0) scale(2);
+  }
+  
+  .hover-effect-container::before {
+    left: 0;
+  }
+  
+  .hover-effect-container .span-1 {
+    left: 25%;
+    transition-delay: 0.1s;
+  }
+  
+  .hover-effect-container .span-2 {
+    left: 50%;
+    transition-delay: 0.2s;
+  }
+  
+  .hover-effect-container::after {
+    left: 75%;
+    transform: translateY(150%);
+    transition-delay: 0.3s;
+  }
+  
+  .hover-effect-container:hover::after {
+    transform: translateY(0) scale(2);
+  }
+  
+
+
+
+  /* animation css  */
+  /* bannerCardHover.css */
+@keyframes bottomToTop {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-bottom-to-top {
+    animation: bottomToTop 1.5s ease-in-out;
+  }
+  
+  /* animation css  */

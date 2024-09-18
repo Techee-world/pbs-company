@@ -7,6 +7,9 @@ import Seo from "./seo/Seo";
 import Image from "next/image";
 import mdBackground from '../../public/images/bca-bg-1.png'
 import md from '../../public/images/md.jpeg'
+import SecondBanner from "./component/SecondBanner";
+import ShortBriefBanner from "./component/ShortBriefBanner";
+import ThreePoints from "./component/ThreePoints";
 
 export default function Home() {
   return (
@@ -17,7 +20,14 @@ export default function Home() {
         url="https://pbsgroup.in/about"
         image="/images/og-image-about.jpg"
       />
-      <Banner />
+      {/* <Banner /> */}
+      <div className="bg-banner-gradient">
+
+      <SecondBanner />
+      <ShortBriefBanner />
+      <ThreePoints />
+      </div>
+
       <HomeAbout />
       <div className="h-fit pb-6 lg:pb-0  lg:h-fit  lg:w-full "
         style={{
@@ -60,7 +70,7 @@ export default function Home() {
             data-aos-duration="800"
             data-aos-delay="700"
           >
-            <p className="text-lg md:text-lg lg:ml-6  leading-relaxed">
+            <p className="text-base lg:ml-6  ">
               I am thrilled to announce the launch of our new business
               consultancy, dedicated to empowering businesses and professionals
               to reach their full potential. In today s rapidly evolving
