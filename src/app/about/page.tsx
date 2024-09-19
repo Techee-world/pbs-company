@@ -143,7 +143,7 @@ export default function AboutPage() {
                   <div className="grid md:grid-cols-2 grid-cols-1 gap-6">
 
                   {[Array(6).fill(0).map((_,i)=>
-                  <div className="flex items-center gap-2">
+                  <div key={i} className="flex items-center gap-2">
 <div className="w-1  h-6 bg-blue-600">
 </div>
                   <span
