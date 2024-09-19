@@ -6,10 +6,11 @@ import HomeAbout from "./component/HomeAbout";
 import Seo from "./seo/Seo";
 import Image from "next/image";
 import mdBackground from '../../public/images/bca-bg-1.png'
-import md from '../../public/images/md.jpeg'
+import md from '../../public/images/ceo.jpg'
 import SecondBanner from "./component/SecondBanner";
 import ShortBriefBanner from "./component/ShortBriefBanner";
 import ThreePoints from "./component/ThreePoints";
+import SecondAbout from "./component/SecondAbout";
 
 export default function Home() {
   return (
@@ -21,21 +22,24 @@ export default function Home() {
         image="/images/og-image-about.jpg"
       />
       {/* <Banner /> */}
-      <div className="bg-banner-gradient">
+      <div style={{backgroundImage:`url('https://tegain-website-static-media-bucket.s3.ap-south-1.amazonaws.com/assets/images/21-05-2024/landing-gradient.svg')`,
+      backgroundRepeat: 'no-repeat',
+     }} className="">
 
       <SecondBanner />
       <ShortBriefBanner />
+      <SecondAbout />
       <ThreePoints />
       </div>
 
       <HomeAbout />
-      <div className="h-fit pb-6 lg:pb-0  lg:h-fit  lg:w-full "
-        style={{
-          backgroundImage: `url(${mdBackground.src})`,
-        }}
+      <div className="h-fit pb-6 lg:pb-0  lg:h-fit  lg:w-full bg-gradient-to-l from-blue-500 to-blue-950  text-gray-300 "
+        // style={{
+        //   backgroundImage: `url(${mdBackground.src})`,
+        // }}
       >
-        <h3 className="text-center  text-white font-black helvetic-Head-font text-3xl lg:text-4xl pt-10">CEO</h3>
-        <div className="2xl:max-w-7xl pb-8 max-w-6xl m-auto relativ  flex flex-col md:flex-row gap-6 pt-6 items-start  text-white  md:space-x-6 px-4">
+      
+        <div className="2xl:max-w-7xl pb-8  max-w-6xl m-auto relativ  flex flex-col md:flex-row gap-6 pt-16 items-start  text-white  md:space-x-6 px-4">
           {/* <div
             className=" border-8 z-10 -rotate-[9deg] absolute sm:w-[25rem] w-[21rem]  lg:w-80 h-[60vh] lg:h-[60vh] top-28 lg:top-32 left-4 lg:left-5 border-white p-1 mb-4 md:mb-0"
             data-aos="fade-up"
@@ -50,7 +54,7 @@ export default function Home() {
             alt="Sridhar Vembu"
             width={300}
             height={500}
-            className="z-40 rounded-sm w-full border-[8px] border-white  md:w-80 lg:w-80 p-2"
+            className="z-40 w-full object-cover  md:w-80 lg:w-96 rounded-2xl shadow-xl lg:h-[30rem] "
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="800"
@@ -70,7 +74,8 @@ export default function Home() {
             data-aos-duration="800"
             data-aos-delay="700"
           >
-            <p className="text-base lg:ml-6  ">
+              <h3 className="lg:ml-6   text-white font-black helvetic-Head-font text-start text-3xl lg:text-4xl pb-6">MD's Message</h3>
+            <p className="text-base font-normal text-gray-300 lg:ml-6  ">
               I am thrilled to announce the launch of our new business
               consultancy, dedicated to empowering businesses and professionals
               to reach their full potential. In today s rapidly evolving
@@ -102,7 +107,7 @@ export default function Home() {
             <p className="mt-4 text-right text-base md:text-lg font-bold text-white"  data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="800"
-            data-aos-delay="1000">
+            data-aos-delay="800">
               - Habeebu Rahiman <br />
               <span className="text-sm md:text-base font-normal">MD - PBS</span>
             </p>

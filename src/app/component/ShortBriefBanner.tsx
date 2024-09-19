@@ -3,9 +3,9 @@ import React from 'react'
 const ShortBriefBanner = () => {
   return (
     <div>
-         <section className="py-20 px-4 text-center ">
+         <section className="pt-20 pb-8 px-4 text-center ">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-3xl md:text-5xl  mb-10 helvetic-sub-title-font">
+        <h1 className="text-3xl md:text-5xl button-color-text  mb-10 helvetic-sub-title-font">
           Our Services are Efficient, <br className="hidden md:block" />
           Modern, and Customer-Focused
         </h1>

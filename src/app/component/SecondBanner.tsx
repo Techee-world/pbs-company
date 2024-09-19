@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import type { NextPage } from 'next';
 import Button from './Button';
 import '../style/bannerCardHover.css';
+import Image from 'next/image';
 
 const SecondBanner: NextPage = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -77,14 +78,13 @@ const SecondBanner: NextPage = () => {
 
   return (
     <div 
-    // style={{
-    //     backgroundImage: `url('https://tegain-website-static-media-bucket.s3.ap-south-1.amazonaws.com/assets/images/28-06-2024/union.svg')`,
-    //     backgroundRepeat: 'no-repeat',
-    //     backgroundPosition: 'center',
-    //     backgroundSize: 'contain',  // Ensures the image scales appropriately while maintaining its aspect ratio
-    //     marginTop: '100px',
-    //   }} 
-      className="min-h-screen max-w-7xl pt-28 m-auto flex flex-col items-center justify-center gap-6">
+    style={{
+        backgroundImage: `url('https://tegain-website-static-media-bucket.s3.ap-south-1.amazonaws.com/assets/images/21-05-2024/landing-grid.svg')`,
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+        backgroundSize: 'contain',  // Ensures the image scales appropriately while maintaining its aspect ratio
+      }} 
+      className="min-h-screen max-w-7xl pt-40 m-auto flex flex-col items-center justify-center gap-6">
       {slides.map((slide, index) => (
         <div key={index} className={`w-full ${index === activeIndex ? 'block' : 'hidden'}`}>
           <header
@@ -92,10 +92,12 @@ const SecondBanner: NextPage = () => {
               index === activeIndex ? 'animate-bottom-to-top opacity-100' : 'opacity-0'
             }`}
           >
-            <h1 className="text-4xl md:text-[55px] w-3/4 text-center  m-auto leading-tight font-black text-gray-800  helvetic-Head-font">
-              {slide.title}
+            <h1 className="text-4xl md:text-[55px] w-3/4 text-center  m-auto leading-tight font-black button-color-text  helvetic-Head-font">
+              {/* {slide.title} */}
+              <span className="button-color-text ">{slide.title.split(' ')[0]}</span>{' '}
+                    {slide.title.split(' ').slice(1).join(' ')}
             </h1>
-            <p className="text-base text-gray-600 my-10">{slide.description}</p>
+            <p className="text-base  text-gray-600 my-6">{slide.description}</p>
           </header>
 
           {/* Button */}
@@ -107,10 +109,10 @@ const SecondBanner: NextPage = () => {
 
           {/* Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
-            <Card title={slide.page1} isActive={index === activeIndex} />
-            <Card title={slide.page2} isActive={index === activeIndex} />
-            <Card title={slide.page3} isActive={index === activeIndex} />
-            <Card title={slide.page4} isActive={index === activeIndex} />
+            <Card title={slide.page1} url='https://tegain-website-static-media-bucket.s3.ap-south-1.amazonaws.com/assets/images/17-05-2024/it-collaborate.svg' some='YBN' des='Management Consulting For Startups' isActive={index === activeIndex} />
+            <Card title={slide.page2} url='https://tegain-website-static-media-bucket.s3.ap-south-1.amazonaws.com/assets/images/17-05-2024/business-connect.svg'  some='ACS' des='Financial Consulting Solutions' isActive={index === activeIndex} />
+            <Card title={slide.page3} url='https://tegain-website-static-media-bucket.s3.ap-south-1.amazonaws.com/assets/images/17-05-2024/back-office.svg' some='IT' des='Complete IT EcoSystem' isActive={index === activeIndex} />
+            <Card title={slide.page4} url='https://tegain-website-static-media-bucket.s3.ap-south-1.amazonaws.com/assets/images/17-05-2024/it-recruit.svg' some='Training' des='Tailored Training Sessions' isActive={index === activeIndex} />
           </div>
         </div>
       ))}
@@ -122,19 +124,41 @@ const SecondBanner: NextPage = () => {
 interface CardProps {
   title: string[];
   isActive: boolean;
+  some:string
+  des:string
+  url:string
 }
 
-const Card: React.FC<CardProps> = ({ title, isActive }) => {
+const Card: React.FC<CardProps> = ({ title, isActive ,some ,des , url}) => {
   return (
-    <div
-      className={`transition-opacity duration-500 ease-in-out hover-effect-container  bg-white cursor-pointer p-6 rounded-lg shadow-lg w-full h-32 flex items-center justify-center ${
-        isActive ? 'animate-bottom-to-top opacity-100' : 'opacity-0'
-      }`}
-    >
-      <h3 className="text-base font-semibold text-gray-800 helvetic-sub-title-font">{title[0]}</h3>
-      <div className="span-1"></div>
-    <div className="span-2"></div>
+    // <div
+    //   className={`transition-opacity duration-500 ease-in-out hover-effect-container  bg-white cursor-pointer p-6 rounded-lg shadow-lg w-full h-32 flex items-center justify-center ${
+    //     isActive ? 'animate-bottom-to-top opacity-100' : 'opacity-0'
+    //   }`}
+    // >
+    //   <h3 className="text-base font-semibold text-gray-800 helvetic-sub-title-font">{title[0]}</h3>
+    //   <div className="span-1"></div>
+    // <div className="span-2"></div>
+    // </div>
+
+
+    <div   style={{
+      backgroundImage: `url(${url})`,
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center',  // Ensures the image scales appropriately while maintaining its aspect ratio
+    }}  className="relative cursor-pointer bg-blue-100 rounded-lg shadow-lg p-4 sm:p-6 flex flex-col items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-4 max-w-md mx-auto sm:max-w-lg lg:max-w-xl">
+    {/* Badge Section */}
+    <div className=" mb-10 bg-white border border-gray-300 rounded-full px-3 py-1 flex items-center space-x-2 shadow-md">
+      <span className="text-black font-medium text-sm">{some}</span>
     </div>
+
+    {/* Text Section */}
+    <div className="flex-grow text-center sm:text-left">
+      <h2 className="text-lg font-semibold text-black">
+       {des}
+      </h2>
+    </div>
+  </div>
   );
 };
 

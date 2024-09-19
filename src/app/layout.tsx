@@ -26,12 +26,24 @@ export default function RootLayout({
           rel="stylesheet"
         />
         {/* font hanken grotesk  */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com"  />
         <link
           href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,463;1,463&display=swap"
           rel="stylesheet"
-          />
+          /> */}
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet"/>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet"/>
+
           {/* font hanken grotesk  */}
       </head>
       <body className="bg-white">

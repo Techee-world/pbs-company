@@ -4,6 +4,33 @@ import WhoNeedUsCard from './WhoNeedUsCard';
 // import blueBackground from '../../../public/bca-bg-1.png'
 
 const HomeAbout = () => {
+
+   const content = [
+    {
+      title:"Startups with Unique Ideas",
+      des:"Launch your venture with a solid foundation. We offer tailored advice and strategies to kickstart your success"
+    },
+    {
+      title:"Business aiming to expand Horizons",
+      des:"Ready to take your business to new heights? Our seasoned consultants provide insights and tactics to fuel your growth and expansion"
+    },
+    {
+      title:"Business facing Challenges",
+      des:"Overcome obstacles with ease. We offer practical solutions to navigate through rough patches and emerge stronger than ever. Partner with us today and let's chart a course to your business success!"
+    },
+    {
+      title:"Startups with Unique Ideas: Launch your venture with a solid foundation. We offer tailored advice and strategies to kickstart your success.",
+      des:"Launch your venture with a solid foundation. We offer tailored advice and strategies to kickstart your success"
+    },
+    {
+      title:"Startups with Unique Ideas: Launch your venture with a solid foundation. We offer tailored advice and strategies to kickstart your success.",
+      des:"Launch your venture with a solid foundation. We offer tailored advice and strategies to kickstart your success"
+    },
+    {
+      title:"Startups with Unique Ideas: Launch your venture with a solid foundation. We offer tailored advice and strategies to kickstart your success.",
+      des:"Launch your venture with a solid foundation. We offer tailored advice and strategies to kickstart your success"
+    }
+   ]
   return (
     <div
       style={{
@@ -21,14 +48,16 @@ const HomeAbout = () => {
       >
         WHO <span className='text-blue-600'>NEEDS US </span> 
       </h1>
+      {content.map((item)=>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12 lg:gap-16 2xl:max-w-7xl max-w-6xl mx-auto">
-        <WhoNeedUsCard url='https://tegain-website-static-media-bucket.s3.ap-south-1.amazonaws.com/assets/images/17-05-2024/it-collaborate.svg' />
-        <WhoNeedUsCard url='https://tegain-website-static-media-bucket.s3.ap-south-1.amazonaws.com/assets/images/17-05-2024/it-recruit.svg' />
-        <WhoNeedUsCard url='https://tegain-website-static-media-bucket.s3.ap-south-1.amazonaws.com/assets/images/17-05-2024/back-office.svg' />
-        <WhoNeedUsCard url='https://tegain-website-static-media-bucket.s3.ap-south-1.amazonaws.com/assets/images/17-05-2024/business-connect.svg' />
-        <WhoNeedUsCard url='https://tegain-website-static-media-bucket.s3.ap-south-1.amazonaws.com/assets/images/17-05-2024/project-control-bg.svg' />
-        <WhoNeedUsCard url='https://tegain-website-static-media-bucket.s3.ap-south-1.amazonaws.com/assets/images/17-05-2024/evening-company.svg' />
+        <WhoNeedUsCard title={item.title} des={item.des} url='https://tegain-website-static-media-bucket.s3.ap-south-1.amazonaws.com/assets/images/17-05-2024/it-collaborate.svg' />
+        <WhoNeedUsCard title={item.title} des={item.des}  url='https://tegain-website-static-media-bucket.s3.ap-south-1.amazonaws.com/assets/images/17-05-2024/it-recruit.svg' />
+        <WhoNeedUsCard title={item.title} des={item.des}  url='https://tegain-website-static-media-bucket.s3.ap-south-1.amazonaws.com/assets/images/17-05-2024/back-office.svg' />
+        <WhoNeedUsCard title={item.title} des={item.des}  url='https://tegain-website-static-media-bucket.s3.ap-south-1.amazonaws.com/assets/images/17-05-2024/business-connect.svg' />
+        <WhoNeedUsCard title={item.title} des={item.des}  url='https://tegain-website-static-media-bucket.s3.ap-south-1.amazonaws.com/assets/images/17-05-2024/project-control-bg.svg' />
+        <WhoNeedUsCard title={item.title} des={item.des}  url='https://tegain-website-static-media-bucket.s3.ap-south-1.amazonaws.com/assets/images/17-05-2024/evening-company.svg' />
       </div>
+      )}
     </div>
   );
 }
