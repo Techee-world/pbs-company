@@ -15,6 +15,7 @@ const NavBar = () => {
     { path: "/about", title: "About" },
     { path: "/services", title: "Services" },
     { path: "/leaders", title: "Leaders" },
+    { path: "/Impact ", title: "Impact initiatives" },
     // { path: "/contact", title: "Contact" },
   ];
 

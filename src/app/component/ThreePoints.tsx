@@ -37,7 +37,7 @@ const ThreePoints = () => {
                 <div key={index} className="text-center flex flex-col items-center">
                   <div className=" text-white text-4xl font-bold p-4 rounded-full ">
                     {/* <Image src={service.icon} alt={service.title} width={50} height={50} /> */}
-                   {/* {service.some} */}
+                   {service.some}
                    {/* <NumberTicker value={100} /> */}
                   </div>
                   <h3 className="text-xl font-semibold mb-4">{service.title}</h3>
