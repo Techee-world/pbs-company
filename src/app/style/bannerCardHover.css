@@ -75,7 +75,7 @@
 @keyframes bottomToTop {
     0% {
       opacity: 0;
-      transform: translateY(100%);
+      transform: translateY(50%);
     }
     100% {
       opacity: 1;
@@ -84,7 +84,13 @@
   }
   
   .animate-bottom-to-top {
-    animation: bottomToTop 1.5s ease-in-out;
+    animation: bottomToTop 1.2s ease-in-out;
   }
   
+
+
+
   /* animation css  */
+
+
+

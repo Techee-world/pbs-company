@@ -9,7 +9,7 @@ interface SEOProps {
   twitterHandle?: string;
 }
 
-const Seo: React.FC<SEOProps> = ({ title, description, keywords, url, image, twitterHandle }) => {
+const Seo = ({ title, description, keywords, url, image, twitterHandle }:SEOProps) => {
   const defaultTitle = "PBS Group";
   const defaultDescription = "PBS Group provides professional business services tailored to your needs.";
   const defaultKeywords = "Business Services, PBS Group, Consulting,pbs , pbsgroup , business training , business developement , individul training ";

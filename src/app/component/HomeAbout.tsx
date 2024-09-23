@@ -39,11 +39,11 @@ const HomeAbout = () => {
    ]
   return (
     <div
-      style={{
-        backgroundImage:` url('https://www.thechennaiangels.com/wp-content/uploads/2023/03/bg-founder-voice.png')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}
+      // style={{
+      //   backgroundImage:` url('https://www.thechennaiangels.com/wp-content/uploads/2023/03/bg-founder-voice.png')`,
+      //   backgroundSize: 'cover',
+      //   backgroundPosition: 'center',
+      // }}
       className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 min-h-1/2  g h-[65rem] md:h-[55rem] lg:h-auto items-center flex flex-col justify-start"
     >
       <h1 
