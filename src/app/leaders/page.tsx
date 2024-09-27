@@ -3,13 +3,14 @@ import React, { useEffect } from "react";
 import LeadersCard from "../component/LeadersCard";
 import Link from "next/link";
 import Image from "next/image";
-import { RiDoubleQuotesL } from "react-icons/ri";
+// import { RiDoubleQuotesL } from "react-icons/ri";
 import Button from "../component/Button";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import the AOS CSS
-import ourTeam from '../../../public/images/10.jpg'
-import mdBackground from '../../../public/images/bca-bg-1.png'
-import md from '../../../public/images/md.jpeg'
+import ourTeam from '../../../public/images/ourTeam.jpg'
+// import mdBackground from '../../../public/images/bca-bg-1.png'
+// import md from '../../../public/images/md.jpeg'
+import md from '../../../public/images/Md.jpg'
 
 const Page = () => {  // Changed 'page' to 'Page'
   useEffect(() => {
@@ -23,16 +24,16 @@ const Page = () => {  // Changed 'page' to 'Page'
   }, []);
 
   return (
-    <div className=" ">
+    <div className=" pb-40">
       <div
-      className="relative h-screen px-6 "
+      className="relative flex w-full justify-center items-end pb-40 h-screen px-6 "
       style={{
         backgroundImage: `url(${ourTeam.src})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
     >
-      <div className="absolute inset-0 bg-black bg-opacity-40"></div> {/* Black overlay with low opacity */}
+      <div className="absolute inset-0 bg-black bg-opacity-50"></div> 
       <div className="relative z-10 text-center pt-40">
         <h1 className="text-4xl helvetic-sub-title-font font-black text-white mb-4 animated-box-fade animated-box-fade-2s">
           Our Team
@@ -45,13 +46,13 @@ const Page = () => {  // Changed 'page' to 'Page'
     </div>
 
 
-      <div className="h-fit pb-6 lg:pb-0  lg:h-fit  lg:w-full lg:mt-[10rem] "
-        style={{
-          backgroundImage: `url(${mdBackground.src})`,
-        }}
+    <div className="h-fit pb-6 lg:pb-0  lg:h-fit  lg:w-full bg-gradient-to-l from-blue-500 to-blue-950  text-gray-300 "
+        // style={{
+        //   backgroundImage: `url(${mdBackground.src})`,
+        // }}
       >
-        <h3 className="text-center  text-white font-black helvetic-Head-font text-3xl lg:text-4xl pt-10">CEO</h3>
-        <div className="2xl:max-w-7xl pb-8 max-w-6xl m-auto relativ  flex flex-col md:flex-row gap-6 pt-6 items-start  text-white  md:space-x-6 px-4">
+      
+        <div className="2xl:max-w-7xl pb-8  max-w-6xl m-auto relativ  flex flex-col md:flex-row gap-6 pt-16 items-start  text-white  md:space-x-6 px-4">
           {/* <div
             className=" border-8 z-10 -rotate-[9deg] absolute sm:w-[25rem] w-[21rem]  lg:w-80 h-[60vh] lg:h-[60vh] top-28 lg:top-32 left-4 lg:left-5 border-white p-1 mb-4 md:mb-0"
             data-aos="fade-up"
@@ -66,7 +67,7 @@ const Page = () => {  // Changed 'page' to 'Page'
             alt="Sridhar Vembu"
             width={300}
             height={500}
-            className="z-40 rounded-sm w-full border-[8px] border-white  md:w-80 lg:w-80 p-2"
+            className="z-40 w-full  object-cover  md:w-80 lg:w-96 rounded-2xl shadow-xl lg:h-[25rem] "
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="800"
@@ -86,7 +87,8 @@ const Page = () => {  // Changed 'page' to 'Page'
             data-aos-duration="800"
             data-aos-delay="700"
           >
-            <p className="text-base lg:ml-6   ">
+              <h3 className="lg:ml-6   text-white font-black helvetic-Head-font text-start text-3xl lg:text-4xl pb-6">Vice Chairperson's Message</h3>
+            <p className="text-base font-normal text-gray-300 lg:ml-6  ">
               I am thrilled to announce the launch of our new business
               consultancy, dedicated to empowering businesses and professionals
               to reach their full potential. In today s rapidly evolving
@@ -118,7 +120,7 @@ const Page = () => {  // Changed 'page' to 'Page'
             <p className="mt-4 text-right text-base md:text-lg font-bold text-white"  data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="800"
-            data-aos-delay="1000">
+            data-aos-delay="800">
               - Habeebu Rahiman <br />
               <span className="text-sm md:text-base font-normal">MD - PBS</span>
             </p>

@@ -54,7 +54,7 @@ export default function AboutPage() {
       <div className="absolute inset-0 bg-black bg-opacity-40"></div> {/* Black overlay with low opacity */}
       <div className="relative z-10 text-center pt-40">
         <h1 className="text-4xl helvetic-sub-title-font font-black text-white mb-4 animated-box-fade animated-box-fade-2s">
-        Company Overview
+        Who we are
         </h1>
         <p className="text-lg font-thin text-white lg:w-3/4 mx-auto w-full animated-box-fade animated-box-fade-4s">
         We pride ourselves on staying ahead with the latest technology
@@ -181,23 +181,20 @@ export default function AboutPage() {
               <div className="flex gap-10">
                 <div className="my-6 w-full">
                   <div className="grid  grid-cols-1 gap-6">
-                    {[
-                      Array(6)
-                        .fill(0)
-                        .map((_, i) => (
+                    {["Integrity ","  Quality "," Accountability "," Trust"," Innovation "," Competitive Collaboration"].map((item, i) => (
                           <ul key={i} className="flex items-center mt-3 gap-2">
                             <li
-                              className="text-lg list-decimal font-semibold montserrat-font md:w-[90%] w-full"
+                              className="text-lg list-disc font-semibold montserrat-font md:w-[90%] w-full"
                               data-aos="fade-up"
                               data-aos-anchor-placement="top-bottom"
                               data-aos-duration="800"
                               data-aos-delay="800"
                             >
-                              Accountability
+                              {item}
                             </li>
                           </ul>
-                        )),
-                    ]}
+                        ))
+                    }
                   </div>
                 </div>
                 <Image

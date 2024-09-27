@@ -14,7 +14,7 @@ const Funding: React.FC = () => {
 
   return (
     <>
-    <div className="bg-blue-600 py-20 px-4 sm:px-6 lg:px-8 ">
+    <div className="button-color py-20 px-4 sm:px-6 lg:px-8 ">
       <div className="2xl:max-w-7xl max-w-6xl mx-auto">
         <h2
           className="text-3xl font-bold mb-6 text-gray-200 sm:text-4xl helvetic-sub-title-font lg:text-4xl"

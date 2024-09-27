@@ -11,9 +11,10 @@ import logo from "../../../public/images/darkLogo.png";
 import Image from "next/image";
 
 const Footer: React.FC = () => {
+  // bg-[#0A1128]
   return (
     <>
-      <footer className="bg-[#0A1128]  text-gray-200  pt-48 pb-16 px-4 sm:px-6 lg:px-8 relative lg:pt-40">
+      <footer className=" button-color  text-gray-200  pt-48 pb-16 px-4 sm:px-6 lg:px-8 relative lg:pt-40">
         {/* <div
           className="bg-blue-600 w-full md:w-[60rem] rounded-lg z-50 -mt-60 mb-12 lg:-mt-0 lg:mb-0 lg:absolute -top-28 left-64 transform -translate-x-1/2 -translate-y-1/2 px-4 md:px-10 py-14 md:py-28"
           data-aos="fade-up"
@@ -34,8 +35,8 @@ const Footer: React.FC = () => {
         <div   data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
           data-aos-duration="800"
-          data-aos-delay="400" className="  max-w-3xl m-auto -mt-72 mb-20 rounded-lg px-4">
-          <div className="bg-blue-600 rounded-2xl  text-white w-full flex  justify-center  items-center h-28 lg:h-40 text-center">
+          data-aos-delay="400" className="  max-w-3xl m-auto -mt-56 mb-20 rounded-lg px-4">
+          <div className="button-color border-2 border-white rounded-2xl  text-white w-full flex  justify-center  items-center h-28 lg:h-40 text-center">
             <Link href='/contact'><h4 className="helvetic-sub-title-font text-2xl md:text-4xl tex-white"> Contact Us</h4></Link> 
           </div>
         </div>

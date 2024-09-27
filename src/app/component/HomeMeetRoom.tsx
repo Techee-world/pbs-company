@@ -7,7 +7,7 @@ import meeting from '../../../public/images/meeting2.png'
 
 const HomeMeetRoom: React.FC = () => {
   return (
-    <section className="py-10 pb-16 2xl:max-w-7xl max-w-6xl m-auto px-4 md:px-8 lg:px-16 flex flex-col md:flex-row justify-between items-center gap-8">
+    <section className="py-10 pb-40 2xl:max-w-7xl max-w-6xl m-auto px-4 md:px-8 lg:px-16 flex flex-col md:flex-row justify-between items-center gap-8">
       {/* <div className="md:w-1/2 w-full flex   justify-center" data-aos="fade-up"
      data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="800">
         <div className="relative bg-transparent border p-6 border-gray-300 rounded-full">
@@ -108,7 +108,7 @@ const HomeMeetRoom: React.FC = () => {
       <div className="md:w-1/2 md:text-left mt-2 md:mt-0">
         <p className="inline-block text-sm font-semibold uppercase bg-blue-200 text-blue-600 py-1 px-4 rounded-lg mb-4" data-aos="fade-up"
      data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="300">
-          Meeting Room space rental
+          Meeting Room space rental 
         </p>
         <h1 className="text-3xl sm:text-4xl uppercase  text-gray-900 mt-2 helvetic-Head-font" data-aos="fade-up"
      data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="500">
@@ -152,7 +152,7 @@ const HomeMeetRoom: React.FC = () => {
         <div data-aos="fade-up"
      data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="1000">
 
-        <Button title='Discover More' path='/services' />
+        <Button title='Discover More ' path='/services' />
         </div>
       </div>
     </section>

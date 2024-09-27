@@ -19,7 +19,7 @@ const ServicesHome: React.FC = () => {
               data-aos-delay="100"
             >
              Elevate Your Events with{" "}
-              <span className="text-blue-600">Premium Meeting Spaces</span>
+              <span className="">Premium Meeting Spaces</span>
             </h2>
       </div>
       <div className="flex justify-center items-center mt-4 px-4 lg:px-0 space-x-4">
@@ -27,7 +27,7 @@ const ServicesHome: React.FC = () => {
           {hallData.map((hall, index) => (
             <div
             onClick={()=>setPageSwitch(index)}
-              className={`border border-gray-400 rounded-lg p-3 w-full hover:bg-blue-600 ${pageSwitch === index ? 'bg-blue-600 text-white':''} hover:text-white cursor-pointer`}
+              className={`border border-gray-400 rounded-lg p-3 w-full button-color-one duration-500 ${pageSwitch === index ? 'button-color text-white duration-500':''} hover:text-white cursor-pointer`}
               key={index}
             >
               <h4 className="text-center  text-sm lg:text-lg">{hall}</h4>

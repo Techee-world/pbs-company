@@ -14,10 +14,10 @@ const Growth: React.FC = () => {
 
   return (
     <>
-    <div className="bg-blue-600 py-20 px-4 sm:px-6 lg:px-8 ">
+    <div className="py-20 px-4 sm:px-6 lg:px-8 ">
       <div className="2xl:max-w-7xl max-w-6xl mx-auto">
         <h2
-          className="text-3xl font-bold mb-6 text-gray-200 sm:text-4xl helvetic-sub-title-font lg:text-4xl"
+          className="text-3xl font-bold mb-6  sm:text-4xl helvetic-sub-title-font lg:text-4xl"
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
           data-aos-duration="800"
@@ -26,7 +26,7 @@ const Growth: React.FC = () => {
           BUSINESS GROWTH DEVELOPMENT
         </h2>
         {/* <p
-          className="text-gray-200 mb-10 text-lg montserrat-font helvetic-font"
+          className=" mb-10 text-lg montserrat-font helvetic-font"
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
           data-aos-duration="800"
@@ -43,7 +43,7 @@ const Growth: React.FC = () => {
           <div className="flex items-center lg:flex-row flex-col w-full gap-4 lg:border-r sm:mb-6 lg:mb-0 mb-0 border-gray-400 pr-0 lg:pr-6">
             <div>
               <h2 id="nine"
-                className="text-2xl font-bold text-gray-200 mb-4 helvetic-sub-title-sub-font"
+                className="text-2xl font-bold  mb-4 helvetic-sub-title-sub-font"
                 data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom"
                 data-aos-duration="800"
@@ -52,7 +52,7 @@ const Growth: React.FC = () => {
                 YBN
               </h2>
               <p
-                className="text-gray-200 mb-6 text-lg montserrat-font"
+                className=" mb-6 text-lg montserrat-font"
                 data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom"
                 data-aos-duration="800"
@@ -81,7 +81,7 @@ For more details <span className="underline text-red-300 cursor-pointer">visit h
           <div className="flex items-center lg:flex-row flex-col gap-4 w-full mt-6 lg:mt-0 pl-0 lg:pl-6">
             <div className="w-full">
               <h2 id="ten"
-                className="text-2xl font-bold text-gray-200 mb-4 helvetic-sub-title-sub-font"
+                className="text-2xl font-bold  mb-4 helvetic-sub-title-sub-font"
                 data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom"
                 data-aos-duration="800"
@@ -93,7 +93,7 @@ For more details <span className="underline text-red-300 cursor-pointer">visit h
               <ul  data-aos="fade-up"
               data-aos-anchor-placement="top-bottom"
               data-aos-duration="800"
-              data-aos-delay="800" className="text-white ">
+              data-aos-delay="800" className=" ">
                 <li className="list-disc">GST Services</li>
                 <li className="list-disc">Income Tax Services</li>
                 <li className="list-disc">Audit & Certification</li>
@@ -102,7 +102,7 @@ For more details <span className="underline text-red-300 cursor-pointer">visit h
               <ul  data-aos="fade-up"
               data-aos-anchor-placement="top-bottom"
               data-aos-duration="800"
-              data-aos-delay="900" className="text-white ">
+              data-aos-delay="900" className=" ">
                 <li className="list-disc">Accounting & Book Keeping</li>
                 <li className="list-disc">Drafting & Documentation</li>
                 <li className="list-disc">Management Consultancy</li>
@@ -111,7 +111,7 @@ For more details <span className="underline text-red-300 cursor-pointer">visit h
 
               </div>
               {/* <p
-                className="text-gray-200 mb-6 text-lg"
+                className=" mb-6 text-lg"
                 data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom"
                 data-aos-duration="800"

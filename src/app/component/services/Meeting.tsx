@@ -25,12 +25,12 @@ const  Meeting: React.FC<Title> = ({  name, img , capacity, rite , second ,subTi
   }, []);
 
   return (
-    <div className="lg:py-20 py-8 px-4 sm:px-6 lg:px-8 mb-20 lg:mb-0">
+    <div className="lg:py-20 py-8 px-4 sm:px-6 lg:pb-56 lg:px-8 mb-20 lg:mb-0">
       <div className="2xl:max-w-7xl max-w-6xl mx-auto">
         <div className="flex lg:flex-row flex-col items-center justify-between gap-8">
           <div>
             <h2
-              className="text-3xl font-bold text-gray-900 mb-6 sm:text-4xl lg:text-4xl helvetic-sub-title-font"
+              className="text-3xl font-bold  mb-6 sm:text-4xl lg:text-4xl helvetic-sub-title-font"
               data-aos="fade-up"
               data-aos-anchor-placement="top-bottom"
               data-aos-duration="800"
@@ -51,7 +51,7 @@ const  Meeting: React.FC<Title> = ({  name, img , capacity, rite , second ,subTi
             </p>
             <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-3 py-4">
               <div
-                className="border border-gray-600 rounded-lg px-3 py-2 text-center w-full outline outline-offset-2 outline-2 outline-blue-600"
+                className="border border-gray-600 rounded-lg px-3 py-2 text-center w-full outline outline-offset-2 outline-2 outline-button-color-text"
                 data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom"
                 data-aos-duration="800"
@@ -60,7 +60,7 @@ const  Meeting: React.FC<Title> = ({  name, img , capacity, rite , second ,subTi
                 {name}
               </div>
               <div
-                className="border border-gray-600 rounded-lg px-3 py-2 text-center w-full outline outline-offset-2 outline-2 outline-blue-600"
+                className="border border-gray-600 rounded-lg px-3 py-2 text-center w-full outline outline-offset-2 outline-2 outline-button-color-text"
                 data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom"
                 data-aos-duration="800"
@@ -69,7 +69,7 @@ const  Meeting: React.FC<Title> = ({  name, img , capacity, rite , second ,subTi
                Capacity Up to   {capacity} People
               </div>
               <div
-                className="border border-gray-600 rounded-lg px-3 py-2 text-center w-full outline outline-offset-2 outline-2 outline-blue-600"
+                className="border border-gray-600 rounded-lg px-3 py-2 text-center w-full outline outline-offset-2 outline-2 outline-button-color-text"
                 data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom"
                 data-aos-duration="800"
@@ -78,7 +78,7 @@ const  Meeting: React.FC<Title> = ({  name, img , capacity, rite , second ,subTi
                  {rite}
               </div>
              <div
-                className={`${second === '' ? '' :" border outline outline-offset-2 outline-2 outline-blue-600"} border-gray-600 rounded-lg px-3 py-2 text-center w-full `}
+                className={`${second === '' ? '' :" border outline outline-offset-2 outline-2 outline-button-color-text"} border-gray-600 rounded-lg px-3 py-2 text-center w-full `}
                 data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom"
                 data-aos-duration="800"

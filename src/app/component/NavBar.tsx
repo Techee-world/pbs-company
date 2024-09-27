@@ -68,12 +68,12 @@ const NavBar = () => {
                 key={item.path}
                 href={item.path}
                 className={`relative text-gray-900 mt-2 ${
-                  pathname === item.path ? "text-blue-700" : ""
-                } font-normal text-lg hover:text-blue-600 transition duration-300 group`}
+                  pathname === item.path ? "button-color-text" : ""
+                } font-normal text-lg button-color-two transition duration-300 group`}
               >
                 {item.title}
                 <span
-                  className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-600 transform origin-left transition-all duration-300 ease-out ${
+                  className={`absolute bottom-0 left-0 w-full h-0.5 button-color transform origin-left transition-all duration-300 ease-out ${
                     pathname === item.path ? "scale-x-100" : "scale-x-0"
                   } group-hover:scale-x-100`}
                 ></span>
@@ -81,8 +81,8 @@ const NavBar = () => {
             ))}
             <Link
               href="/contact"
-              className={`relative text-blue-600 border hover:bg-blue-600 hover:text-white px-4 py-2 border-blue-600 rounded-lg font-normal text-lg transition duration-300 group ${
-                pathname === "/contact" ? "bg-blue-600 text-white" : ""
+              className={`relative button-color-text border button-color-one hover:text-white px-4 py-2 border-blue-950 rounded-lg font-normal text-lg transition duration-300 group ${
+                pathname === "/contact" ? "button-color text-white" : ""
               }`}
             >
               Contact Us
@@ -100,7 +100,7 @@ const NavBar = () => {
           <div className="md:hidden  ">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-900 hover:text-blue-600"
+              className="text-gray-900 button-color-one"
               aria-label="Toggle Menu"
             >
               {isMenuOpen ? (
@@ -148,7 +148,7 @@ const NavBar = () => {
                 href={item.path}
                 className={`block px-4 py-2 text-gray-900 hover:bg-gray-100 transition duration-300 ${
                   pathname === item.path
-                    ? "underline underline-offset-8 text-blue-600"
+                    ? "underline underline-offset-8 button-color-text"
                     : ""
                 }`}
                 onClick={() => setIsMenuOpen(false)}
@@ -160,8 +160,8 @@ const NavBar = () => {
           <Link
             href="/contact"
             onClick={() => setIsMenuOpen(false)}
-            className={`text-blue-600 border mb-6 hover:bg-blue-600 w-fit  hover:text-white px-4 py-2 border-blue-600 rounded-lg font-bold text-lg transition duration-300 ${
-              pathname === "/contact" ? "text-blue-600" : ""
+            className={`button-color-text border mb-6 button-color-one w-fit  hover:text-white px-4 py-2 border-blue-950 rounded-lg font-bold text-lg transition duration-300 ${
+              pathname === "/contact" ? "button-color-text" : ""
             }`}
           >
             Contact Us

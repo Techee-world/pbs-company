@@ -10,7 +10,7 @@ export default function Services() {
       <div className="">
        <Training />
        <Funding />
-       <div className="bg-white max-w-6xl m-auto h-px  "></div>
+       {/* <div className="bg-white max-w-6xl m-auto h-px  "></div> */}
        <Growth/>
        <ServicesHome />
        {/* <Meeting /> */}

@@ -102,9 +102,16 @@ html {
   --tw-text-opacity: 1;
 background-color: rgb(16 42 86 / var(--tw-text-opacity));
 }
+.button-color-one:hover {
+  --tw-text-opacity: 1;
+background-color: rgb(16 42 86 / var(--tw-text-opacity));
+}
+.button-color-two:hover {
+  --tw-text-opacity: 1;
+  color: rgb(16 42 86 / var(--tw-text-opacity));
+}
 .button-color-text{
   --tw-text-opacity: 1;
-color: rgb(16 42 86 / var(--tw-text-opacity));
 }
 
 body{
@@ -113,8 +120,32 @@ body{
 }
 
 
-/* banner page card border animation  */
+/* flip card who need us animation  */
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
 
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
 
-/* banner page card border animation  */
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.perspective-150 {
+  perspective: 150em;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.transition-transform {
+  transition: transform 0.6s ease;
+}
+
+/* flip card who need us animation  */

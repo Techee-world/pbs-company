@@ -1,4 +1,6 @@
+'use client'
 import Banner from "./component/Banner";
+import {useEffect} from 'react'
 import HomeTraining from "./component/HomeTraining";
 import HomeFunding from "./component/HomeFunding";
 import HomeMeetRoom from "./component/HomeMeetRoom";
@@ -11,8 +13,27 @@ import SecondBanner from "./component/SecondBanner";
 import ShortBriefBanner from "./component/ShortBriefBanner";
 import ThreePoints from "./component/ThreePoints";
 import SecondAbout from "./component/SecondAbout";
+import SecondWhoNeedUs from "./component/SecodWhoNeedUs";
+// import SmoothScroll from 'smooth-scroll';
 
 export default function Home() {
+  useEffect(() => {
+    const handleSmoothScroll = (e: Event) => {
+      const target = e.target as HTMLAnchorElement;
+      if (target.tagName === 'A' && target.getAttribute('href')?.startsWith('#')) {
+        e.preventDefault();
+        const sectionId = target.getAttribute('href');
+        const section = document.querySelector(sectionId);
+        section?.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+
+    document.addEventListener('click', handleSmoothScroll);
+
+    return () => {
+      document.removeEventListener('click', handleSmoothScroll);
+    };
+  }, []);
   return (
     <>
       <Seo
@@ -33,6 +54,10 @@ export default function Home() {
       </div>
 
       <HomeAbout />
+ 
+ <SecondWhoNeedUs />
+
+
       <div className="h-fit pb-6 lg:pb-0  lg:h-fit  lg:w-full bg-gradient-to-l from-blue-500 to-blue-950  text-gray-300 "
         // style={{
         //   backgroundImage: `url(${mdBackground.src})`,
@@ -74,7 +99,7 @@ export default function Home() {
             data-aos-duration="800"
             data-aos-delay="700"
           >
-              <h3 className="lg:ml-6   text-white font-black helvetic-Head-font text-start text-3xl lg:text-4xl pb-6">MD's Message</h3>
+              <h3 className="lg:ml-6   text-white font-black helvetic-Head-font text-start text-3xl lg:text-4xl pb-6">Chairman's Message</h3>
             <p className="text-base font-normal text-gray-300 lg:ml-6  ">
               I am thrilled to announce the launch of our new business
               consultancy, dedicated to empowering businesses and professionals
@@ -120,3 +145,7 @@ export default function Home() {
     </>
   );
 }
+
+
+// leader ship background image is change 
+// 672 image in leader page md massage 

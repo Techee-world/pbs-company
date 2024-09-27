@@ -18,7 +18,7 @@ const Training: React.FC = () => {
     AOS.refresh();
   }, []);
   return (
-    <div className=" lg:pt-10 pb-20">
+    <div className=" lg:pt-36 pb-20">
       <div className="2xl:max-w-7xl max-w-6xl mx-auto p-4 lg:p-0">
       <div className=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6  relative items-center lg:mb-20 mb-10 animated-box-fade ">
             {/* <Image
@@ -36,7 +36,7 @@ const Training: React.FC = () => {
             <TrainingTopCart />
              {/* <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent rounded-lg"> </div> */}
           </div>
-        <h1 className="text-3xl font-bold text-blue-600 mb-6 sm:text-5xl helvetic-Head-font lg:text-5xl"  data-aos="fade-up"
+        <h1 className="text-3xl font-bold  mb-6 sm:text-5xl helvetic-Head-font lg:text-5xl"  data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="800"
             data-aos-delay="100">
@@ -57,7 +57,7 @@ const Training: React.FC = () => {
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="800"
             data-aos-delay="300">
-               <span className="text-blue-600">Individual</span>  Training
+               <span className="button-color-text">Individual</span>  Training
               </h2>
     
               <p className="text-gray-600 mb-6 text-lg w-full"  data-aos="fade-up"
@@ -74,7 +74,7 @@ const Training: React.FC = () => {
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="800"
             data-aos-delay="500">
-               <span className="text-blue-600">Group</span>  Training
+               <span className="button-color-text">Group</span>  Training
               </h2>
               <p className="text-gray-600 mb-6 text-lg w-full"  data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
@@ -91,7 +91,7 @@ const Training: React.FC = () => {
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="800"
             data-aos-delay="700">
-               <span className="text-blue-600">Our job-oriented</span>  training programs
+               <span className="button-color-text">Our job-oriented</span>  training programs
               </h2>
               <p className="text-gray-600 mb-6 text-lg w-full"  data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
@@ -121,8 +121,8 @@ const Training: React.FC = () => {
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="800"
             data-aos-delay="900">
-              <h2 id="seven" className="text-2xl font-bold text-blue-600 mb-4 helvetic-sub-title-sub-font" >
-              <span className="text-blue-600">Soft Skills </span>  Development
+              <h2 id="seven" className="text-2xl font-bold button-color-text mb-4 helvetic-sub-title-sub-font" >
+              <span className="button-color-text">Soft Skills </span>  Development
               </h2>
               <p className="text-gray-600 mb-6 text-lg w-full">
                 Training sessions focused on essential soft skills such as
@@ -149,8 +149,8 @@ const Training: React.FC = () => {
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="800"
             data-aos-delay="900">
-              <h2 id="eight" className="text-2xl font-bold text-blue-600 mb-4 helvetic-sub-title-sub-font">
-               <span className="text-blue-600">Executive</span>  Coaching
+              <h2 id="eight" className="text-2xl font-bold button-color-text mb-4 helvetic-sub-title-sub-font">
+               <span className="button-color-text">Executive</span>  Coaching
               </h2>
               <p className="text-gray-600 mb-6 text-lg w-full">
                 One-on-one coaching sessions for executives and managers to
