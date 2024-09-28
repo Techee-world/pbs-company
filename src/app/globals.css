@@ -71,7 +71,7 @@ html {
 /* Position pagination dots at the bottom of the banner */
 .swiper-pagination-custom {
   position: absolute;
-  bottom: 10px !important; /* Adjust the bottom position */
+  bottom: 80px !important; /* Adjust the bottom position */
   left: 0;
   right: 0;
   display: flex;

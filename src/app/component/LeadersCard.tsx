@@ -3,7 +3,12 @@ import Image from "next/image";
 import React from "react";
 import ceo from "../../../public/images/ceo.png";
 
-const LeadersCard = () => {
+interface LeaderTypes {
+  name:string;
+  designation:string
+}
+
+const LeadersCard = ({name,designation}:LeaderTypes) => {
   return (
     <div>
       <div
@@ -22,7 +27,8 @@ const LeadersCard = () => {
         />
       </div>
       <div className="py-2 text-center ">
-        <h1 className="text-sm font-bold ">Lorem ipsum dolor sit </h1>
+        <h1 className="text-base font-bold ">{name}</h1>
+        <p className="text-sm">{designation}</p>
       </div>
     </div>
   );

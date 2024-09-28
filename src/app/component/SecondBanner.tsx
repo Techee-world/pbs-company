@@ -97,7 +97,7 @@ const SecondBanner: NextPage = () => {
         }}>
       <div
         
-        className="min-h-screen max-w-7xl m-auto flex flex-col items-center justify-center gap-6"
+        className="min-h-[92vh] max-w-7xl m-auto flex flex-col items-center justify-center gap-6"
       >
         {slides.map((slide, index) => (
           <div
@@ -134,36 +134,36 @@ const SecondBanner: NextPage = () => {
             </div>
 
             {/* Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
+            {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
               <Card
-                title={slide.page1}
+                // title={slide.page1}
                 url="https://tegain-website-static-media-bucket.s3.ap-south-1.amazonaws.com/assets/images/17-05-2024/it-collaborate.svg"
                 some="YBN"
                 des="Management Consulting For Startups"
-                isActive={index === activeIndex}
+                // isActive={index === activeIndex}
               />
               <Card
-                title={slide.page2}
+                // title={slide.page2}
                 url="https://tegain-website-static-media-bucket.s3.ap-south-1.amazonaws.com/assets/images/17-05-2024/business-connect.svg"
                 some="ACS"
                 des="Financial Consulting Solutions"
-                isActive={index === activeIndex}
+                // isActive={index === activeIndex}
               />
               <Card
-                title={slide.page3}
+                // title={slide.page3}
                 url="https://tegain-website-static-media-bucket.s3.ap-south-1.amazonaws.com/assets/images/17-05-2024/back-office.svg"
                 some="IT"
                 des="Complete IT EcoSystem"
-                isActive={index === activeIndex}
+                // isActive={index === activeIndex}
               />
               <Card
-                title={slide.page4}
+                // title={slide.page4}
                 url="https://tegain-website-static-media-bucket.s3.ap-south-1.amazonaws.com/assets/images/17-05-2024/it-recruit.svg"
                 some="Training"
                 des="Tailored Training Sessions"
-                isActive={index === activeIndex}
+                // isActive={index === activeIndex}
               />
-            </div>
+            </div> */}
           </div>
         ))}
 
@@ -186,14 +186,14 @@ const SecondBanner: NextPage = () => {
 };
 
 interface CardProps {
-  title: string[];
-  isActive: boolean;
+  // title: string[];
+  // isActive: boolean;
   some: string;
   des: string;
   url: string;
 }
 
-const Card: React.FC<CardProps> = ({ title, isActive, some, des, url }) => {
+const Card: React.FC<CardProps> = ({   some, des, url }) => {
   return (
     <div
       style={{

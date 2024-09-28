@@ -134,13 +134,21 @@ const Page = () => {  // Changed 'page' to 'Page'
             LEADERSHIP
           </h1>
           <div className="grid grid-cols-2 place-items-center lg:place-items-start md:grid-cols-2 lg:grid-cols-4 gap-4">
-            <LeadersCard />
-            <LeadersCard />
-            <LeadersCard />
-            <LeadersCard />
+            <LeadersCard name="Habeeb Rahman" designation="Chairman & founder" />
+            <LeadersCard name="Muhammed Rafi" designation="MD & Co-founder" />
+            <LeadersCard name="Nazrin Midlaj" designation="Vice Chairperson & Co-founder" />
+            <LeadersCard name="Ahmad Kutty" designation="Finance Director" />
+            <LeadersCard name="Slam" designation="President" />
+            <LeadersCard name="Ashik A" designation="CEO" />
+            <LeadersCard name="Farhanudheen" designation="COO" />
+            <LeadersCard name="Ashik CK" designation="Director" />
+            <LeadersCard name="Abin" designation="Director" />
+            <LeadersCard name="Habeeb Rahman" designation="Chairman & founder" />
+            <LeadersCard name="Habeeb Rahman" designation="Chairman & founder" />
+            <LeadersCard name="Habeeb Rahman" designation="Chairman & founder" />
           </div>
         </div>
-        <div className="my-6">
+        {/* <div className="my-6">
           <h1 className="text-xl font-bold mt-4  text-center  lg:text-start helvetic-sub-title-sub-font">
             ADMINISTRATION
           </h1>
@@ -169,7 +177,7 @@ const Page = () => {  // Changed 'page' to 'Page'
             <LeadersCard />
             <LeadersCard />
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="2xl:max-w-7xl max-w-6xl m-auto lg:py-16 pb-12 lg:pb-0 flex px-6 lg:px-0 flex-col items-center">
         <h1 className="text-2xl font-bold text-center my-4 helvetic-Head-font">

@@ -52,7 +52,7 @@ export default function AboutPage() {
       }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-40"></div> {/* Black overlay with low opacity */}
-      <div className="relative z-10 text-center pt-40">
+      <div className="relative z-10 text-center pt-32">
         <h1 className="text-4xl helvetic-sub-title-font font-black text-white mb-4 animated-box-fade animated-box-fade-2s">
         Who we are
         </h1>
