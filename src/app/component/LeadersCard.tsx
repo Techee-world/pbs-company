@@ -1,14 +1,15 @@
 "use client";
-import Image from "next/image";
-import React from "react";
-import ceo from "../../../public/images/ceo.png";
+import Image, { StaticImageData } from "next/image";
+import React, { ImgHTMLAttributes } from "react";
+
 
 interface LeaderTypes {
   name:string;
   designation:string
+  img?:string | StaticImageData
 }
 
-const LeadersCard = ({name,designation}:LeaderTypes) => {
+const LeadersCard = ({name,designation,img}:LeaderTypes) => {
   return (
     <div>
       <div
@@ -19,7 +20,7 @@ const LeadersCard = ({name,designation}:LeaderTypes) => {
         className="lg:w-fit w-full my-4 px-3 lg:px-0 border rounded-full borde-gray-400"
       >
         <Image
-          src={ceo}
+          src={img as string}
           alt="leaders images"
           height={500}
           width={300}

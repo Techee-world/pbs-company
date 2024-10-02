@@ -19,6 +19,33 @@ export default function AboutPage() {
     AOS.refresh();
   }, []);
 
+  const Values = [
+    {
+      title:"Integrity",
+      Values:"We uphold the highest ethical standards in all our interactions and decisions"
+    },
+    {
+      title:"Quality",
+      Values:"We are committed to delivering excellence in every product and service we offer"
+    },
+    {
+      title:"Accountability",
+      Values:"We take ownership of our actions and strive to exceed expectations at every turn"
+    },
+    {
+      title:"Trust",
+      Values:"We build lasting relationships with our clients, grounded in transparency and reliability"
+    },
+    {
+      title:"Innovation",
+      Values:"We constantly seek new and creative solutions to drive business growth and efficiency"
+    },
+    {
+      title:"Competitive Collaboration",
+      Values:"We foster a collaborative spirit, leveraging collective strengths to create winning solutions"
+    }
+  ]
+
   return (
     <>
       <Seo
@@ -178,19 +205,25 @@ export default function AboutPage() {
                   >
                     Core Values
                   </h1>
-              <div className="flex gap-10">
+                  <p 
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-duration="800"
+                    data-aos-delay="600"
+                  >Our values are the building blocks of our culture, embedded in everything we do and central to what allows us to be a global consulting firm that leads with integrity.</p>
+              <div className="flex items-center  gap-6">
                 <div className="my-6 w-full">
-                  <div className="grid  grid-cols-1 gap-6">
-                    {["Integrity ","  Quality "," Accountability "," Trust"," Innovation "," Competitive Collaboration"].map((item, i) => (
+                  <div className="grid  grid-cols-1 gap-2">
+                    {Values.map((item, i) => (
                           <ul key={i} className="flex items-center mt-3 gap-2">
                             <li
-                              className="text-lg list-disc font-semibold montserrat-font md:w-[90%] w-full"
+                              className="text-lg list-disc  font-semibold montserrat-font md:w-[30rem] w-full"
                               data-aos="fade-up"
                               data-aos-anchor-placement="top-bottom"
                               data-aos-duration="800"
                               data-aos-delay="800"
                             >
-                              {item}
+                              {item.title} - <span className="font-normal text-base ">{item.Values}</span>
                             </li>
                           </ul>
                         ))

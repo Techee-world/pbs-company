@@ -11,6 +11,15 @@ import ourTeam from '../../../public/images/ourTeam.jpg'
 // import mdBackground from '../../../public/images/bca-bg-1.png'
 // import md from '../../../public/images/md.jpeg'
 import md from '../../../public/images/Md.jpg'
+import one from '../../../public/images/one.png'
+import two from '../../../public/images/two.png'
+import three from '../../../public/images/three.png'
+import four from '../../../public/images/four.png'
+import five from '../../../public/images/five.png'
+import six from '../../../public/images/six.png'
+import seven from '../../../public/images/seven.png'
+import abi from '../../../public/images/abi.jpg'
+import habeeb from '../../../public/images/habeeb.png'
 
 const Page = () => {  // Changed 'page' to 'Page'
   useEffect(() => {
@@ -134,18 +143,18 @@ const Page = () => {  // Changed 'page' to 'Page'
             LEADERSHIP
           </h1>
           <div className="grid grid-cols-2 place-items-center lg:place-items-start md:grid-cols-2 lg:grid-cols-4 gap-4">
-            <LeadersCard name="Habeeb Rahman" designation="Chairman & founder" />
-            <LeadersCard name="Muhammed Rafi" designation="MD & Co-founder" />
-            <LeadersCard name="Nazrin Midlaj" designation="Vice Chairperson & Co-founder" />
-            <LeadersCard name="Ahmad Kutty" designation="Finance Director" />
-            <LeadersCard name="Slam" designation="President" />
-            <LeadersCard name="Ashik A" designation="CEO" />
-            <LeadersCard name="Farhanudheen" designation="COO" />
-            <LeadersCard name="Ashik CK" designation="Director" />
-            <LeadersCard name="Abin" designation="Director" />
-            <LeadersCard name="Habeeb Rahman" designation="Chairman & founder" />
-            <LeadersCard name="Habeeb Rahman" designation="Chairman & founder" />
-            <LeadersCard name="Habeeb Rahman" designation="Chairman & founder" />
+            <LeadersCard img={habeeb} name="Habeeb Rahman" designation="Chairman & founder" />
+            <LeadersCard img={seven} name="Muhammed Rafi" designation="MD & Co-founder" />
+            <LeadersCard img={one} name="Nazrin Midlaj" designation="Vice Chairperson & Co-founder" />
+            <LeadersCard img={four} name="Ahmad Kutty" designation="Finance Director" />
+            <LeadersCard img={five} name="Slam" designation="President" />
+            <LeadersCard img={five} name="Ashik A" designation="CEO" />
+            <LeadersCard img={six} name="Farhanudheen" designation="COO" />
+            <LeadersCard img={two} name="Ashik CK" designation="Director" />
+            <LeadersCard img={abi} name="Abin" designation="Director" />
+            <LeadersCard img={four} name="Safwan" designation="Chairman & founder" />
+            <LeadersCard img={three} name="SHahjahan" designation="Chairman & founder" />
+            <LeadersCard img={two} name="Mohammed Shafi " designation="Chairman & founder" />
           </div>
         </div>
         {/* <div className="my-6">

@@ -42,7 +42,7 @@ const Training: React.FC = () => {
             data-aos-delay="100">
           TRAINING
         </h1>
-        <p className="text-gray-600 mb-10 text-lg  w-full helvetic-font"  data-aos="fade-up"
+        <p className=" mb-10 text-lg  w-full helvetic-font"  data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="800"
             data-aos-delay="200">
@@ -57,16 +57,14 @@ const Training: React.FC = () => {
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="800"
             data-aos-delay="300">
-               <span className="button-color-text">Individual</span>  Training
+               <span className="button-color-text">Leadership Coaching</span> 
               </h2>
     
-              <p className="text-gray-600 mb-6 text-lg w-full"  data-aos="fade-up"
+              <p className=" mb-6 text-lg w-full"  data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="800"
             data-aos-delay="400">
-                Dive deep into your chosen skill set with one-on-one sessions
-                tailored to your pace and goals. Our expert trainers provide
-                personalised guidance to maximise your learning experience.
+             We empower professionals to enhance their leadership capabilities through personalized coaching sessions. Our focus is on developing essential skills for driving growth, fostering high-performance teams, and cultivating a positive organizational culture that inspires excellence
               </p>
             </div>
             <div>
@@ -74,16 +72,13 @@ const Training: React.FC = () => {
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="800"
             data-aos-delay="500">
-               <span className="button-color-text">Group</span>  Training
+               <span className="button-color-text">Business Coaching</span>  
               </h2>
-              <p className="text-gray-600 mb-6 text-lg w-full"  data-aos="fade-up"
+              <p className=" mb-6 text-lg w-full"  data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="800"
             data-aos-delay="600">
-                Join forces with like-minded individuals in our interactive
-                group sessions. Collaborate, learn, and grow together under the
-                guidance of seasoned professionals, fostering a supportive and
-                dynamic learning environment.
+                Our tailored business coaching service is designed to help entrepreneurs refine their strategies and optimize operations. We work closely with you to identify challenges, set actionable goals, and ensure sustainable success in a competitive landscape
               </p>
             </div>
             <div>
@@ -91,16 +86,13 @@ const Training: React.FC = () => {
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="800"
             data-aos-delay="700">
-               <span className="button-color-text">Our job-oriented</span>  training programs
+               <span className="button-color-text">Life Coaching</span> 
               </h2>
-              <p className="text-gray-600 mb-6 text-lg w-full"  data-aos="fade-up"
+              <p className=" mb-6 text-lg w-full"  data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="800"
             data-aos-delay="800">
-                spanning 7 to 10 days, equip you with practical skills and
-                industry insights to excel in your chosen field. Whether you re
-                aiming for career advancement or seeking to acquire new skills,
-                our training sessions are your pathway to success.
+               We provide supportive life coaching to help individuals navigate personal transitions and achieve a balanced, fulfilling life. Our coaches guide clients in setting meaningful goals, overcoming obstacles, and realizing their potential
               </p>
             </div>
           </div>
@@ -122,13 +114,10 @@ const Training: React.FC = () => {
             data-aos-duration="800"
             data-aos-delay="900">
               <h2 id="seven" className="text-2xl font-bold button-color-text mb-4 helvetic-sub-title-sub-font" >
-              <span className="button-color-text">Soft Skills </span>  Development
+              <span className="button-color-text">Corporate TrainingSoft Skills </span> 
               </h2>
-              <p className="text-gray-600 mb-6 text-lg w-full">
-                Training sessions focused on essential soft skills such as
-                communication, teamwork, and problem-solving. Improve
-                interpersonal skills to complement technical knowledge and boost
-                overall performance.
+              <p className=" mb-6 text-lg w-full">
+              Our customized corporate training programs are aimed at enhancing employee skills and improving overall productivity. We assess your organization's unique needs to deliver targeted training that fosters collaboration and drives results
               </p>
             </div>
             {/* <div className="w-full h-auto rounded-lg "  data-aos="fade-up"
@@ -150,13 +139,10 @@ const Training: React.FC = () => {
             data-aos-duration="800"
             data-aos-delay="900">
               <h2 id="eight" className="text-2xl font-bold button-color-text mb-4 helvetic-sub-title-sub-font">
-               <span className="button-color-text">Executive</span>  Coaching
+               <span className="button-color-text">Placement Training</span> 
               </h2>
-              <p className="text-gray-600 mb-6 text-lg w-full">
-                One-on-one coaching sessions for executives and managers to
-                develop leadership skills and strategic thinking. Personalized
-                feedback and development plans to enhance leadership
-                capabilities.
+              <p className=" mb-6 text-lg w-full">
+              We prepare job candidates for success in the competitive job market through comprehensive placement training. Our program equips individuals with essential skills, interview techniques, and confidence to excel in their careers
               </p>
             </div>
             {/* <div className="w-full h-auto rounded-lg "  data-aos="fade-up"
