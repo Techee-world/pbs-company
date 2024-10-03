@@ -22,19 +22,19 @@ const HomeAbout = () => {
       des:"Overcome obstacles with ease. We offer practical solutions to navigate through rough patches and emerge stronger than ever. Partner with us today and let's chart a course to your business success!"
     },
     {
-      title:"Startups with Unique Ideas",
+      title:"Businesses Seeking Digital Transformation ",
       url:'https://tegain-website-static-media-bucket.s3.ap-south-1.amazonaws.com/assets/images/17-05-2024/business-connect.svg',
-      des:"Launch your venture with a solid foundation. We offer tailored advice and strategies to kickstart your success"
+      des:" Stay competitive with cutting-edge IT solutions designed to streamline your operations and accelerate growth in the digital era."
     },
     {
-      title:"Business aiming to expand Horizons",
+      title:"Businesses Looking to Optimize Finances ",
       url:'https://tegain-website-static-media-bucket.s3.ap-south-1.amazonaws.com/assets/images/17-05-2024/project-control-bg.svg',
-      des:"Launch your venture with a solid foundation. We offer tailored advice and strategies to kickstart your success"
+      des:" Maximize your financial potential with expert strategies that ensure efficient resource management and drive sustainable success."
     },
     {
-      title:"Business facing Challenges",
+      title:"Aiming for Skill Enhancement ",
       url:'https://tegain-website-static-media-bucket.s3.ap-south-1.amazonaws.com/assets/images/17-05-2024/evening-company.svg',
-      des:"Launch your venture with a solid foundation. We offer tailored advice and strategies to kickstart your success"
+      des:" Empower your workforce with targeted training programs that foster growth, improve performance, and elevate business outcomes."
     }
    ]
   return (

@@ -18,7 +18,7 @@ const WhoNeedUsCard: React.FC<URL> = ({url,title,des}) => {
           <h2 className="title font-semibold   lg:pt-3 text-xl">
           {title}
           </h2>
-          <p className=" text-sm mt-9 lg:mt-6">
+          <p className=" text-sm mt-9 lg:mt-16">
          {des}
           </p>
         </div>

@@ -215,7 +215,7 @@ export default function AboutPage() {
                 <div className="my-6 w-full">
                   <div className="grid  grid-cols-1 gap-2">
                     {Values.map((item, i) => (
-                          <ul key={i} className="flex items-center mt-3 gap-2">
+                          <ul key={i} className="flex ml-5 items-center mt-3 gap-2">
                             <li
                               className="text-lg list-disc  font-semibold montserrat-font md:w-[30rem] w-full"
                               data-aos="fade-up"

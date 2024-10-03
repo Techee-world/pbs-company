@@ -8,15 +8,15 @@ const SecondAbout = () => {
     <div>
           <div className=" py-16 px-4 md:px-16 lg:px-32 flex flex-col md:flex-row justify-between items-center">
       {/* Left side content */}
-      <div className="max-w-lg mb-8 md:mb-0">
+      <div className="max-w-lg flex  flex-col gap-3 mb-8 md:mb-0">
         <h2 className=" text-XL font-semibold mb-4">
            About <span className=" font-bold">PBS</span>
         </h2>
         <h1 className="md:text-[45px] helvetic-sub-title-font font-bold leading-none button-color-text mb-4">
-        Transforming the way we do Business from the last 15+ years
+        Transforming the way we do business for over 15 years
         </h1>
         <p className="text-gray-700 mb-6">
-          Tegain improves workflows, drives real-world solutions, and creates growth for IT talents. Through planned collaborations, Tegain guides projects from concept to completion. This creates skilled experts and visionary tech solutions set for global success. Tegain pushes professionals towards tackling challenges more innovatively, leading to a vibrant and dynamic IT ecosystem where success is attainable to one and all.
+        Founded by a team of seasoned entrepreneurs with a combined 30 years of industry experience, is committed to offering bespoke strategies that are meticulously designed to foster growth and ensure long-term success. With a wide-ranging suite of services encompassing IT solutions, branding, legal advisory, and beyond, we provide comprehensive support to address every facet of your business needs. Our unwavering mission is to empower businesses to not only navigate challenges but to thrive and flourish in an ever-evolving and competitive market landscape.
         </p>
 <Button title='Know More' />
       </div>

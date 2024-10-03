@@ -40,9 +40,9 @@ const Growth: React.FC = () => {
           essentially unchanged.
         </p> */}
         <div className="flex mb-6 items-center lg:flex-row flex-col mt-10 lg:mt-0">
-          <div className=" w-full  sm:mb-6 lg:mb-0 mb-0  pr-0 lg:pr-6">
+          <div id="acs" className=" w-full  sm:mb-6 lg:mb-0 mb-0  pr-0 lg:pr-6">
             {/* <div className="w-full mb-6"> */}
-              <h2 id="nine"
+              <h2 
                style={{fontWeight:600}}
                 className="text-2xl font-bold  mb-4 helvetic-sub-title-sub-font"
                 data-aos="fade-up"
@@ -294,9 +294,9 @@ Statutory & Compliances
           {/* </div> */}
         </div>
         <div className="flex items-center lg:flex-row flex-col mt-10 lg:mt-0">
-          <div className=" w-full  sm:mb-6 lg:mb-0 mb-0  pr-0 lg:pr-6">
+          <div id="ybn" className=" w-full  sm:mb-6 lg:mb-0 mb-0  pr-0 lg:pr-6">
             {/* <div className="w-full mb-6"> */}
-              <h2 id="nine"
+              <h2  
               style={{fontWeight:600}}
                 className="text-2xl font-bold  mb-4 helvetic-sub-title-sub-font"
                 data-aos="fade-up"
