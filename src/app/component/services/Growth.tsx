@@ -50,7 +50,7 @@ const Growth: React.FC = () => {
                 data-aos-duration="800"
                 data-aos-delay="500"
               >
-                Profile YBN
+                Profile ACS
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 space-y-4 lg:grid-cols-3">
               <div className="w-full">
@@ -304,7 +304,7 @@ Statutory & Compliances
                 data-aos-duration="800"
                 data-aos-delay="500"
               >
-                Profile ACS
+                Profile YBN
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 space-y-4 lg:grid-cols-3 w-full">
               <div className="w-full">

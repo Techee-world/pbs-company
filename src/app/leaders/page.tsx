@@ -188,7 +188,7 @@ const Page = () => {  // Changed 'page' to 'Page'
           </div>
         </div> */}
       </div>
-      <div className="2xl:max-w-7xl max-w-6xl m-auto lg:py-16 pb-12 lg:pb-0 flex px-6 lg:px-0 flex-col items-center">
+      {/* <div className="2xl:max-w-7xl max-w-6xl m-auto lg:py-16 pb-12 lg:pb-0 flex px-6 lg:px-0 flex-col items-center">
         <h1 className="text-2xl font-bold text-center my-4 helvetic-Head-font">
           Ask Questions
         </h1>
@@ -203,7 +203,7 @@ const Page = () => {  // Changed 'page' to 'Page'
         <Link href="/contact">
           <Button title="Contact" />
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 };
