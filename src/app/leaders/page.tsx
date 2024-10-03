@@ -18,7 +18,7 @@ import four from '../../../public/images/four.png'
 import five from '../../../public/images/five.png'
 import six from '../../../public/images/six.png'
 import seven from '../../../public/images/seven.png'
-import abi from '../../../public/images/abi.jpg'
+// import abi from '../../../public/images/abi.jpg'
 import habeeb from '../../../public/images/habeeb.png'
 
 const Page = () => {  // Changed 'page' to 'Page'
@@ -147,14 +147,14 @@ const Page = () => {  // Changed 'page' to 'Page'
             <LeadersCard img={seven} name="Muhammed Rafi" designation="MD & Co-founder" />
             <LeadersCard img={one} name="Nazrin Midlaj" designation="Vice Chairperson & Co-founder" />
             <LeadersCard img={four} name="Ahmad Kutty" designation="Finance Director" />
-            <LeadersCard img={five} name="Slam" designation="President" />
+            <LeadersCard  name="Slam" designation="President" />
             <LeadersCard img={five} name="Ashik A" designation="CEO" />
             <LeadersCard img={six} name="Farhanudheen" designation="COO" />
             <LeadersCard img={two} name="Ashik CK" designation="Director" />
-            <LeadersCard img={abi} name="Abin" designation="Director" />
+            <LeadersCard  name="Abin" designation="Director" />
             <LeadersCard img={four} name="Safwan" designation="Chairman & founder" />
             <LeadersCard img={three} name="SHahjahan" designation="Chairman & founder" />
-            <LeadersCard img={two} name="Mohammed Shafi " designation="Chairman & founder" />
+            <LeadersCard  name="Mohammed Shafi " designation="Chairman & founder" />
           </div>
         </div>
         {/* <div className="my-6">
