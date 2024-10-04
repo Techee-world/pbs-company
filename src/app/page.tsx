@@ -83,35 +83,18 @@ export default function Home() {
             data-aos-duration="800"
             data-aos-delay="700"
           >
-              <h3 className="lg:ml-6   text-white font-black helvetic-Head-font text-start text-3xl lg:text-4xl pb-6">Chairman's Message</h3>
+              <h3 className="lg:ml-6   text-white font-black helvetic-Head-font text-start text-3xl lg:text-4xl pb-6">Founder's Message</h3>
             <p className="text-base font-normal text-gray-300 lg:ml-6  ">
-              I am thrilled to announce the launch of our new business
-              consultancy, dedicated to empowering businesses and professionals
-              to reach their full potential. In today s rapidly evolving
-              landscape, success requires not only strategic insight but also
-              the continuous development of essential skills. That s why we are
-              not just a consultancy—we are your partner in growth.
+            Welcome to PBS, your trusted partner in navigating the complex landscape of business solutions. As a company dedicated to providing comprehensive 360-degree services, we are committed to empowering businesses of all sizes to achieve their goals.
               <br />
-              Our services go beyond traditional consulting. We offer
-              comprehensive training programs designed to enhance both soft
-              skills and technical expertise, ensuring that your team is
-              equipped to meet the challenges of tomorrow. Whether you re
-              looking to sharpen your leadership capabilities, improve
-              communication within your organization, or master the latest
-              technologies, our tailored solutions are here to guide you every
-              step of the way.
+              Our unwavering focus on corporate solutions, financial services, and business consulting ensures that we offer a holistic approach to meeting your diverse needs. From the initial stages of company registration to the ongoing management of financial affairs, our expert team is equipped to provide tailored solutions that drive growth and success.
+
               <br />
-              At the heart of our mission is a commitment to excellence and a
-              deep understanding of the unique needs of each client. We believe
-              that by investing in people, we create the foundation for lasting
-              success. I invite you to explore how we can collaborate to drive
-              your business forward and achieve remarkable results.
+              Whether you're a seasoned entrepreneur seeking to expand your operations or a startup embarking on a new venture, we are here to support your journey every step of the way. Our commitment to excellence, coupled with our deep understanding of the market, enables us to deliver innovative and effective solutions that exceed your expectations.
               <br />
-              Thank you for your trust, and I look forward to embarking on this
-              journey with you.
+              As you explore our website, we invite you to discover the breadth of services we offer and learn more about how we can help your business thrive. Thank you for choosing PBS as your trusted partner.
               <br />
-              <br />
-              Warm regards,
+              
             </p>
             <p className="mt-4 text-right text-base md:text-lg font-bold text-white"  data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"

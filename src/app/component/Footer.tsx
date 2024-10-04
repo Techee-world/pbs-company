@@ -205,7 +205,7 @@ const Footer: React.FC = () => {
             </p>
             <div className="flex space-x-4">
               {[
-                { icon: FaFacebookF, href: "https://facebook.com" },
+                { icon: FaFacebookF, href: "https://www.facebook.com/profile.php?id=61566387213154&mibextid=ZbWKwL" },
                 { icon: FaTwitter, href: "https://twitter.com" },
                 { icon: FaLinkedinIn, href: "https://linkedin.com" },
                 { icon: FaPinterestP, href: "https://pinterest.com" },

@@ -84,11 +84,7 @@ export default function AboutPage() {
         Who we are
         </h1>
         <p className="text-lg font-thin text-white lg:w-3/4 mx-auto w-full animated-box-fade animated-box-fade-4s">
-        We pride ourselves on staying ahead with the latest technology
-                  and maintaining the highest standards of compliance and quality
-                  in all our ventures. Join us at PBS, where your business
-                  ambitions meet our comprehensive solutions, paving the way for
-                  mutual growth and success.
+        We are committed to helping businesses thrive by providing innovative and personalized solutions. Our comprehensive approach ensures that you have access to the resources and expertise needed to succeed in today's competitive market.
         </p>
       </div>
     </div>

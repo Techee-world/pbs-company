@@ -102,10 +102,19 @@ const ContactUs = () => {
             data-aos-delay="400"
           >
             <FaEnvelope className="button-color-text text-3xl mr-4" />
+            
+            {/* <Link href='info@profile-bs.com' >  */}
+
             <div>
-              <h4 className="text-lg font-semibold text-gray-700">Email</h4>
-              <p className="text-gray-500">shafi@pbsgroup.in</p>
+            <h4 className="text-lg font-semibold text-gray-700">Email</h4>
+
+            <p className="text-gray-500">info@profile-bs.com</p>
+
             </div>
+            
+            {/* </Link> */}
+
+          
           </div>
           <div
             className="flex items-center p-6 rounded-lg border border-gray-400"
@@ -117,8 +126,8 @@ const ContactUs = () => {
             <FaPhone className="button-color-text text-3xl mr-4" />
             <div>
               <h4 className="text-lg font-semibold text-gray-700">Contacts</h4>
-              <p className="text-gray-500">(270) 555-0117</p>
-              <p className="text-gray-500">(704) 555-0127</p>
+              
+              <p className="text-gray-500">(+91)7902991199</p>
             </div>
           </div>
           <div
@@ -129,11 +138,11 @@ const ContactUs = () => {
             data-aos-delay="800"
           >
             <FaMapMarkerAlt className="button-color-text text-3xl mr-4" />
-            <Link href='https://www.google.com/maps/place/PBS+GLOBAL+BUSINESS/@11.3196759,75.9960522,20.11z/data=!4m15!1m8!3m7!1s0x3ba641801beef9e9:0xb2830e78854a4e17!2sMukkam,+Kerala!3b1!8m2!3d11.3214948!4d75.9952897!16s%2Fm%2F064mnv5!3m5!1s0x3ba641004cc869c9:0x594e7c93a7ea90c6!8m2!3d11.3196559!4d75.9967332!16s%2Fg%2F11w2f_91_n?entry=ttu&g_ep=EgoyMDI0MDgyOC4wIKXMDSoASAFQAw%3D%3D' > 
+            <Link href='https://maps.app.goo.gl/XUL65q1d8D6kGgeC8' > 
             <div>
               <h4 className="text-lg font-semibold text-gray-700">Location</h4>
               <p className="text-gray-500">
-                PBS GLOBAL BUSINESS NETWORKING COMPANY
+              Kalloor building, Bypass Rd, Mukkam, Kerala 673602
               </p>
             </div>
             </Link>

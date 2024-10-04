@@ -9,7 +9,7 @@ const ShortBriefBanner = () => {
               <Card
                 // title={slide.page1}
                 url="https://tegain-website-static-media-bucket.s3.ap-south-1.amazonaws.com/assets/images/17-05-2024/it-collaborate.svg"
-                some="YBN"
+                some="PBS Corporate"
                 des="Management Consulting For Startups"
                 path='ybn'
                 // isActive={index === activeIndex}
@@ -17,7 +17,7 @@ const ShortBriefBanner = () => {
               <Card
                 // title={slide.page2}
                 url="https://tegain-website-static-media-bucket.s3.ap-south-1.amazonaws.com/assets/images/17-05-2024/business-connect.svg"
-                some="ACS"
+                some="PBS Finance"
                 des="Financial Consulting Solutions"
                 path='acs'
                 // isActive={index === activeIndex}
@@ -25,7 +25,7 @@ const ShortBriefBanner = () => {
               <Card
                 // title={slide.page3}
                 url="https://tegain-website-static-media-bucket.s3.ap-south-1.amazonaws.com/assets/images/17-05-2024/back-office.svg"
-                some="IT"
+                some="PBS Tech"
                 des="Complete Digital Transformation"
                 path='it'
                 // isActive={index === activeIndex}
@@ -33,7 +33,7 @@ const ShortBriefBanner = () => {
               <Card
                 // title={slide.page4}
                 url="https://tegain-website-static-media-bucket.s3.ap-south-1.amazonaws.com/assets/images/17-05-2024/it-recruit.svg"
-                some="Training"
+                some="PBS Trainings"
                 des="Tailored Training Sessions"
                 path='training'
                 // isActive={index === activeIndex}
@@ -47,7 +47,7 @@ const ShortBriefBanner = () => {
           Modern, and Customer-Focused
         </h1>
         <p className="text-gray-600 lg:pb-16 pb-0 text-base md:text-base leading-relaxed ">
-        At PBS, our services are efficient, modern, and tailored to meet your business needs. With a focus on IT consulting, branding, legal advisory, and more, we leverage the latest technologies and strategies to drive your growth. Our experienced team ensures top-quality solutions that are compliant and customer-centric, helping businesses thrive in a competitive landscape. Let PBS empower your business with innovative and personalized services for lasting success.
+        At PBS, our services are efficient, modern, and tailored to meet your business needs. With a focus on IT consulting, corporate, finance consulting and more, we leverage the latest technologies and strategies to drive your growth. Our experienced team ensures top-quality solutions that are compliant and customer-centric, helping businesses thrive in a competitive landscape. Let PBS empower your business with innovative and personalized services for lasting success.
         </p>
       </div>
     </section>
