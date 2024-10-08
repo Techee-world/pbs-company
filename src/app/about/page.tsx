@@ -206,6 +206,7 @@ export default function AboutPage() {
                     data-aos-anchor-placement="top-bottom"
                     data-aos-duration="800"
                     data-aos-delay="600"
+                    className="text-lg font-normal"
                   >Our values are the building blocks of our culture, embedded in everything we do and central to what allows us to be a global consulting firm that leads with integrity.</p>
               <div className="flex items-center  gap-6">
                 <div className="my-6 w-full">
@@ -219,7 +220,7 @@ export default function AboutPage() {
                               data-aos-duration="800"
                               data-aos-delay="800"
                             >
-                              {item.title} - <span className="font-normal text-base ">{item.Values}</span>
+                              {item.title} - <span className="font-normal text-lg ">{item.Values}</span>
                             </li>
                           </ul>
                         ))

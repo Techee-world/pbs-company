@@ -39,10 +39,10 @@ export default function Home() {
 
       <HomeAbout />
  
- <SecondWhoNeedUs />
+ {/* <SecondWhoNeedUs /> */}
 
 
-      <div className="h-fit pb-6 lg:pb-0  lg:h-fit  lg:w-full bg-gradient-to-l from-blue-500 to-blue-950  text-gray-300 "
+      <div className="h-fit pb-6 lg:pb-0 lg:mb-40  lg:h-fit  lg:w-full bg-gradient-to-l from-blue-500 to-blue-950  text-gray-300 "
         // style={{
         //   backgroundImage: `url(${mdBackground.src})`,
         // }}
@@ -101,14 +101,14 @@ export default function Home() {
             data-aos-duration="800"
             data-aos-delay="800">
               - Habeebu Rahiman <br />
-              <span className="text-sm md:text-base font-normal">MD - PBS</span>
+              <span className="text-sm md:text-base font-normal">Chairman & founder - PBS</span>
             </p>
           </div>
         </div>
       </div>
-      <HomeTraining />
+      {/* <HomeTraining />
       <HomeFunding />
-      <HomeMeetRoom />
+      <HomeMeetRoom /> */}
     </>
   );
 }

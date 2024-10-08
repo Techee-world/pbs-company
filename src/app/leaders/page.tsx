@@ -130,8 +130,8 @@ const Page = () => {  // Changed 'page' to 'Page'
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="800"
             data-aos-delay="800">
-              - Habeebu Rahiman <br />
-              <span className="text-sm md:text-base font-normal">MD - PBS</span>
+              - Nazrin Midlaj<br />
+              <span className="text-sm md:text-base font-normal">Vice Chairperson & Co-founder - PBS</span>
             </p>
           </div>
         </div>
@@ -148,8 +148,8 @@ const Page = () => {  // Changed 'page' to 'Page'
             <LeadersCard img={one} name="Nazrin Midlaj" designation="Vice Chairperson & Co-founder" />
             <LeadersCard img={four} name="Ahmad Kutty" designation="Finance Director" />
             <LeadersCard  name="Slam" designation="President" />
-            <LeadersCard img={five} name="Ashik A" designation="CEO" />
-            <LeadersCard img={six} name="Farhanudheen" designation="COO" />
+            <LeadersCard img={five} name="Muhammed Ashik" designation="CEO & Director" />
+            <LeadersCard img={six} name="Muhammed Farhan" designation="COO" />
             <LeadersCard img={two} name="Ashik CK" designation="Director" />
             <LeadersCard  name="Abin" designation="Director" />
             <LeadersCard img={four} name="Safwan" designation="Chairman & founder" />

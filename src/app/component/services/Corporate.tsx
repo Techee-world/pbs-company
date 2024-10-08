@@ -4,7 +4,7 @@ import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import the AOS CSS
 
-const Growth: React.FC = () => {
+const Corporate: React.FC = () => {
   useEffect(() => {
     AOS.init({
       once: true, // Whether animation should happen only once - while scrolling down
@@ -15,18 +15,9 @@ const Growth: React.FC = () => {
   return (
     <>
     <div 
-    // style={{background:'rgb(171, 229, 242)'}}
-     className="py-20 px-4 sm:px-6 lg:px-8 ">
+    // style={{background:'rgb(171, 200, 255)'}}
+     className="py-10 px-4 sm:px-6 lg:px-8 ">
       <div className="2xl:max-w-7xl max-w-6xl mx-auto">
-        <h2
-          className="text-3xl font-bold mb-6  sm:text-4xl helvetic-sub-title-font lg:text-4xl"
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-bottom"
-          data-aos-duration="800"
-          data-aos-delay="300"
-        >
-          PBS Finance
-        </h2>
         {/* <p
           className=" mb-10 text-lg montserrat-font helvetic-font"
           data-aos="fade-up"
@@ -41,11 +32,21 @@ const Growth: React.FC = () => {
           not only five centuries into electronic typesetting remaining
           essentially unchanged.
         </p> */}
-        <div className="flex mb-6 items-center lg:flex-row flex-col mt-10 lg:mt-0">
-          <div id="acs" className=" w-full  sm:mb-6 lg:mb-0 mb-0  pr-0 lg:pr-6">
+        <h2
+          className="text-3xl font-bold mb-6  sm:text-4xl helvetic-sub-title-font lg:text-4xl"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="800"
+          data-aos-delay="300"
+        >
+           PBS corporate
+        </h2>
+       
+        <div className="flex items-center lg:flex-row flex-col mt-10 lg:mt-0">
+          <div id="ybn" className=" w-full  sm:mb-6 lg:mb-0 mb-0  pr-0 lg:pr-6">
             {/* <div className="w-full mb-6"> */}
-              <h2 
-               style={{fontWeight:600}}
+              <h2  
+              style={{fontWeight:600}}
                 className="text-2xl font-bold  mb-4 helvetic-sub-title-sub-font"
                 data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom"
@@ -54,7 +55,7 @@ const Growth: React.FC = () => {
               >
                 Content to be added
               </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 space-y-4 lg:grid-cols-3">
+              <div className="grid grid-cols-1 md:grid-cols-2 space-y-4 lg:grid-cols-3 w-full">
               <div className="w-full">
               <p
                 className=" text-lg mb-2 font-semibold montserrat-font"
@@ -63,10 +64,10 @@ const Growth: React.FC = () => {
                 data-aos-duration="800"
                 data-aos-delay="600"
               >
-Registration & Compliances
+Management consulting
               </p>
               <ul className="grid grid-cols-1 ">
-                {["Company/LLP Registration","Companies/LLP Annual Compliances","Firm/Proprietorship Registration","Trust/Society Registration and Renewal","12A/80G Registration","Trademark Registration","Start-up India Registration","MSME Registration"].map((item,index)=>
+                {["Strategy for New Entrants","Strategy for Existing Businesses","Customer Strategy & Marketing"].map((item,index)=>
                 <li className="list-disc " key={index}>{item}</li>
                 )}
               </ul>
@@ -80,10 +81,10 @@ Registration & Compliances
                 data-aos-duration="800"
                 data-aos-delay="600"
               >
-Audit & Certification
+Startup consulting
               </p>
               <ul className="grid grid-cols-1 ">
-                {["Statutory Audit","Tax Audit","Stock Audit & Certification","Management Audit","Other Audits"].map((item,index)=>
+                {["Business Idea Validation","Business Plan","Business Funding Support","Business Model Development","Setting up Operations","Market Positioning and Marketing Plan"].map((item,index)=>
                 <li className="list-disc " key={index}>{item}</li>
                 )}
               </ul>
@@ -96,11 +97,11 @@ Audit & Certification
                 data-aos-duration="800"
                 data-aos-delay="600"
               >
-Drafting & Documentation
+Digital marketing & SEO
 
               </p>
               <ul className="grid grid-cols-1 ">
-                {["Partnership/Trust Deed Drafting","Legal Agreement Drafting","Payroll Management"].map((item,index)=>
+                {["Branding & Re-branding","Brand Building","Sales Improvement","Promotion Tactics ","Advertisement (outdoor/indoor) ","Advertisement Budget Planning"].map((item,index)=>
                 <li className="list-disc " key={index}>{item}</li>
                 )}
               </ul>
@@ -113,106 +114,17 @@ Drafting & Documentation
                 data-aos-duration="800"
                 data-aos-delay="600"
               >
-Accounting & Book Keeping
+Franchise Development Program
 
 
               </p>
               <ul className="grid grid-cols-1 ">
-                {["Accounts and Book Keeping","Cost Accounting and Record Maintenance","Project Reports"].map((item,index)=>
+                {["Franchise Development Program","Franchise Marketing","Franchise Audit"].map((item,index)=>
                 <li className="list-disc " key={index}>{item}</li>
                 )}
               </ul>
             </div>
-            <div className="w-full mb-6">
-              <p
-                className="  text-lg mb-2 font-semibold montserrat-font"
-                data-aos="fade-up"
-                data-aos-anchor-placement="top-bottom"
-                data-aos-duration="800"
-                data-aos-delay="600"
-              >
-Income Tax Services
 
-
-              </p>
-              <ul className="grid grid-cols-1 ">
-                {["Income Tax/TDS/TCS Return Filing","Income Tax Audit & Certification","PAN & TAN Services (UTI/NSDL)"].map((item,index)=>
-                <li className="list-disc " key={index}>{item}</li>
-                )}
-              </ul>
-            </div>
-            <div className="w-full mb-6">
-              <p
-                className="  text-lg mb-2 font-semibold montserrat-font"
-                data-aos="fade-up"
-                data-aos-anchor-placement="top-bottom"
-                data-aos-duration="800"
-                data-aos-delay="600"
-              >
-GST Services
-
-
-              </p>
-              <ul className="grid grid-cols-1 ">
-                {["GST Registration & Return Filing","GST Certification & Audit","Other GST Compliances","Notice & Personnel Representation Services"].map((item,index)=>
-                <li className="list-disc " key={index}>{item}</li>
-                )}
-              </ul>
-            </div>
-            <div className="w-full mb-6">
-              <p
-                className="  text-lg mb-2 font-semibold montserrat-font"
-                data-aos="fade-up"
-                data-aos-anchor-placement="top-bottom"
-                data-aos-duration="800"
-                data-aos-delay="600"
-              >
-Management Consultancy
-
-
-              </p>
-              <ul className="grid grid-cols-1 ">
-                {["Business Setup Advisory","Financial Consultancy","International Taxation","Compliance Consulting","Strategy Consulting"].map((item,index)=>
-                <li className="list-disc " key={index}>{item}</li>
-                )}
-              </ul>
-            </div>
-            <div className="w-full mb-6">
-              <p
-                className="  text-lg mb-2 font-semibold montserrat-font"
-                data-aos="fade-up"
-                data-aos-anchor-placement="top-bottom"
-                data-aos-duration="800"
-                data-aos-delay="600"
-              >
-Human Resource Services
-
-
-              </p>
-              <ul className="grid grid-cols-1 ">
-                {["ESI Registration & Returns","PF Registration & Return","Kerala Labour Welfare Fund","Payroll Management","HR Consultancy Services"].map((item,index)=>
-                <li className="list-disc " key={index}>{item}</li>
-                )}
-              </ul>
-            </div>
-            <div className="w-full mb-6">
-              <p
-                className="  text-lg mb-2 font-semibold montserrat-font"
-                data-aos="fade-up"
-                data-aos-anchor-placement="top-bottom"
-                data-aos-duration="800"
-                data-aos-delay="600"
-              >
-Statutory & Compliances
-
-
-              </p>
-              <ul className="grid grid-cols-1 ">
-                {["Import Export Licenses","Payroll Management","FEMA & RBI Compliances","Merger & Amalgamation"].map((item,index)=>
-                <li className="list-disc " key={index}>{item}</li>
-                )}
-              </ul>
-            </div>
 
               </div>
             {/* </div> */}
@@ -302,4 +214,4 @@ Statutory & Compliances
   );
 };
 
-export default Growth;
+export default Corporate;

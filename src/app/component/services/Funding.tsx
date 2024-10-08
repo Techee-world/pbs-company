@@ -14,10 +14,12 @@ const Funding: React.FC = () => {
 
   return (
     <>
-    <div className="button-color py-20 px-4 sm:px-6 lg:px-8 ">
+    <div
+    //  style={{background:'rgb(251, 213, 213)'}} 
+     className=" py-20 px-4 sm:px-6 lg:px-8 ">
       <div className="2xl:max-w-7xl max-w-6xl mx-auto">
         <h2
-          className="text-3xl font-bold mb-6 text-gray-200 sm:text-4xl helvetic-sub-title-font lg:text-4xl"
+          className="text-3xl font-bold mb-6  sm:text-4xl helvetic-sub-title-font lg:text-4xl"
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
           data-aos-duration="800"
@@ -26,7 +28,7 @@ const Funding: React.FC = () => {
           FUNDING SOLUTIONS FOR EVERY STAGE
         </h2>
         <p
-          className="text-gray-200 mb-10 text-lg montserrat-font helvetic-font"
+          className=" mb-10 text-lg montserrat-font helvetic-font"
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
           data-aos-duration="800"
@@ -43,7 +45,7 @@ const Funding: React.FC = () => {
           <div className="flex items-center lg:flex-row flex-col w-full gap-4 lg:border-r sm:mb-6 lg:mb-0 mb-0 border-gray-400 pr-0 lg:pr-6">
             <div>
               <h2 id="nine"
-                className="text-2xl font-bold text-gray-200 mb-4 helvetic-sub-title-sub-font"
+                className="text-2xl font-bold  mb-4 helvetic-sub-title-sub-font"
                 data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom"
                 data-aos-duration="800"
@@ -52,7 +54,7 @@ const Funding: React.FC = () => {
                 New Startups
               </h2>
               <p
-                className="text-gray-200 mb-6 text-lg montserrat-font"
+                className=" mb-6 text-lg montserrat-font"
                 data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom"
                 data-aos-duration="800"
@@ -83,7 +85,7 @@ const Funding: React.FC = () => {
           <div className="flex items-center lg:flex-row flex-col gap-4 w-full mt-6 lg:mt-0 pl-0 lg:pl-6">
             <div>
               <h2 id="ten"
-                className="text-2xl font-bold text-gray-200 mb-4 helvetic-sub-title-sub-font"
+                className="text-2xl font-bold  mb-4 helvetic-sub-title-sub-font"
                 data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom"
                 data-aos-duration="800"
@@ -92,7 +94,7 @@ const Funding: React.FC = () => {
                 Existing Companies Seeking Expansion
               </h2>
               <p
-                className="text-gray-200 mb-6 text-lg"
+                className=" mb-6 text-lg"
                 data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom"
                 data-aos-duration="800"

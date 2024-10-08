@@ -94,7 +94,8 @@ const ContactUs = () => {
           </form>
         </div>
         <div className="space-y-6">
-          <div
+          <Link href='mailto:info@profile-bs.com'  > 
+          <div 
             className="flex items-center p-6 rounded-lg border border-gray-400"
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
@@ -103,7 +104,6 @@ const ContactUs = () => {
           >
             <FaEnvelope className="button-color-text text-3xl mr-4" />
             
-            {/* <Link href='info@profile-bs.com' >  */}
 
             <div>
             <h4 className="text-lg font-semibold text-gray-700">Email</h4>
@@ -112,10 +112,10 @@ const ContactUs = () => {
 
             </div>
             
-            {/* </Link> */}
 
           
           </div>
+            </Link>
           <div
             className="flex items-center p-6 rounded-lg border border-gray-400"
             data-aos="fade-up"
