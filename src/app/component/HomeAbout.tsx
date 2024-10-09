@@ -54,10 +54,10 @@ const HomeAbout = () => {
       //   backgroundSize: 'cover',
       //   backgroundPosition: 'center',
       // }}
-      className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 min-h-1/2  g h-[65rem] md:h-[55rem] lg:h-auto items-center flex flex-col justify-start"
+      className="py-0 lg:py-12 sm:pt-6 lg:pb-28 px-4 sm:px-6 lg:px-8 min-h-1/2   lg:mb-0 mb-16 lg:h-auto items-center flex flex-col justify-start"
     >
       <h1 
-        className="text-center shadow text-3xl text-shadow sm:text-5xl font-bold helvetic-sub-title-font   mb-8 sm:mb-12" 
+        className="text-center  text-3xl md:text-5xl font-bold helvetic-sub-title-font   mb-8 sm:mb-12" 
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom" 
         data-aos-duration='800'

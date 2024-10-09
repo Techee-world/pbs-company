@@ -106,13 +106,13 @@ const SecondBanner: NextPage = () => {
           >
             <div className=' h-80 pt-16 mb-10'>
             <header
-              className={`text-center transition-all duration-500 ease-in-out ${
+              className={`text-center px-4 lg:px-0 md:px-0 transition-all duration-500 ease-in-out ${
                 index === activeIndex ? 'animate-bottom-to-top opacity-100' : 'opacity-0'
               }`}
             >
               <h1 className={`${
                 index === activeIndex ? 'animate-bottom-to-top opacity-100 ' : 'opacity-0'
-              } text-4xl md:text-[55px] w-3/4 text-center m-auto leading-tight font-black button-color-text helvetic-Head-font `}>
+              } text-4xl md:text-[60px] md:w-3/4 w-full text-center m-auto leading-tight font-black button-color-text helvetic-Head-font `}>
                 <span className="button-color-text ">
                   {slide.title.split(' ')[0]}
                 </span>{' '}
@@ -120,7 +120,7 @@ const SecondBanner: NextPage = () => {
               </h1>
               <p className={`${
                 index === activeIndex ? 'animate-bottom-to-top opacity-100 ' : 'opacity-0'
-              } text-base text-gray-600 mt-6 `}>{slide.description}</p>
+              } text-lg text-gray-600 mt-6 `}>{slide.description}</p>
             </header>
 
             {/* Button */}
