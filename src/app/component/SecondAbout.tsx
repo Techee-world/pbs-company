@@ -19,7 +19,7 @@ const SecondAbout = () => {
         Transforming the way we do business for over 15 years
         </h1>
         <p className="text-gray-700  ">
-        Founded by a team of seasoned entrepreneurs with a combined 40 years of industry experience, we are committed to offering bespoke strategies that are meticulously designed to foster growth and ensure long-term success. With a wide-ranging suite of services encompassing IT solutions, branding, legal advisory, and beyond, we provide comprehensive support to address every facet of your business needs. Our unwavering mission is to empower businesses to not only navigate challenges but to thrive and flourish in an ever-evolving and competitive market landscape.
+        Founded by a team of seasoned entrepreneurs with a combined 40 years of industry experience, we are committed to offering bespoke strategies meticulously designed to foster growth and ensure long-term success. With a wide-ranging suite of services encompassing IT, Corporate, Finance Solutions and beyond, we provide comprehensive support to address every facet of your business needs. Our mission is to empower businesses to navigate challenges, thrive, and flourish.
         </p>
 <Button title='Know More' />
       </div>

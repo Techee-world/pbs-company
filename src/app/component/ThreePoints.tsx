@@ -69,10 +69,10 @@ const ThreePoints = () => {
                   {animatedNumber} +
                 </div>
                 <div className='mb-4'>
-                  <h3 className="text-xl font-semibold">
+                  <h3 className="text-xl text-white font-semibold">
                     {firstWord}
                   </h3>
-                  <h3 className="text-xl font-semibold">
+                  <h3 className="text-xl text-white font-semibold">
                     {remainingTitle}
                   </h3>
                 </div>

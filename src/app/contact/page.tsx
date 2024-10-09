@@ -1,6 +1,6 @@
 'use client'
 import React, { useEffect } from 'react';
-import { FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaMapMarkerAlt ,FaWhatsapp } from 'react-icons/fa';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Link from 'next/link';
@@ -93,10 +93,10 @@ const ContactUs = () => {
             </button>
           </form>
         </div>
-        <div className="space-y-6">
+        <div className="space-y-4 flex flex-col">
           <Link href='mailto:info@profile-bs.com'  > 
           <div 
-            className="flex items-center p-6 rounded-lg border border-gray-400"
+            className="flex items-center p-3 rounded-lg border border-gray-400"
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="800"
@@ -116,8 +116,24 @@ const ContactUs = () => {
           
           </div>
             </Link>
+            <Link href='https://wa.me/917902991199' >
+            <div
+            className="flex items-center p-3 rounded-lg border border-gray-400"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="800"
+            data-aos-delay="600"
+          >
+            <FaWhatsapp className="button-color-text text-3xl mr-4" />
+            <div>
+              <h4 className="text-lg font-semibold text-gray-700">WhatsApp</h4>
+              
+              <p className="text-gray-500">(+91)7902991199</p>
+            </div>
+          </div>
+          </Link>
           <div
-            className="flex items-center p-6 rounded-lg border border-gray-400"
+            className="flex items-center p-3 rounded-lg border border-gray-400"
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="800"
@@ -125,13 +141,13 @@ const ContactUs = () => {
           >
             <FaPhone className="button-color-text text-3xl mr-4" />
             <div>
-              <h4 className="text-lg font-semibold text-gray-700">Contacts</h4>
+              <h4 className="text-lg font-semibold text-gray-700">Contact</h4>
               
               <p className="text-gray-500">(+91)7902991199</p>
             </div>
           </div>
           <div
-            className="flex items-center p-6 rounded-lg border border-gray-400"
+            className="flex items-center p-3 rounded-lg border border-gray-400"
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="800"
@@ -147,6 +163,7 @@ const ContactUs = () => {
             </div>
             </Link>
           </div>
+         
         </div>
       </div>
     </section>

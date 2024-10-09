@@ -44,3 +44,9 @@ IT - green
 Finance - it collabarate
 Training - pink
 Corprate - bussinet corparte
+
+
+
+
+carousel - content 
+card - gradinet

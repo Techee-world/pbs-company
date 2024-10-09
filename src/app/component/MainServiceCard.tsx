@@ -1,6 +1,6 @@
-import React from 'react';
-import { useRouter } from 'next/navigation';
-import union from '../../../public/images/union-started.svg'; // Ensure the correct import
+import React from "react";
+import { useRouter } from "next/navigation";
+import union from "../../../public/images/union-started.svg"; // Ensure the correct import
 
 const MainServiceCard = () => {
   return (
@@ -46,41 +46,64 @@ const Card: React.FC<CardProps> = ({ path, color, some, des }) => {
   const handleClick = (sectionId: string) => {
     router.push(`/services#${sectionId}`);
   };
- 
+
   return (
-    <div  style={{
-      backgroundImage:`${color}`,
-    }}
-    className='transform scale-100   object-cover hover:scale-105 hover:shadow-xl transition duration-300 ease-out cursor-pointer rounded-lg'>
     <div
       style={{
-        backgroundImage: ` url(${union.src})`,
-        // backgroundPosition: 'center',
-        // backgroundRepeat: 'no-repeat',
-        backgroundSize:' 200%',
-        zIndex:'999'
-        
+        backgroundImage: `${color}`,
       }}
-      onClick={() => handleClick(path)}
-      className="w-full  object-cover rounded-lg p-4 sm:p-6 flex flex-col items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-4 max-w-md mx-auto sm:max-w-lg lg:max-w-xl"
+      className="transform scale-100   object-cover hover:scale-105 hover:shadow-xl transition duration-300 ease-out cursor-pointer rounded-lg"
     >
-      {/* Badge Section */}
-      <div className="mb-10 bg-blue-950 rounded-lg px-6 py-1 flex items-center space-x-2">
-        <span className="text-white font-medium text-sm">{some}</span>
-      </div>
+      <div
+        style={{
+          backgroundImage: ` url(${union.src})`,
+          // backgroundPosition: 'center',
+          backgroundRepeat: "no-repeat",
+          backgroundSize: " 100%",
+          zIndex: "999",
+          marginTop: "20px",
+          display:'flex',
+            justifyContent:'center',
+            alignItems:'center'
+        }}
+        onClick={() => handleClick(path)}
+        className="w-full justify-center   object-cover rounded-lg p-4 sm:p-6 flex flex-col items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-4 max-w-md mx-auto sm:max-w-lg lg:max-w-xl"
+      >
+        {/* Badge Section */}
 
-      {/* Text Section */}
-      <div className="flex-grow text-center sm:text-left">
-        {des === 'Complete Digital Transformation' ? (
-          <>
-            <h2 className="text-lg font-semibold text-black">Complete</h2>
-            <h2 className="text-lg font-semibold text-black">Digital Transformation</h2>
-          </>
-        ) : (
-          <h2 className="text-lg font-semibold text-black">{des}</h2>
-        )}
+        <div className="mb-10 bg-blue-950 rounded-lg shadow-md  px-6 py-1 flex items-center justify-center space-x-2">
+          <span className="text-white  font-normal text-base">{some}</span>
+        </div>
+
+        {/* Text Section */}
+        <div className="flex-grow  sm:text-left">
+          {des === "Complete Digital Transformation" ? (
+            <>
+              <h2
+                className="text-lg text-center helvetic-sub-title-sub-font font-semibold text-black"
+              >
+                Complete
+              </h2>
+              <h2
+                className="text-lg  text-center helvetic-sub-title-sub-font font-semibold text-black"
+              >
+                Digital Transformation
+              </h2>
+            </>
+          ) : ( <>
+            <h2
+              className="text-lg text-center helvetic-sub-title-sub-font font-semibold text-black"
+            >
+              {des.split(' ').slice(0, 2).join(' ')}
+            </h2>
+            <h2
+              className="text-lg text-center helvetic-sub-title-sub-font font-semibold text-black"
+            >
+              {des.split(' ').slice(2).join(' ')}
+            </h2>
+            </>  )}
+        </div>
       </div>
-    </div>
     </div>
   );
 };

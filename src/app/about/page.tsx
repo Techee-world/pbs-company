@@ -124,7 +124,7 @@ export default function AboutPage() {
                       Vision
                     </h1>
                     <p
-                      className="text-lg font-light md:w-[90%] w-full border-b montserrat-font border-gray-400 pb-4"
+                      className="text-lgfont-normal md:w-[90%] w-full border-b montserrat-font border-gray-400 pb-4"
                       data-aos="fade-up"
                       data-aos-anchor-placement="top-bottom"
                       data-aos-duration="800"
@@ -147,7 +147,7 @@ export default function AboutPage() {
                       Mission
                     </h1>
                     <p
-                      className="text-lg font-light montserrat-font md:w-[90%] w-full"
+                      className="text-lg font-normal montserrat-font md:w-[90%] w-full"
                       data-aos="fade-up"
                       data-aos-anchor-placement="top-bottom"
                       data-aos-duration="800"
@@ -177,7 +177,7 @@ export default function AboutPage() {
 <div className="w-1  h-6 bg-blue-600">
 </div>
                   <span
-                    className="text-lg font-light montserrat-font md:w-[90%] w-full"
+                    className="text-lgfont-normal montserrat-font md:w-[90%] w-full"
                     data-aos="fade-up"
                     data-aos-anchor-placement="top-bottom"
                     data-aos-duration="800"
