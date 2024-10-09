@@ -83,7 +83,7 @@ export default function AboutPage() {
         <h1 className="text-4xl helvetic-sub-title-font font-black text-white mb-4 animated-box-fade animated-box-fade-2s">
         Who we are
         </h1>
-        <p className="text-lg font-thin text-white lg:w-3/4 mx-auto w-full animated-box-fade animated-box-fade-4s">
+        <p className="text-lg font-normal text-gray-200 lg:w-3/4 mx-auto w-full animated-box-fade animated-box-fade-4s">
         We are committed to helping businesses thrive by providing innovative and personalized solutions. Our comprehensive approach ensures that you have access to the resources and expertise needed to succeed in today's competitive market.
         </p>
       </div>
@@ -124,7 +124,7 @@ export default function AboutPage() {
                       Vision
                     </h1>
                     <p
-                      className="text-lgfont-normal md:w-[90%] w-full border-b montserrat-font border-gray-400 pb-4"
+                      className="text-lg font-normal md:w-[90%] w-full border-b montserrat-font border-gray-400 pb-4"
                       data-aos="fade-up"
                       data-aos-anchor-placement="top-bottom"
                       data-aos-duration="800"
