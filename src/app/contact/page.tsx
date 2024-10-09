@@ -1,6 +1,7 @@
 'use client'
 import React, { useEffect } from 'react';
-import { FaEnvelope, FaPhone, FaMapMarkerAlt ,FaWhatsapp } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaMapMarkerAlt  } from 'react-icons/fa';
+import { RiWhatsappFill } from "react-icons/ri";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Link from 'next/link';
@@ -28,7 +29,7 @@ const ContactUs = () => {
             Contact Us
           </button>
           <h2
-            className="text-2xl sm:text-3xl font-bold text-gray-800 mb-6"
+            className="text-2xl sm:text-4xl font-bold text-gray-800 mb-6"
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="800"
@@ -124,7 +125,7 @@ const ContactUs = () => {
             data-aos-duration="800"
             data-aos-delay="600"
           >
-            <FaWhatsapp className="button-color-text text-3xl mr-4" />
+            <RiWhatsappFill className="button-color-text text-3xl mr-4" />
             <div>
               <h4 className="text-lg font-semibold text-gray-700">WhatsApp</h4>
               

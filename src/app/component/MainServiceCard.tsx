@@ -6,25 +6,25 @@ const MainServiceCard = () => {
   return (
     <div className="grid max-w-6xl md:px-0 px-4 m-auto 2xl:max-w-7xl grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
       <Card
-        color="linear-gradient(91.43deg, rgb(79, 130, 227) 100%, rgb(122, 178, 248) 100%)"
+        color="radial-gradient(circle, rgba(79,130,227,1) 0%, rgba(177,212,255,1) 100%)"
         some="PBS Corporate"
         des="Management Consulting For Startups"
         path="ybn"
       />
       <Card
-        color="linear-gradient(91.43deg, rgb(94, 177, 195) 100%, rgb(157, 231, 247) 100%)"
+        color="radial-gradient(circle, rgba(68,162,182,1) 0%, rgba(164,231,246,1) 100%)"
         some="PBS Finance"
         des="Financial Consulting Solutions"
         path="acs"
       />
       <Card
-        color="linear-gradient(91.43deg, rgb(85, 181, 150) 100%, rgb(170, 234, 213) 100%)"
+        color="radial-gradient(circle, rgba(73,174,92,1) 0%, rgba(184,216,190,1) 100%)"
         some="PBS Tech"
         des="Complete Digital Transformation"
         path="it"
       />
       <Card
-        color="linear-gradient(91.43deg, rgb(218, 97, 97) 100%, rgb(243, 145, 145) 100%)"
+        color="radial-gradient(circle, rgba(208,83,96,1) 0%, rgba(242,189,189,1) 100%)"
         some="PBS Trainings"
         des="Tailored Training Sessions "
         path="training"
@@ -67,11 +67,11 @@ const Card: React.FC<CardProps> = ({ path, color, some, des }) => {
             alignItems:'center'
         }}
         onClick={() => handleClick(path)}
-        className="w-full justify-center   object-cover rounded-lg p-4 sm:p-6 flex flex-col items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-4 max-w-md mx-auto sm:max-w-lg lg:max-w-xl"
+        className="w-full justify-center   object-cover rounded-lg p-4 sm:p-3 flex flex-col items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-4 max-w-md mx-auto sm:max-w-lg lg:max-w-xl"
       >
         {/* Badge Section */}
 
-        <div className="mb-10 bg-blue-950 rounded-lg shadow-md  px-6 py-1 flex items-center justify-center space-x-2">
+        <div className="mb-8 bg-blue-950 rounded-lg shadow-md  px-6 py-1 flex items-center justify-center space-x-2">
           <span className="text-white  font-normal text-base">{some}</span>
         </div>
 
