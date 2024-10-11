@@ -16,8 +16,8 @@ const Corporate: React.FC = () => {
     <>
     <div 
   
-     className="py-10 px-4 sm:px-6 lg:px-8 ">
-      <div   style={{background:'radial-gradient(circle, rgba(79,130,227,1) 0%, rgba(177,212,255,1) 100%)'}}
+     className=" px-4 sm:px-6 lg:px-8 ">
+      <div   style={{background:'rgb(171, 200, 255)'}}
        className="2xl:max-w-7xl max-w-6xl mx-auto p-6 rounded-xl">
         {/* <p
           className=" mb-10 text-lg montserrat-font helvetic-font"

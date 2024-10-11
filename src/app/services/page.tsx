@@ -12,10 +12,12 @@ export default function Services() {
   return (
       <div className="pt-24 lg:pt-0">
         <CardInService />
+        <div className="space-y-10">
         <Corporate />
        <Growth/>
        <ItService />
        <Training />
+        </div>
        <Funding />
        {/* <div className="bg-white max-w-6xl m-auto h-px  "></div> */}
        <ServicesHome />

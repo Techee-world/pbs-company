@@ -19,9 +19,9 @@ const ItService: React.FC = () => {
   }, []);
   return (
     <div 
-    style={{background:'radial-gradient(circle, rgba(208,83,96,1) 0%, rgba(242,189,189,1) 100%)'}} 
+    
     className="  ">
-      <div className="2xl:max-w-7xl max-w-6xl mx-auto p-4 lg:p-0">
+      <div style={{background:'rgb(251, 213, 213)'}}  className="2xl:max-w-7xl max-w-6xl mx-auto p-4 lg:p-6 rounded-xl">
       <div className=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6  relative items-center lg:mb-20 mb-10 animated-box-fade ">
             {/* <Image
               src={service1}
@@ -44,8 +44,9 @@ const ItService: React.FC = () => {
             data-aos-delay="200">
           We create dynamic websites and mobile apps tailored to your business needs, ensuring a seamless user experience across all platforms
         </p> */}
-        <div className="flex flex-col gap-8">
-          <div >
+        <div className="flex  gap-8">
+          <div className="border-r border-gray-400 pr-4" >
+
             <div className="w-full">
               <h2 id="five" className="text-2xl font-bold text-gray-900 mb-4 helvetic-sub-title-sub-font"  data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
@@ -104,6 +105,9 @@ const ItService: React.FC = () => {
                From IT management to equipment installation, we provide complete infrastructure solutions that ensure smooth, secure, and efficient operations for businesses
               </p>
             </div>
+          </div>
+
+          <div>
             <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-4 helvetic-sub-title-sub-font"  data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
@@ -146,6 +150,7 @@ const ItService: React.FC = () => {
               Streamline your software development and operations processes with our DevOps services, including version control, automated software delivery, and system monitoring
               </p>
             </div>
+
           </div>
           {/* <div className="flex items-center">
             <Image
