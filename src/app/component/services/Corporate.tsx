@@ -18,7 +18,7 @@ const Corporate: React.FC = () => {
   
      className=" px-4 sm:px-6 lg:px-8 ">
       <div   style={{background:'rgb(171, 200, 255)'}}
-       className="2xl:max-w-7xl max-w-6xl mx-auto p-6 rounded-xl">
+       className="2xl:max-w-7xl max-w-6xl mx-auto p-6 shadow-2xl rounded-xl">
         {/* <p
           className=" mb-10 text-lg montserrat-font helvetic-font"
           data-aos="fade-up"
@@ -48,7 +48,7 @@ const Corporate: React.FC = () => {
             {/* <div className="w-full mb-6"> */}
               <h2  
               style={{fontWeight:600}}
-                className="text-2xl font-bold  mb-4 helvetic-sub-title-sub-font"
+                className="text-lg font-bold  mb-4 helvetic-sub-title-sub-font"
                 data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom"
                 data-aos-duration="800"
@@ -69,7 +69,10 @@ Management consulting
               </p>
               <ul className="grid grid-cols-1 ">
                 {["Strategy for New Entrants","Strategy for Existing Businesses","Customer Strategy & Marketing"].map((item,index)=>
-                <li className="list-disc ml-5" key={index}>{item}</li>
+                <li data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
+                data-aos-duration="800"
+                data-aos-delay="600" className="list-disc ml-5" key={index}>{item}</li>
                 )}
               </ul>
 
@@ -88,7 +91,10 @@ Franchise Development Program
               </p>
               <ul className="grid grid-cols-1 ">
                 {["Franchise Development Program","Franchise Marketing","Franchise Audit"].map((item,index)=>
-                <li className="list-disc ml-5" key={index}>{item}</li>
+                <li data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
+                data-aos-duration="800"
+                data-aos-delay="600" className="list-disc ml-5" key={index}>{item}</li>
                 )}
               </ul>
             </div>
@@ -104,7 +110,10 @@ Startup consulting
               </p>
               <ul className="grid grid-cols-1 ">
                 {["Business Idea Validation","Business Plan","Business Funding Support","Business Model Development","Setting up Operations","Market Positioning and Marketing Plan"].map((item,index)=>
-                <li className="list-disc ml-5 " key={index}>{item}</li>
+                <li data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
+                data-aos-duration="800"
+                data-aos-delay="600" className="list-disc ml-5 " key={index}>{item}</li>
                 )}
               </ul>
             </div>
@@ -121,7 +130,10 @@ Digital marketing & SEO
               </p>
               <ul className="grid grid-cols-1 ">
                 {["Branding & Re-branding","Brand Building","Sales Improvement","Promotion Tactics ","Advertisement (outdoor/indoor) ","Advertisement Budget Planning"].map((item,index)=>
-                <li className="list-disc ml-5" key={index}>{item}</li>
+                <li data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
+                data-aos-duration="800"
+                data-aos-delay="600" className="list-disc ml-5" key={index}>{item}</li>
                 )}
               </ul>
             </div>

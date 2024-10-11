@@ -21,7 +21,7 @@ const ItService: React.FC = () => {
     <div 
     
     className=" p-4 ">
-      <div style={{background:'rgb(251, 213, 213)'}}  className="2xl:max-w-7xl max-w-6xl mx-auto p-4 lg:p-6 rounded-xl">
+      <div style={{background:'rgb(251, 213, 213)'}}  className="2xl:max-w-7xl shadow-2xl max-w-6xl mx-auto p-4 lg:p-6 rounded-xl">
       <div className=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6  relative items-center lg:mb-20 mb-10 animated-box-fade ">
             {/* <Image
               src={service1}

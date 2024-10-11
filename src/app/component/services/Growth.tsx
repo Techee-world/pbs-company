@@ -17,7 +17,7 @@ const Growth: React.FC = () => {
     <div 
     
      className=" px-4 sm:px-6 lg:px-8 ">
-      <div style={{background:'rgb(225, 207, 242)'}} className="2xl:max-w-7xl p-6 rounded-xl max-w-6xl mx-auto">
+      <div style={{background:'rgb(225, 207, 242)'}} className="2xl:max-w-7xl shadow-2xl p-6 rounded-xl max-w-6xl mx-auto">
         <h2
           className="text-3xl font-bold mb-6  sm:text-4xl helvetic-sub-title-font lg:text-4xl"
           data-aos="fade-up"
@@ -46,7 +46,7 @@ const Growth: React.FC = () => {
             {/* <div className="w-full mb-6"> */}
               <h2 
                style={{fontWeight:600}}
-                className="text-2xl font-bold  mb-4 helvetic-sub-title-sub-font"
+                className="text-lg font-bold  mb-4 helvetic-sub-title-sub-font"
                 data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom"
                 data-aos-duration="800"
@@ -67,7 +67,10 @@ Registration & Compliances
               </p>
               <ul className="grid grid-cols-1 ">
                 {["Company/LLP Registration","Companies/LLP Annual Compliances","Firm/Proprietorship Registration","Trust/Society Registration and Renewal","12A/80G Registration","Trademark Registration","Start-up India Registration","MSME Registration"].map((item,index)=>
-                <li className="list-disc ml-5 " key={index}>{item}</li>
+                <li  data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
+                data-aos-duration="800"
+                data-aos-delay="600" className="list-disc ml-5 " key={index}>{item}</li>
                 )}
               </ul>
 
@@ -84,7 +87,10 @@ Audit & Certification
               </p>
               <ul className="grid grid-cols-1 ">
                 {["Statutory Audit","Tax Audit","Stock Audit & Certification","Management Audit","Other Audits"].map((item,index)=>
-                <li className="list-disc ml-5 " key={index}>{item}</li>
+                <li  data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
+                data-aos-duration="800"
+                data-aos-delay="600" className="list-disc ml-5 " key={index}>{item}</li>
                 )}
               </ul>
             </div>
@@ -101,7 +107,10 @@ Drafting & Documentation
               </p>
               <ul className="grid grid-cols-1 ">
                 {["Partnership/Trust Deed Drafting","Legal Agreement Drafting","Payroll Management"].map((item,index)=>
-                <li className="list-disc ml-5 " key={index}>{item}</li>
+                <li  data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
+                data-aos-duration="800"
+                data-aos-delay="600" className="list-disc ml-5 " key={index}>{item}</li>
                 )}
               </ul>
             </div>
@@ -119,7 +128,10 @@ Accounting & Book Keeping
               </p>
               <ul className="grid grid-cols-1 ">
                 {["Accounts and Book Keeping","Cost Accounting and Record Maintenance","Project Reports"].map((item,index)=>
-                <li className="list-disc ml-5 " key={index}>{item}</li>
+                <li  data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
+                data-aos-duration="800"
+                data-aos-delay="600" className="list-disc ml-5 " key={index}>{item}</li>
                 )}
               </ul>
             </div>
@@ -137,7 +149,10 @@ Income Tax Services
               </p>
               <ul className="grid grid-cols-1 ">
                 {["Income Tax/TDS/TCS Return Filing","Income Tax Audit & Certification","PAN & TAN Services (UTI/NSDL)"].map((item,index)=>
-                <li className="list-disc ml-5 " key={index}>{item}</li>
+                <li  data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
+                data-aos-duration="800"
+                data-aos-delay="600" className="list-disc ml-5 " key={index}>{item}</li>
                 )}
               </ul>
             </div>
@@ -155,7 +170,10 @@ GST Services
               </p>
               <ul className="grid grid-cols-1 ">
                 {["GST Registration & Return Filing","GST Certification & Audit","Other GST Compliances","Notice & Personnel Representation Services"].map((item,index)=>
-                <li className="list-disc ml-5 " key={index}>{item}</li>
+                <li  data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
+                data-aos-duration="800"
+                data-aos-delay="600" className="list-disc ml-5 " key={index}>{item}</li>
                 )}
               </ul>
             </div>
@@ -173,7 +191,10 @@ Management Consultancy
               </p>
               <ul className="grid grid-cols-1 ">
                 {["Business Setup Advisory","Financial Consultancy","International Taxation","Compliance Consulting","Strategy Consulting"].map((item,index)=>
-                <li className="list-disc ml-5 " key={index}>{item}</li>
+                <li  data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
+                data-aos-duration="800"
+                data-aos-delay="600" className="list-disc ml-5 " key={index}>{item}</li>
                 )}
               </ul>
             </div>
@@ -191,7 +212,10 @@ Human Resource Services
               </p>
               <ul className="grid grid-cols-1 ">
                 {["ESI Registration & Returns","PF Registration & Return","Kerala Labour Welfare Fund","Payroll Management","HR Consultancy Services"].map((item,index)=>
-                <li className="list-disc " key={index}>{item}</li>
+                <li  data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
+                data-aos-duration="800"
+                data-aos-delay="600" className="list-disc " key={index}>{item}</li>
                 )}
               </ul>
             </div>
@@ -209,7 +233,10 @@ Statutory & Compliances
               </p>
               <ul className="grid grid-cols-1 ">
                 {["Import Export Licenses","Payroll Management","FEMA & RBI Compliances","Merger & Amalgamation"].map((item,index)=>
-                <li className="list-disc " key={index}>{item}</li>
+                <li  data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
+                data-aos-duration="800"
+                data-aos-delay="600" className="list-disc " key={index}>{item}</li>
                 )}
               </ul>
             </div>
