@@ -10,13 +10,13 @@ import CardInService from "../component/services/CardInService";
 
 export default function Services() {
   return (
-      <div className="">
+      <div className="pt-24 lg:pt-0">
         <CardInService />
         <Corporate />
        <Growth/>
        <ItService />
-       <Funding />
        <Training />
+       <Funding />
        {/* <div className="bg-white max-w-6xl m-auto h-px  "></div> */}
        <ServicesHome />
        {/* <Meeting /> */}

@@ -17,7 +17,7 @@ const ContactUs = () => {
   }, []);
 
   return (
-    <section className="max-w-7xl mx-auto h-full lg:pt-32 flex lg:pb-40 items-center justify-center mt-0 lg:mt-2 mb-10 lg:mb-0 py-12 px-4">
+    <section className="max-w-7xl mx-auto  h-full pt-24 lg:pt-32 flex lg:pb-40 items-center justify-center mt-0 lg:mt-0 mb-10 lg:mb-0 py-12 px-4">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 w-full">
         <div className="lg:col-span-2 flex flex-col justify-between">
           {/* <span
