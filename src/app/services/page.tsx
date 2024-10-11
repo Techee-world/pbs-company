@@ -11,8 +11,8 @@ import CardInService from "../component/services/CardInService";
 export default function Services() {
   return (
       <div className="pt-24 lg:pt-0">
-        <CardInService />
-        <div className="space-y-10">
+        {/* <CardInService /> */}
+        <div className="space-y-10 lg:pt-40">
         <Corporate />
        <Growth/>
        <ItService />

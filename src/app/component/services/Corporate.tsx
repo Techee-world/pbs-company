@@ -54,9 +54,9 @@ const Corporate: React.FC = () => {
                 data-aos-duration="800"
                 data-aos-delay="500"
               >
-                Content to be added
+                Our solutions offers a wide range of comprehensive consultancy services, custom tailored to suit client requirements, vision and market value.
               </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 space-y-4 lg:grid-cols-3 w-full">
+              <div className="grid grid-cols-1 md:grid-cols-2 space-y-4 lg:grid-cols-2 w-full">
               <div className="w-full">
               <p
                 className=" text-lg mb-2 font-semibold montserrat-font"
@@ -74,6 +74,24 @@ Management consulting
               </ul>
 
               </div>
+              <div className="w-full mb-6">
+              <p
+                className="  text-lg mb-2 font-semibold montserrat-font"
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
+                data-aos-duration="800"
+                data-aos-delay="600"
+              >
+Franchise Development Program
+
+
+              </p>
+              <ul className="grid grid-cols-1 ">
+                {["Franchise Development Program","Franchise Marketing","Franchise Audit"].map((item,index)=>
+                <li className="list-disc ml-5" key={index}>{item}</li>
+                )}
+              </ul>
+            </div>
             <div className="w-full mb-6">
               <p
                 className="  text-lg mb-2 font-semibold montserrat-font"
@@ -107,24 +125,7 @@ Digital marketing & SEO
                 )}
               </ul>
             </div>
-            <div className="w-full mb-6">
-              <p
-                className="  text-lg mb-2 font-semibold montserrat-font"
-                data-aos="fade-up"
-                data-aos-anchor-placement="top-bottom"
-                data-aos-duration="800"
-                data-aos-delay="600"
-              >
-Franchise Development Program
-
-
-              </p>
-              <ul className="grid grid-cols-1 ">
-                {["Franchise Development Program","Franchise Marketing","Franchise Audit"].map((item,index)=>
-                <li className="list-disc ml-5" key={index}>{item}</li>
-                )}
-              </ul>
-            </div>
+           
 
 
               </div>

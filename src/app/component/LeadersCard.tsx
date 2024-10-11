@@ -24,7 +24,7 @@ const LeadersCard = ({ name, designation, img }: LeaderTypes) => {
           data-aos-anchor-placement="top-bottom"
           data-aos-duration="800"
           data-aos-delay="300"
-          className="lg:w-fit w-full my-4 px-3 lg:px-0 border rounded-full border-gray-400"
+          className="lg:w-fit w-full my-4 px-3 lg:px-0  border-gray-400"
         >
           <Image
             src={img as string}

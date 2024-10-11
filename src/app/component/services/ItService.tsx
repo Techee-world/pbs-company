@@ -20,7 +20,7 @@ const ItService: React.FC = () => {
   return (
     <div 
     
-    className="  ">
+    className=" p-4 ">
       <div style={{background:'rgb(251, 213, 213)'}}  className="2xl:max-w-7xl max-w-6xl mx-auto p-4 lg:p-6 rounded-xl">
       <div className=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6  relative items-center lg:mb-20 mb-10 animated-box-fade ">
             {/* <Image
@@ -44,8 +44,8 @@ const ItService: React.FC = () => {
             data-aos-delay="200">
           We create dynamic websites and mobile apps tailored to your business needs, ensuring a seamless user experience across all platforms
         </p> */}
-        <div className="flex  gap-8">
-          <div className="border-r border-gray-400 pr-4" >
+        <div className="flex lg:flex-row flex-col  gap-8">
+          <div className="lg:border-r lg:border-gray-400 lg:pr-4" >
 
             <div className="w-full">
               <h2 id="five" className="text-2xl font-bold text-gray-900 mb-4 helvetic-sub-title-sub-font"  data-aos="fade-up"

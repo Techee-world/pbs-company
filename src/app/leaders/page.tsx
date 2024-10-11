@@ -33,7 +33,7 @@ const Page = () => {  // Changed 'page' to 'Page'
   }, []);
 
   return (
-    <div className=" pb-40">
+    <div className=" pb-0 lg:pb-40">
       <div
       className="relative flex w-full justify-center items-end pb-40 h-screen px-6 "
       style={{
@@ -61,7 +61,7 @@ const Page = () => {  // Changed 'page' to 'Page'
         // }}
       >
       
-        <div className="2xl:max-w-7xl pb-8  max-w-6xl m-auto relativ  flex flex-col md:flex-row gap-6 pt-16 items-start  text-white  md:space-x-6 px-4">
+        <div className="2xl:max-w-7xl pb-8  max-w-6xl m-auto relativ  flex flex-col lg:flex-row gap-6 pt-16 items-start  text-white  md:space-x-6 px-4">
           {/* <div
             className=" border-8 z-10 -rotate-[9deg] absolute sm:w-[25rem] w-[21rem]  lg:w-80 h-[60vh] lg:h-[60vh] top-28 lg:top-32 left-4 lg:left-5 border-white p-1 mb-4 md:mb-0"
             data-aos="fade-up"
@@ -71,12 +71,13 @@ const Page = () => {  // Changed 'page' to 'Page'
           >
             {" "}
           </div> */}
+          <h3 className="lg:ml-6 text-center w-full lg:hidden block text-white font-black helvetic-Head-font lg:text-start text-3xl lg:text-4xl pb-6">Vice Chairperson's Message</h3>
           <Image
             src={md.src}
             alt="Sridhar Vembu"
             width={300}
             height={500}
-            className="z-40 w-full  object-cover  md:w-80 lg:w-96 rounded-2xl shadow-xl lg:h-[25rem] "
+            className="z-40 w-64  object-cover self-center lg:self-auto  h-[18rem] md:w-80 lg:w-96 rounded-2xl shadow-xl lg:h-[25rem] "
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="800"
@@ -85,7 +86,7 @@ const Page = () => {  // Changed 'page' to 'Page'
           {/* <RiDoubleQuotesL
             className="w-16 h-16 text-white lg:absolute  top-16 left-80"
             data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
+            data-aos-anchor-placement="top-bottom" 
             data-aos-duration="800"
             data-aos-delay="700"
           /> */}
@@ -96,8 +97,8 @@ const Page = () => {  // Changed 'page' to 'Page'
             data-aos-duration="800"
             data-aos-delay="700"
           >
-              <h3 className="lg:ml-6   text-white font-black helvetic-Head-font text-start text-3xl lg:text-4xl pb-6">Vice Chairperson's Message</h3>
-            <p className="text-base font-normal text-gray-300 lg:ml-6  ">
+              <h3 className="lg:ml-6 hidden lg:block  text-white font-black helvetic-Head-font text-start text-3xl lg:text-4xl pb-6">Vice Chairperson's Message</h3>
+            <p className="text-base font-normal text-center lg:text-start text-gray-300 lg:ml-6  ">
               I am thrilled to announce the launch of our new business
               consultancy, dedicated to empowering businesses and professionals
               to reach their full potential. In today s rapidly evolving
@@ -142,7 +143,7 @@ const Page = () => {  // Changed 'page' to 'Page'
           <h1 className="text-xl font-bold mt-4 text-center lg:text-start helvetic-sub-title-sub-font">
             LEADERSHIP
           </h1>
-          <div className="grid grid-cols-2 place-items-center lg:place-items-start md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 place-items-center xl:grid-cols-3 lg:place-items-start md:grid-cols-2 lg:grid-cols-4 gap-4">
             <LeadersCard img={habeeb} name="Habeeb Rahman" designation="Chairman & founder" />
             <LeadersCard img={seven} name="Muhammed Rafi" designation="MD & Co-founder" />
             <LeadersCard img={one} name="Nazrin Midlaj" designation="Vice Chairperson & Co-founder" />
