@@ -15,7 +15,7 @@ const Funding: React.FC = () => {
   return (
     <>
     <div
-    //  style={{background:'rgb(251, 213, 213)'}} 
+     
      className=" py-20 px-4 sm:px-6 lg:px-8 ">
       <div className="2xl:max-w-7xl max-w-6xl mx-auto">
         <h2

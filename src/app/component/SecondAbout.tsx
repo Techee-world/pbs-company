@@ -5,13 +5,13 @@ import Button from './Button'
 
 const SecondAbout = () => {
   return (
-    <div>
+    <div className='max-w-6xl 2xl:max-w-7xl m-auto'>
         <h2 className="mt-12 mx-4 mb-4 lg:hidden block bg-blue-200 rounded-full py-1 px-4 w-fit text-XL font-semibold">
            About <span className=" font-bold">PBS</span>
         </h2>
-          <div className=" lg:py-16 px-4 md:px-16 lg:px-32 flex md:gap-8 flex-col-reverse md:flex-row justify-between items-center">
+          <div className=" lg:py-16 px-4  lg:px-4 flex md:gap-8 flex-col-reverse lg:flex-row justify-between items-center">
       {/* Left side content */}
-      <div className="max-w-lg flex  flex-col gap-3 mb-8 md:mb-0">
+      <div className="w-full flex  flex-col gap-3 mb-8 md:mb-0">
         <h2 className="hidden lg:block bg-blue-200 rounded-full py-1 px-4 w-fit text-XL font-semibold">
            About <span className=" font-bold">PBS</span>
         </h2>
@@ -25,13 +25,13 @@ const SecondAbout = () => {
       </div>
 
       {/* Right side image */}
-      <div className="relative w-full max-w-md md:max-w-2xl">
+      <div className="relative w-full  ">
         <Image
           src={ourTeam.src} // Add the correct path of your image
           alt="Tegain Team"
           width={600}
           height={800}
-          className="rounded-3xl lg:shadow-2xl"
+          className="rounded-3xl lg:shadow-2xl w-full"
         />
       </div>
     </div>

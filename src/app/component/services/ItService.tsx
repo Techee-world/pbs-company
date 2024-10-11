@@ -19,7 +19,7 @@ const ItService: React.FC = () => {
   }, []);
   return (
     <div 
-    // style={{background:'rgb(147, 226, 202)'}} 
+    style={{background:'radial-gradient(circle, rgba(208,83,96,1) 0%, rgba(242,189,189,1) 100%)'}} 
     className="  ">
       <div className="2xl:max-w-7xl max-w-6xl mx-auto p-4 lg:p-0">
       <div className=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6  relative items-center lg:mb-20 mb-10 animated-box-fade ">

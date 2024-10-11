@@ -15,7 +15,7 @@ const WhoNeedUsCard: React.FC<URL> = ({url,title,des}) => {
      data-aos-anchor-placement="top-bottom" data-aos-duration='800' data-aos-delay="700" className="card">
         <div className="thumb bg-blue-100"  style={{ backgroundImage: `url(${url}) `}}></div>
         <div className="infos">
-          <h2 className="title font-semibold   lg:pt-3 text-xl">
+          <h2 className="title font-semibold  pt-7 lg:pt-3 text-xl">
           {title}
           </h2>
           <p className="  mt-9 lg:mt-16">

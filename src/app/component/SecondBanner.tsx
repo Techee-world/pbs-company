@@ -91,18 +91,18 @@ const SecondBanner: NextPage = () => {
     <div style={{
           backgroundImage: `url('https://tegain-website-static-media-bucket.s3.ap-south-1.amazonaws.com/assets/images/21-05-2024/landing-grid.svg')`,
           backgroundRepeat: 'no-repeat',
-          marginTop: '30px',
+          // marginTop: '30px',
           backgroundSize: 'contain',
           backgroundPosition:'center',
         }}>
       <div
         
-        className="min-h-[92vh] max-w-7xl m-auto flex flex-col items-center justify-center gap-6"
+        className="min-h-[96vh] max-w-7xl m-auto flex flex-col items-center justify-center gap-6"
       >
         {slides.map((slide, index) => (
           <div
             key={index}
-            className={`w-full ${index === activeIndex ? 'block' : 'hidden'}`}
+            className={`w-full lg:mb-0 mb-28 ${index === activeIndex ? 'block' : 'hidden'}`}
           >
             <div className=' h-80 pt-16 mb-10'>
             <header
@@ -168,7 +168,7 @@ const SecondBanner: NextPage = () => {
         ))}
 
         {/* Pagination Dots */}
-        <div className="swiper-pagination-custom z-[99999]">
+        <div className="swiper-pagination-custom  z-[99999]">
           {slides.map((_, index) => (
             <div
               key={index}

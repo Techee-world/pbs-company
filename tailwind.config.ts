@@ -32,6 +32,11 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      backgroundColor: {
+        'custom-blue': 'radial-gradient(circle, rgba(79,130,227,1) 0%, rgba(177,212,255,1) 100%)',   
+        'custom-green': 'radial-gradient(circle, rgba(73,174,92,1) 0%, rgba(184,216,190,1) 100%)',   
+        'custom-pink': 'radial-gradient(circle, rgba(208,83,96,1) 0%, rgba(242,189,189,1) 100%)', 
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],

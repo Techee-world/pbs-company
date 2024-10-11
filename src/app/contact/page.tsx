@@ -5,6 +5,7 @@ import { RiWhatsappFill } from "react-icons/ri";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Link from 'next/link';
+import { SiPandas } from 'react-icons/si';
 
 const ContactUs = () => {
   useEffect(() => {
@@ -16,10 +17,10 @@ const ContactUs = () => {
   }, []);
 
   return (
-    <section className="max-w-7xl mx-auto h-full lg:pt-32 flex lg:pb-40 items-center justify-center mt-0 lg:mt-2 mb-28 lg:mb-0 py-12 px-4">
+    <section className="max-w-7xl mx-auto h-full lg:pt-32 flex lg:pb-40 items-center justify-center mt-0 lg:mt-2 mb-10 lg:mb-0 py-12 px-4">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 w-full">
-        <div className="lg:col-span-2">
-          <button
+        <div className="lg:col-span-2 flex flex-col justify-between">
+          {/* <span
             className="bg-blue-200 button-color-text py-1 px-4 rounded-full text-sm mb-4"
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
@@ -27,7 +28,7 @@ const ContactUs = () => {
             data-aos-delay="100"
           >
             Contact Us
-          </button>
+          </span> */}
           <h2
             className="text-2xl sm:text-4xl font-bold text-gray-800 mb-6"
             data-aos="fade-up"
@@ -80,7 +81,7 @@ const ContactUs = () => {
               data-aos-duration="800"
               data-aos-delay="700"
               placeholder="Your Message"
-              className="border bg-transparent border-gray-400 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-950 sm:col-span-2 h-24"
+              className="border bg-transparent border-gray-400 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-950 sm:col-span-2 h-28"
             ></textarea>
             <button
               data-aos="fade-up"
@@ -104,17 +105,10 @@ const ContactUs = () => {
             data-aos-delay="400"
           >
             <FaEnvelope className="button-color-text text-3xl mr-4" />
-            
-
             <div>
             <h4 className="text-lg font-semibold text-gray-700">Email</h4>
-
-            <p className="text-gray-500">info@profile-bs.com</p>
-
+            <p className="text-gray-500 text-sm">info@profile-bs.com</p>
             </div>
-            
-
-          
           </div>
             </Link>
             <Link href='https://wa.me/917902991199' >
@@ -129,7 +123,7 @@ const ContactUs = () => {
             <div>
               <h4 className="text-lg font-semibold text-gray-700">WhatsApp</h4>
               
-              <p className="text-gray-500">(+91)7902991199</p>
+              <p className="text-gray-500 text-sm">(+91)7902991199</p>
             </div>
           </div>
           </Link>
@@ -144,7 +138,7 @@ const ContactUs = () => {
             <div>
               <h4 className="text-lg font-semibold text-gray-700">Contact</h4>
               
-              <p className="text-gray-500">(+91)7902991199</p>
+              <p className="text-gray-500 text-sm">(+91)7902991199</p>
             </div>
           </div>
           <div
@@ -158,7 +152,7 @@ const ContactUs = () => {
             <Link href='https://maps.app.goo.gl/XUL65q1d8D6kGgeC8' > 
             <div>
               <h4 className="text-lg font-semibold text-gray-700">Location</h4>
-              <p className="text-gray-500">
+              <p className="text-gray-500 text-sm">
               Kalloor building, Bypass Rd, Mukkam, Kerala 673602
               </p>
             </div>

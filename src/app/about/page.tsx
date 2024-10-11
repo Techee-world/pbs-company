@@ -55,32 +55,32 @@ export default function AboutPage() {
         keywords="pbs, pbsgroup , pbs about"
         image="/images/og-image-about.jpg"
       />
-      {/* <div className="h-auto w-full bg-no-repeat bg-cover center " style={{backgroundImage:`url(${line.src})`}}> */}
+      {/* <div className="h-auto w-full bg-no-repeat bg-cover center " style={{backgroundImage:url(${line.src})}}> */}
       <div
         style={{
           backgroundImage: `url('https://tegain-website-static-media-bucket.s3.ap-south-1.amazonaws.com/assets/images/21-05-2024/landing-gradient.svg')`,
           backgroundRepeat: "no-repeat",
         }}
-        className="relative min-h-screen pb-40"
+        className="relative min-h-screen lg:pb-10"
       >
         {/* Background Image */}
         {/* <div  
         className=""
-        style={{backgroundImage: `url(${line.src})`}}
+        style={{backgroundImage: url(${line.src})}}
       ></div> */}
 
         {/* Content */}
             <div
       className="relative h-screen px-6 "
       style={{
-        backgroundImage: `url(${ourTeam.src})`,
+        backgroundImage:` url(${ourTeam.src})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-40"></div> {/* Black overlay with low opacity */}
-      <div className="relative z-10 text-center pt-32">
-        <h1 className="text-4xl helvetic-sub-title-font font-black text-white mb-4 animated-box-fade animated-box-fade-2s">
+      <div className="relative z-10 text-center pt-32 ">
+        <h1 className="text-4xl helvetic-sub-title-font  sm:mt-40  lg:mt-0 font-black text-white mb-4 animated-box-fade animated-box-fade-2s">
         Who we are
         </h1>
         <p className="text-lg font-normal text-gray-200 lg:w-3/4 mx-auto w-full animated-box-fade animated-box-fade-4s">
@@ -88,26 +88,27 @@ export default function AboutPage() {
         </p>
       </div>
     </div>
-        <div className="relative z-10 2xl:max-w-7xl max-w-6xl mx-auto p-4 py-[2rem] mb-28 lg:mb-0">
+        <div className="relative z-10 2xl:max-w-7xl max-w-6xl mx-auto p-4 py-[2rem] sm:mb-0 lg:mb-0">
           <div className="flex md:flex-row flex-col items-center justify-between">
             <div className="mb-10 w-full">
 
               {/* <div 
         className="h-auto w-full"
-        style={{backgroundImage: `url(${line.src})`}}
+        style={{backgroundImage: url(${line.src})}}
       ></div> */}
 
-              <div className="flex justify-between items-center  border-b border-gray-400 pb-4  lg:flex-row mb-6 flex-col-reverse lg:justify-between gap-8 lg:gap-0">
+              <div className="flex justify-between items-center   border-b border-gray-400 md:pb-4  lg:flex-row mb-6 pb-8 flex-col-reverse lg:justify-between gap-8 lg:gap-10 ">
                 <div
                   data-aos="fade-right"
                   data-aos-duration="800"
                   data-aos-delay="400"
+                  className="w-full lg:w-auto"
                 >
                   <Image
                     src={value}
                     alt="Person giving thumbs up"
-                    className="w-full h-96 object-cover shadow-xl rounded-2xl"
-                    width={500}
+                    className="w-full h-auto lg:h-96 lg:w-auto object-cover shadow-xl rounded-2xl bg-slate-500"
+                    width={600}
                     height={300}
                   />
                 </div>
@@ -208,13 +209,13 @@ export default function AboutPage() {
                     data-aos-delay="600"
                     className="text-lg font-normal"
                   >Our values are the building blocks of our culture, embedded in everything we do and central to what allows us to be a global consulting firm that leads with integrity.</p>
-              <div className="flex items-center  gap-6">
+              <div className="flex items-center gap-6 lg:flex-row flex-col-reverse mt-4 ">
                 <div className="my-6 w-full">
-                  <div className="grid  grid-cols-1 gap-2">
+                  <div className="grid  grid-cols-1 gap-4">
                     {Values.map((item, i) => (
                           <ul key={i} className="flex ml-5 items-center mt-3 gap-2">
                             <li
-                              className="text-lg list-disc  font-semibold montserrat-font md:w-[30rem] w-full"
+                              className="text-lg list-disc  font-semibold montserrat-font lg:w-[30rem] w-full"
                               data-aos="fade-up"
                               data-aos-anchor-placement="top-bottom"
                               data-aos-duration="800"
@@ -230,8 +231,8 @@ export default function AboutPage() {
                 <Image
                   src={vission}
                   alt="Person giving thumbs up"
-                  className="w-full h-96 object-cover shadow-xl rounded-2xl"
-                  width={500}
+                  className="md:w-[100%] h-96 object-cover shadow-xl rounded-2xl"
+                  width={700}
                   height={300}
                 />
               </div>

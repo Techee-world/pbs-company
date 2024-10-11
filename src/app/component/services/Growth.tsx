@@ -15,9 +15,9 @@ const Growth: React.FC = () => {
   return (
     <>
     <div 
-    // style={{background:'rgb(171, 229, 242)'}}
-     className="py-20 px-4 sm:px-6 lg:px-8 ">
-      <div className="2xl:max-w-7xl max-w-6xl mx-auto">
+    
+     className="py-10 px-4 sm:px-6 lg:px-8 ">
+      <div style={{background:'radial-gradient(circle, rgba(68,162,182,1) 0%, rgba(164,231,246,1) 100%)'}} className="2xl:max-w-7xl p-6 rounded-xl max-w-6xl mx-auto">
         <h2
           className="text-3xl font-bold mb-6  sm:text-4xl helvetic-sub-title-font lg:text-4xl"
           data-aos="fade-up"
@@ -67,7 +67,7 @@ Registration & Compliances
               </p>
               <ul className="grid grid-cols-1 ">
                 {["Company/LLP Registration","Companies/LLP Annual Compliances","Firm/Proprietorship Registration","Trust/Society Registration and Renewal","12A/80G Registration","Trademark Registration","Start-up India Registration","MSME Registration"].map((item,index)=>
-                <li className="list-disc " key={index}>{item}</li>
+                <li className="list-disc ml-5 " key={index}>{item}</li>
                 )}
               </ul>
 
@@ -84,7 +84,7 @@ Audit & Certification
               </p>
               <ul className="grid grid-cols-1 ">
                 {["Statutory Audit","Tax Audit","Stock Audit & Certification","Management Audit","Other Audits"].map((item,index)=>
-                <li className="list-disc " key={index}>{item}</li>
+                <li className="list-disc ml-5 " key={index}>{item}</li>
                 )}
               </ul>
             </div>
@@ -101,7 +101,7 @@ Drafting & Documentation
               </p>
               <ul className="grid grid-cols-1 ">
                 {["Partnership/Trust Deed Drafting","Legal Agreement Drafting","Payroll Management"].map((item,index)=>
-                <li className="list-disc " key={index}>{item}</li>
+                <li className="list-disc ml-5 " key={index}>{item}</li>
                 )}
               </ul>
             </div>
@@ -119,7 +119,7 @@ Accounting & Book Keeping
               </p>
               <ul className="grid grid-cols-1 ">
                 {["Accounts and Book Keeping","Cost Accounting and Record Maintenance","Project Reports"].map((item,index)=>
-                <li className="list-disc " key={index}>{item}</li>
+                <li className="list-disc ml-5 " key={index}>{item}</li>
                 )}
               </ul>
             </div>
@@ -137,7 +137,7 @@ Income Tax Services
               </p>
               <ul className="grid grid-cols-1 ">
                 {["Income Tax/TDS/TCS Return Filing","Income Tax Audit & Certification","PAN & TAN Services (UTI/NSDL)"].map((item,index)=>
-                <li className="list-disc " key={index}>{item}</li>
+                <li className="list-disc ml-5 " key={index}>{item}</li>
                 )}
               </ul>
             </div>
@@ -155,7 +155,7 @@ GST Services
               </p>
               <ul className="grid grid-cols-1 ">
                 {["GST Registration & Return Filing","GST Certification & Audit","Other GST Compliances","Notice & Personnel Representation Services"].map((item,index)=>
-                <li className="list-disc " key={index}>{item}</li>
+                <li className="list-disc ml-5 " key={index}>{item}</li>
                 )}
               </ul>
             </div>
@@ -173,7 +173,7 @@ Management Consultancy
               </p>
               <ul className="grid grid-cols-1 ">
                 {["Business Setup Advisory","Financial Consultancy","International Taxation","Compliance Consulting","Strategy Consulting"].map((item,index)=>
-                <li className="list-disc " key={index}>{item}</li>
+                <li className="list-disc ml-5 " key={index}>{item}</li>
                 )}
               </ul>
             </div>

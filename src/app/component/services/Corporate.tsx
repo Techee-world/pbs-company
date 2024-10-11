@@ -15,9 +15,10 @@ const Corporate: React.FC = () => {
   return (
     <>
     <div 
-    // style={{background:'rgb(171, 200, 255)'}}
+  
      className="py-10 px-4 sm:px-6 lg:px-8 ">
-      <div className="2xl:max-w-7xl max-w-6xl mx-auto">
+      <div   style={{background:'radial-gradient(circle, rgba(79,130,227,1) 0%, rgba(177,212,255,1) 100%)'}}
+       className="2xl:max-w-7xl max-w-6xl mx-auto p-6 rounded-xl">
         {/* <p
           className=" mb-10 text-lg montserrat-font helvetic-font"
           data-aos="fade-up"
@@ -68,7 +69,7 @@ Management consulting
               </p>
               <ul className="grid grid-cols-1 ">
                 {["Strategy for New Entrants","Strategy for Existing Businesses","Customer Strategy & Marketing"].map((item,index)=>
-                <li className="list-disc " key={index}>{item}</li>
+                <li className="list-disc ml-5" key={index}>{item}</li>
                 )}
               </ul>
 
@@ -85,7 +86,7 @@ Startup consulting
               </p>
               <ul className="grid grid-cols-1 ">
                 {["Business Idea Validation","Business Plan","Business Funding Support","Business Model Development","Setting up Operations","Market Positioning and Marketing Plan"].map((item,index)=>
-                <li className="list-disc " key={index}>{item}</li>
+                <li className="list-disc ml-5 " key={index}>{item}</li>
                 )}
               </ul>
             </div>
@@ -102,7 +103,7 @@ Digital marketing & SEO
               </p>
               <ul className="grid grid-cols-1 ">
                 {["Branding & Re-branding","Brand Building","Sales Improvement","Promotion Tactics ","Advertisement (outdoor/indoor) ","Advertisement Budget Planning"].map((item,index)=>
-                <li className="list-disc " key={index}>{item}</li>
+                <li className="list-disc ml-5" key={index}>{item}</li>
                 )}
               </ul>
             </div>
@@ -120,7 +121,7 @@ Franchise Development Program
               </p>
               <ul className="grid grid-cols-1 ">
                 {["Franchise Development Program","Franchise Marketing","Franchise Audit"].map((item,index)=>
-                <li className="list-disc " key={index}>{item}</li>
+                <li className="list-disc ml-5" key={index}>{item}</li>
                 )}
               </ul>
             </div>

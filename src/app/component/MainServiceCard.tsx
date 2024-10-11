@@ -4,7 +4,7 @@ import union from "../../../public/images/union-started.svg"; // Ensure the corr
 
 const MainServiceCard = () => {
   return (
-    <div className="grid max-w-6xl md:px-0 px-4 m-auto 2xl:max-w-7xl grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
+    <div className="grid max-w-6xl lg:px-4 px-4 m-auto 2xl:max-w-7xl grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
       <Card
         color="radial-gradient(circle, rgba(79,130,227,1) 0%, rgba(177,212,255,1) 100%)"
         some="PBS Corporate"

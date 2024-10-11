@@ -6,7 +6,7 @@ const ShortBriefBanner = () => {
     <>
     <MainServiceCard/>
     <section className="lg:pt-28 pt-14 px-4 text-start lg:text-center ">
-    <div className="max-w-4xl mx-auto">
+    <div className="max-w-5xl mx-auto">
       <h1 className="text-3xl md:text-5xl button-color-text mb-6 lg:mb-10 helvetic-sub-title-font">
         Our Services are Efficient, <br className="hidden md:block" />
         Modern, and Customer-Focused

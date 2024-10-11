@@ -52,9 +52,9 @@ const ThreePoints = () => {
   };
 
   return (
-    <section className="py-12 pb-20 px-4 lg:px-10">
+    <section className="py-12 pb-20 px-4 lg:px-4">
       <div className="container mx-auto py-12 bg-gradient-to-l shadow-2xl from-blue-500 to-blue-950 rounded-2xl text-gray-300 px-6 md:px-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {services.map((service, index) => {
             const animatedNumber = CountUp(service.some);
 

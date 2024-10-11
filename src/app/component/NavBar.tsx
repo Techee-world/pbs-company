@@ -36,9 +36,10 @@ const NavBar = () => {
   }, []);
 
   return (
+    <div className="h-16 lg:h-auto ">
     <nav
       className={`${
-        isScrolled
+        isScrolled 
           ? "bg-gradient-to-b from-white/100 to-white/60 shadow-md"
           : "bg-transparent"
       } transition-all duration-300  fixed top-0 left-0 w-full  lg:p-4 p-0 py-4 z-50 ${
@@ -62,7 +63,7 @@ const NavBar = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden lg:flex space-x-8">
             {menuItems.map((item) => (
               <Link
                 key={item.path}
@@ -97,7 +98,7 @@ const NavBar = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden  ">
+          <div className="lg:hidden  ">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-gray-900 button-color-one"
@@ -169,6 +170,7 @@ const NavBar = () => {
         </div>
       )}
     </nav>
+    </div>
   );
 };
 
