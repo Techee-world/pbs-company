@@ -22,7 +22,7 @@ const ItService: React.FC = () => {
     
     className=" p-4 ">
       <div style={{background:'rgb(251, 213, 213)'}}  className="2xl:max-w-7xl shadow-2xl max-w-6xl mx-auto p-4 lg:p-6 rounded-xl">
-      <div className=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6  relative items-center lg:mb-20 mb-10 animated-box-fade ">
+      {/* <div className=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6  relative items-center lg:mb-20 mb-10 animated-box-fade "> */}
             {/* <Image
               src={service1}
               alt="Elevating Businesses Through Edge"
@@ -31,7 +31,7 @@ const ItService: React.FC = () => {
               height={100}
             /> */}
              {/* <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent rounded-lg"> </div> */}
-          </div>
+          {/* </div> */}
         <h1 className="text-3xl font-bold  mb-6 sm:text-5xl helvetic-Head-font lg:text-5xl"  data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="800"
