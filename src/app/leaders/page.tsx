@@ -150,7 +150,7 @@ const Page = () => {  // Changed 'page' to 'Page'
             <LeadersCard  name="Ahmad Kutty" designation="Finance Director" />
             <LeadersCard  name="Salam" designation="President" />
             <LeadersCard img={five} name="Muhammed Ashik" designation="CEO & Director" />
-            <LeadersCard img={six} name="Muhammed Farhan" designation="COO" />
+            <LeadersCard img={six} name="Muhammed Farhan" designation="COO & Director" />
             <LeadersCard img={two} name="Ashik CK" designation="Director" />
             <LeadersCard  name="Abin" designation="Director" />
             <LeadersCard img={four} name="Safwan" designation="Chairman & founder" />
