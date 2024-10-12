@@ -119,6 +119,9 @@ body{
   --tw-text-opacity: 1;
   color: rgb(16 42 86 / var(--tw-text-opacity));
 }
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
 
 
 /* flip card who need us animation  */
@@ -160,3 +163,17 @@ body{
   border: 1px solid #cccccc;
 }
 /* 4 card hover effect in  */
+
+/* scrolling none  */
+
+/* .hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+
+.hide-scrollbar {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+} */
+
+/* scrolling none  */

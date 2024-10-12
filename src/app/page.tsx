@@ -20,7 +20,7 @@ import FounderMassage from "./component/FounderMassage";
 export default function Home() {
 
   return (
-    <>
+    <div className="">
       <Seo
         title="home"
         description="pbs over all providing serivces"
@@ -30,7 +30,7 @@ export default function Home() {
       {/* <Banner /> */}
       <div style={{backgroundImage:`url('https://tegain-website-static-media-bucket.s3.ap-south-1.amazonaws.com/assets/images/21-05-2024/landing-gradient.svg')`,
       backgroundRepeat: 'no-repeat',
-     }} className="">
+     }} className=" ">
 
       <SecondBanner />
       <ShortBriefBanner />
@@ -46,10 +46,6 @@ export default function Home() {
       {/* <HomeTraining />
       <HomeFunding />
       <HomeMeetRoom /> */}
-    </>
+    </div>
   );
 }
-
-
-// leader ship background image is change 
-// 672 image in leader page md massage 
