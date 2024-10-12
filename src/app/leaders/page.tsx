@@ -147,8 +147,8 @@ const Page = () => {  // Changed 'page' to 'Page'
             <LeadersCard img={habeeb} name="Habeeb Rahman" designation="Chairman & founder" />
             <LeadersCard img={seven} name="Muhammed Rafi" designation="MD & Co-founder" />
             <LeadersCard img={one} name="Nazrin Midlaj" designation="Vice Chairperson & Co-founder" />
-            <LeadersCard img={four} name="Ahmad Kutty" designation="Finance Director" />
-            <LeadersCard  name="Slam" designation="President" />
+            <LeadersCard  name="Ahmad Kutty" designation="Finance Director" />
+            <LeadersCard  name="Salam" designation="President" />
             <LeadersCard img={five} name="Muhammed Ashik" designation="CEO & Director" />
             <LeadersCard img={six} name="Muhammed Farhan" designation="COO" />
             <LeadersCard img={two} name="Ashik CK" designation="Director" />
