@@ -95,7 +95,7 @@ const NavBar = () => {
             </div>
 
             {/* Mobile Menu Button */}
-            <div className="lg:hidden fade-in  ">
+            <div className="lg:hidden   ">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className="text-gray-900 button-color-one"
