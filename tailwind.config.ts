@@ -36,7 +36,10 @@ const config = {
         'custom-blue': 'radial-gradient(circle, rgba(79,130,227,1) 0%, rgba(177,212,255,1) 100%)',   
         'custom-green': 'radial-gradient(circle, rgba(73,174,92,1) 0%, rgba(184,216,190,1) 100%)',   
         'custom-pink': 'radial-gradient(circle, rgba(208,83,96,1) 0%, rgba(242,189,189,1) 100%)', 
-      }
+      },
+      boxShadow: {
+        'custom-hover': '0 6px 15px rgba(0, 0, 0, 0.68)', 
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

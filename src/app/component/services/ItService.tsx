@@ -48,7 +48,9 @@ const ItService: React.FC = () => {
           <div className="lg:border-r lg:border-gray-400 lg:pr-4" >
 
             <div className="w-full">
-              <h2 id="five" className="text-2xl font-bold text-gray-900 mb-4 helvetic-sub-title-sub-font"  data-aos="fade-up"
+              <h2
+              //  id="five" 
+               className="text-2xl font-bold text-gray-900 mb-4 helvetic-sub-title-sub-font"  data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="800"
             data-aos-delay="300">
@@ -63,7 +65,9 @@ const ItService: React.FC = () => {
               </p>
             </div>
             <div className="w-full">
-              <h2 id="five" className="text-2xl font-bold text-gray-900 mb-4 helvetic-sub-title-sub-font"  data-aos="fade-up"
+              <h2
+              //  id="five" 
+               className="text-2xl font-bold text-gray-900 mb-4 helvetic-sub-title-sub-font"  data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="800"
             data-aos-delay="300">
@@ -78,7 +82,9 @@ const ItService: React.FC = () => {
               </p>
             </div>
             <div>
-              <h2 id="six" className="text-2xl font-bold text-gray-900 mb-4 helvetic-sub-title-sub-font"  data-aos="fade-up"
+              <h2
+              //  id="six" 
+               className="text-2xl font-bold text-gray-900 mb-4 helvetic-sub-title-sub-font"  data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="800"
             data-aos-delay="500">

@@ -40,7 +40,7 @@ const Corporate: React.FC = () => {
           data-aos-duration="800"
           data-aos-delay="300"
         >
-           PBS corporate
+           PBS Consult
         </h2>
        
         <div className="flex items-center lg:flex-row flex-col mt-10 lg:mt-0">
@@ -85,7 +85,7 @@ Management consulting
                 data-aos-duration="800"
                 data-aos-delay="600"
               >
-Franchise Development Program
+Franchise Consulting
 
 
               </p>
