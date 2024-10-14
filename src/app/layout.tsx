@@ -14,9 +14,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const pathname = usePathname(); // Get the current path
-console.log(pathname,'----this is pathname ----')
-  const showHeaderAndFooter = pathname == "/pbstech" ? '': <NavBar/>
+  const pathname = usePathname(); 
+  const showHeaderAndFooter = pathname !== "/pbstech"
 
   return (
     <html lang="en" className="scroll-smooth">
@@ -38,7 +37,7 @@ console.log(pathname,'----this is pathname ----')
       </head>
       <body className="bg-white Bricolage_Grotesque">
         {/* Conditionally render NavBar and Footer */}
-        {showHeaderAndFooter}
+        {showHeaderAndFooter && <NavBar/>}
         {children}
         {showHeaderAndFooter && <Footer />}
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" async></script>
