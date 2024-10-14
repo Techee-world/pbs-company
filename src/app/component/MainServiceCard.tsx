@@ -50,9 +50,8 @@ const Card: React.FC<CardProps> = ({ path, color, some, des, pathRoot }) => {
     console.log(sectionId,'---path new')
     if(sectionId !== ''){
       router.push(`/services#${sectionId}`);
-    }else{
+    }else if (pathRoot) { // Check if pathRoot is defined
       router.push(pathRoot);
-
     }
   };
 
