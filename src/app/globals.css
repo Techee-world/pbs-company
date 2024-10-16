@@ -177,3 +177,16 @@ body{
 } */
 
 /* scrolling none  */
+
+
+
+/* Hide the up and down arrows for input[type=number] */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none; /* Remove default spinner */
+  margin: 0; /* Remove default margin */
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}

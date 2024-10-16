@@ -38,7 +38,10 @@ const ContactUs = () => {
   // Handle form submission
   const submitHandler = async (e: React.FormEvent) => {
     e.preventDefault();
-
+    if (formData.phone.length !== 10) {
+      alert("Phone number must be exactly 10 digits.");
+      return;
+    }
     setFormData({
       name: '',
       email: '',
@@ -55,8 +58,6 @@ const ContactUs = () => {
       })
       .catch(err => console.log(err));
   };
-  
-  
   
 
   return (
@@ -80,6 +81,7 @@ const ContactUs = () => {
               data-aos-duration="800"
               data-aos-delay="300"
               type="text"
+              required
               placeholder="Your Name"
               className="border text-sm bg-transparent border-gray-400 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-950"
             />
@@ -92,6 +94,7 @@ const ContactUs = () => {
               data-aos-duration="800"
               data-aos-delay="400"
               type="email"
+              required
               placeholder="Your E-mail"
               className="border text-sm bg-transparent border-gray-400 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-950"
             />
@@ -103,7 +106,10 @@ const ContactUs = () => {
               data-aos-anchor-placement="top-bottom"
               data-aos-duration="800"
               data-aos-delay="500"
-              type="text"
+              type="number"
+              required
+              maxLength={10}
+              minLength={10}
               placeholder="Phone Number"
               className="border text-sm bg-transparent border-gray-400 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-950"
             />
@@ -127,6 +133,7 @@ const ContactUs = () => {
               data-aos-anchor-placement="top-bottom"
               data-aos-duration="800"
               data-aos-delay="700"
+              required
               placeholder="Your Message"
               className="border bg-transparent border-gray-400 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-950 sm:col-span-2 h-28"
             ></textarea>
