@@ -38,42 +38,25 @@ const ContactUs = () => {
   // Handle form submission
   const submitHandler = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitError(null); // Reset error before submission
 
-    try {
-      const response = await fetch('https://script.google.com/macros/s/AKfycbwA5mQUFxzNIWUwXsSRiKN8GYiisQr3W5MiIBa5tzCLV6P9cr1lCXN1Ro5K0CSVHurX/exec', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-
-      if (!response.ok) {
-        throw new Error('Failed to submit form.');
-      }
-
-      const data = await response.json();
-      if (data.status === 'success') {
-        alert('Form submitted successfully!');
-        setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          subject: '',
-          message: ''
-        });
-      } else {
-        throw new Error(data.message || 'An error occurred while submitting the form.');
-      }
-    } catch (error: any) {
-      console.error('Error submitting form:', error);
-      setSubmitError(error.message || 'An error occurred.');
-    } finally {
-      setIsSubmitting(false);
-    }
+    setFormData({
+      name: '',
+      email: '',
+      phone: '',
+      subject: '',
+      message: ''
+    })
+   await fetch("https://script.google.com/macros/s/AKfycbzxvzglks9Qc1pTpfUf1B45vZbcjNEUxDxBwDdurIBuGsAxrCDpstNSRX3k4gi9UQLA/exec", {
+      method: 'POST',
+      body: JSON.stringify(formData as any),
+    }).then(res => res.json())
+      .then(data => {
+        console.log(data , 'error');
+      })
+      .catch(err => console.log(err));
   };
+  
+  
   
 
   return (
