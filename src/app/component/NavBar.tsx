@@ -34,14 +34,24 @@ const NavBar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const menuHandle = () =>{
-    setIsMenuOpen(!isMenuOpen)
-    if(isMenuOpen === true){
-      document.documentElement.style.overflow = ''
-    }else{
-      document.documentElement.style.overflow = 'hidden'
+  
+  // Handle menu open/close and scroll lock
+  const menuHandle = () => {
+    setIsMenuOpen(!isMenuOpen);
+    if (!isMenuOpen) {
+      // Disable scrolling when menu is open
+      document.body.style.overflow = 'hidden';
+    } else {
+      // Enable scrolling when menu is closed
+      document.body.style.overflow = '';
     }
-  }
+  };
+
+  // Close menu on route change to avoid locked scroll
+  useEffect(() => {
+    setIsMenuOpen(false);
+    document.body.style.overflow = '';
+  }, [pathname]);
 
   return (
     <header className="w-full fixed top-0 left-0 z-50">
