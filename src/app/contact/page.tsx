@@ -38,7 +38,7 @@ const ContactUs = () => {
   // Handle form submission
   const submitHandler = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (formData.phone.length !== 10) {
+    if (formData.phone.length !== 10 && formData.phone.length < 11) {
       alert("Phone number must be exactly 10 digits.");
       return;
     }
@@ -179,6 +179,7 @@ const ContactUs = () => {
               </div>
             </div>
           </Link>
+          <Link href='tel:+91 7902991199' >
           <div className="flex items-center p-3 rounded-lg border border-gray-400"
                data-aos="fade-up"
                data-aos-anchor-placement="top-bottom"
@@ -190,6 +191,7 @@ const ContactUs = () => {
               <p className="text-gray-500 text-sm">(+91)7902991199</p>
             </div>
           </div>
+          </Link>
           <div className="flex items-center p-3 rounded-lg border border-gray-400"
                data-aos="fade-up"
                data-aos-anchor-placement="top-bottom"
