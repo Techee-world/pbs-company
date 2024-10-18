@@ -40,6 +40,22 @@ export default function RootLayout({
         {showHeaderAndFooter && <NavBar/>}
         {children}
         {showHeaderAndFooter && <Footer />}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.embeddedChatbotConfig = {
+                chatbotId: "oc5Nazl0WF0iRYxRTI169",
+                domain: "www.chatbase.co"
+              };
+            `,
+          }}
+        />
+        <script
+          src="https://www.chatbase.co/embed.min.js"
+          chatbotId="oc5Nazl0WF0iRYxRTI169"
+          domain="www.chatbase.co"
+          defer
+        />
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" async></script>
         <script>{`AOS.init()`}</script>
       </body>

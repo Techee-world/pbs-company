@@ -7,7 +7,6 @@ import "aos/dist/aos.css";
 import overview from "../../../public/images/overview.jpg";
 import vission from "../../../public/images/mission.jpg";
 import value from "../../../public/images/value.jpg";
-import Seo from "../seo/Seo";
 import ourTeam from '../../../public/images/10.jpg'
 
 export default function AboutPage() {
@@ -48,13 +47,6 @@ export default function AboutPage() {
 
   return (
     <>
-      <Seo
-        title="About Us"
-        description="Learn about PBS Group, our mission, values, and leadership team."
-        url="https://pbsgroup.in/about"
-        keywords="pbs, pbsgroup , pbs about"
-        image="/images/og-image-about.jpg"
-      />
       {/* <div className="h-auto w-full bg-no-repeat bg-cover center " style={{backgroundImage:url(${line.src})}}> */}
       <div
         style={{

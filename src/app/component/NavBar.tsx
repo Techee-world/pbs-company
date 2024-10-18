@@ -34,6 +34,7 @@ const NavBar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   
   // Handle menu open/close and scroll lock
   const menuHandle = () => {
