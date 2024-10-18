@@ -47,14 +47,14 @@ export default function RootLayout({
                 chatbotId: "oc5Nazl0WF0iRYxRTI169",
                 domain: "www.chatbase.co"
               };
+              (function(d, s) {
+                var script = d.createElement(s);
+                script.src = "https://www.chatbase.co/embed.min.js";
+                script.defer = true;
+                d.head.appendChild(script);
+              })(document, 'script');
             `,
           }}
-        />
-        <script
-          src="https://www.chatbase.co/embed.min.js"
-          chatbotId="oc5Nazl0WF0iRYxRTI169"
-          domain="www.chatbase.co"
-          defer
         />
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" async></script>
         <script>{`AOS.init()`}</script>
